@@ -1,6 +1,8 @@
 package com.github.jp.erudosan.emj;
 
 
+import com.github.jp.erudosan.emj.command.CommandManager;
+import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.utils.CaptionHandler;
 import com.github.jp.erudosan.emj.utils.Config;
 import com.github.jp.erudosan.emj.utils.Lang;
@@ -8,13 +10,7 @@ import com.github.jp.erudosan.emj.utils.db.DBManager;
 import com.github.jp.erudosan.emj.utils.db.SQLGetterSetter;
 import lombok.Getter;
 import lombok.Setter;
-import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.logging.Level;
 
 public class Main extends JavaPlugin {
 
@@ -34,6 +30,8 @@ public class Main extends JavaPlugin {
     @Getter
     private Config config;
 
+    private CommandManager commandManager;
+
     @Override
     public void onDisable() {
         super.onDisable();
@@ -43,10 +41,17 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         setInstance(this);
 
+        sql = new SQLGetterSetter(this);
+
         config = new Config(this);
 
         dbManager = new DBManager(config.getHost(),config.getUsername(),config.getPassword(),config.getDatabase(),config.getPort());
 
         handler = new CaptionHandler(this, config.getLanguage());
+
+        commandManager = new CommandManager(this);
+        commandManager.setup();
+
+        new JobManager(this);
     }
 }
