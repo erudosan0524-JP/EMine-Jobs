@@ -20,7 +20,7 @@ public class Main extends JavaPlugin {
     private static Main instance;
 
     @Getter
-    private CaptionHandler handler;
+    private static CaptionHandler handler;
 
     @Override
     public void onDisable() {
@@ -31,6 +31,6 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         setInstance(this);
 
-         this.handler = new CaptionHandler(this, Lang.JAPANESE);
+        handler = new CaptionHandler(this, Lang.JAPANESE);
     }
 }

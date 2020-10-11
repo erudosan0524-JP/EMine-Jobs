@@ -1,0 +1,3 @@
+length_zero_message: /ltsでヘルプを表示できます
+invalid_command: &c不正なサブコマンド
+error_command: &cエラーが検出されました

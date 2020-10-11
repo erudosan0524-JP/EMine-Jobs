@@ -53,7 +53,7 @@ public class CaptionHandler {
 
     public String getCaption(String name)
     {
-        return this.getCaption(name, false);
+        return this.getCaption(name, true);
     }
 
     public String getCaption(String name, boolean color)

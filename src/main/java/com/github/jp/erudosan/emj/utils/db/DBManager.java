@@ -2,6 +2,7 @@ package com.github.jp.erudosan.emj.utils.db;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.bukkit.Bukkit;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -38,6 +39,7 @@ public class DBManager {
                         , this.username, this.password));
 
                 //Message
+                Bukkit.getLogger().info("Setting up MySQL");
             }
         } catch(SQLException | ClassNotFoundException e) {
             e.printStackTrace();
