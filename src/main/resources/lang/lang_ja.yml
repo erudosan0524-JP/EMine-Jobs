@@ -7,3 +7,6 @@ help_line1: &3/emj stats &f➡ &2現在の職業，レベルを確認
 help_line2: &3/emj join &f[職業名] &f➡ &2指定した職業に就職
 help_line3: &3/emj leave &f➡ &2現在の職業を辞める
 help_line4: &3/emj jobs &f➡ &2就職可能な職業を表示
+
+# Jobs name
+miner: 鉱夫
