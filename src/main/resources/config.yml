@@ -1,3 +1,6 @@
+# Setting Language
+language: ja
+
 #Settings for Database
 enabled-mysql: true
 host: localhost

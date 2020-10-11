@@ -47,6 +47,6 @@ public class Main extends JavaPlugin {
 
         dbManager = new DBManager(config.getHost(),config.getUsername(),config.getPassword(),config.getDatabase(),config.getPort());
 
-        handler = new CaptionHandler(this, Lang.JAPANESE);
+        handler = new CaptionHandler(this, config.getLanguage());
     }
 }

@@ -3,15 +3,18 @@ package com.github.jp.erudosan.emj.utils;
 import com.github.jp.erudosan.emj.Main;
 import lombok.Getter;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.plugin.Plugin;
 
 import java.util.Objects;
 
 public class Config {
 
-    private Main plugin;
+    private Plugin plugin;
     private FileConfiguration config;
 
     //設定
+    private String language;
+
     @Getter
     private boolean enabledMySQL;
 
@@ -20,7 +23,7 @@ public class Config {
     @Getter
     private int port;
 
-    public Config(Main plugin) {
+    public Config(Plugin plugin) {
         this.plugin = plugin;
 
         load();
@@ -35,6 +38,7 @@ public class Config {
 
         config = plugin.getConfig();
 
+        language = config.getString("language");
         enabledMySQL = config.getBoolean("enabled-mysql");
         host = config.getString("host");
         port = config.getInt("port");
@@ -47,6 +51,15 @@ public class Config {
     public void reload() {
         plugin.reloadConfig();
         plugin.saveConfig();
+    }
+
+    public Lang getLanguage() {
+        switch(language.toLowerCase()) {
+            case "ja":
+                return Lang.JAPANESE;
+            default:
+                return Lang.ENGLISH;
+        }
     }
 
 }
