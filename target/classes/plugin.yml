@@ -1,0 +1,4 @@
+name: "${project.name}"
+version: "0.0.1-SNAPSHOT"
+main: "com.github.jp.erudosan.emj.Main"
+author: 'erudo'
