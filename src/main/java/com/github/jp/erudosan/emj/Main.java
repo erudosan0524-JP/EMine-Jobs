@@ -2,7 +2,10 @@ package com.github.jp.erudosan.emj;
 
 
 import com.github.jp.erudosan.emj.utils.CaptionHandler;
+import com.github.jp.erudosan.emj.utils.Config;
 import com.github.jp.erudosan.emj.utils.Lang;
+import com.github.jp.erudosan.emj.utils.db.DBManager;
+import com.github.jp.erudosan.emj.utils.db.SQLGetterSetter;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -20,7 +23,16 @@ public class Main extends JavaPlugin {
     private static Main instance;
 
     @Getter
-    private static CaptionHandler handler;
+    private CaptionHandler handler;
+
+    @Getter
+    private SQLGetterSetter sql;
+
+    @Getter
+    private DBManager dbManager;
+
+    @Getter
+    private Config config;
 
     @Override
     public void onDisable() {
@@ -30,6 +42,10 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         setInstance(this);
+
+        config = new Config(this);
+
+        dbManager = new DBManager(config.getHost(),config.getUsername(),config.getPassword(),config.getDatabase(),config.getPort());
 
         handler = new CaptionHandler(this, Lang.JAPANESE);
     }
