@@ -171,6 +171,44 @@ public class SQLGetterSetter {
         }
     }
 
+    public int getExp(Player player) {
+        try {
+            DBManager db = plugin.getDbManager();
+            PreparedStatement statement = db.getConnection()
+                    .prepareStatement("SELECT * FROM " + player_jobs_table + " WHERE uuid=?");
+            statement.setString(1,player.getUniqueId().toString());
+
+            ResultSet results = statement.executeQuery();
+            results.next();
+
+            return results.getInt("exp");
+
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
+        }
+
+        return 0;
+    }
+
+    public int getLevel(Player player) {
+        try {
+            DBManager db = plugin.getDbManager();
+            PreparedStatement statement = db.getConnection()
+                    .prepareStatement("SELECT * FROM " + player_jobs_table + " WHERE uuid=?");
+            statement.setString(1,player.getUniqueId().toString());
+
+            ResultSet results = statement.executeQuery();
+            results.next();
+
+            return results.getInt("level");
+
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
+        }
+
+        return 0;
+    }
+
     public void setJob(Job job) {
         try {
             DBManager db = plugin.getDbManager();
