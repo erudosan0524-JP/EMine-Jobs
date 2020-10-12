@@ -143,6 +143,44 @@ public class SQLGetterSetter {
         }
     }
 
+    public boolean isSetPlayerJob(Player player) {
+        try {
+            DBManager db = plugin.getDbManager();
+            PreparedStatement statement = db.getConnection()
+                    .prepareStatement("SELECT * FROM " + player_jobs_table + " WHERE uuid=?");
+            statement.setString(1,player.getUniqueId().toString());
+
+            ResultSet results = statement.executeQuery();
+            results.next();
+
+            if(results.getString("job") != null) {
+                return true;
+            }
+
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
+        }
+
+        return false;
+    }
+
+    public void updatePlayerJob(Player player, Job job) {
+        try {
+            DBManager db = plugin.getDbManager();
+            PreparedStatement statement = db.getConnection()
+                    .prepareStatement("UPDATE " + player_jobs_table + "SET 'job'=?, 'exp'=?, 'level'=?, 'job_id'=? WHERE uuid=?");
+            statement.setString(1,job.name());
+            statement.setInt(2,0);
+            statement.setInt(3,0);
+            statement.setInt(4,job.id());
+            statement.setString(5,player.getUniqueId().toString());
+            statement.executeUpdate();
+
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
+        }
+    }
+
     public void updateExp(Player player, int exp) {
         try {
             DBManager db = plugin.getDbManager();

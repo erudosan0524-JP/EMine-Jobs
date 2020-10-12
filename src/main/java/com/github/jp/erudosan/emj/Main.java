@@ -23,10 +23,12 @@ public class Main extends JavaPlugin {
     @Getter
     private DBManager dbManager;
 
-    s@Getter
-    private Config config;
+    @Getter
+    private Config myconfig;
 
     private CommandManager commandManager;
+
+    private  JobManager jobManager;
 
     @Override
     public void onDisable() {
@@ -38,15 +40,16 @@ public class Main extends JavaPlugin {
 
         sql = new SQLGetterSetter(this);
 
-        config = new Config(this);
+        myconfig = new Config(this);
 
-        dbManager = new DBManager(config.getHost(),config.getUsername(),config.getPassword(),config.getDatabase(),config.getPort());
+        dbManager = new DBManager(myconfig.getHost(),myconfig.getUsername(),myconfig.getPassword(),myconfig.getDatabase(),myconfig.getPort());
 
-        handler = new CaptionHandler(this, config.getLanguage());
+        handler = new CaptionHandler(this, myconfig.getLanguage());
 
         commandManager = new CommandManager(this);
         commandManager.setup();
 
-        new JobManager(this);
+        jobManager = new JobManager(this);
+        jobManager.setup();
     }
 }

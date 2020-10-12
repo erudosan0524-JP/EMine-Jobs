@@ -4,9 +4,14 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.jobs.miner.Miner;
 import org.bukkit.entity.Player;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class JobManager {
 
     private Main plugin;
+
+    private List<Job> jobs = new ArrayList<>();
 
     public JobManager(Main plugin) {
         this.plugin = plugin;
@@ -17,8 +22,39 @@ public class JobManager {
         setJob(new Miner(plugin));
     }
 
+    public boolean jobExists(String job_name) {
+        for(Job job : jobs) {
+            if(job.name().equals(job_name)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public Job getJobFromId(int id) {
+        for (Job job : jobs) {
+            if(job.id() == id) {
+                return job;
+            }
+        }
+
+        return null;
+    }
+
+    public Job getJobFromName(String name) {
+        for (Job job : jobs) {
+            if(job.name().equals(name)) {
+                return job;
+            }
+        }
+
+        return null;
+    }
+
 
     private void setJob(Job job) {
+        jobs.add(job);
         plugin.getSql().setJob(job);
     }
 
