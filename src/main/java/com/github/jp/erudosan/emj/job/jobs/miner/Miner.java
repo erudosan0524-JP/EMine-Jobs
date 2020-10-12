@@ -14,12 +14,12 @@ public class Miner extends Job {
 
     @Override
     public String name() {
-        return plugin.getHandler().getCaption("miner");
+        return "miner";
     }
 
     @Override
     public int id() {
-        return 0;
+        return 1;
     }
 
     @Override

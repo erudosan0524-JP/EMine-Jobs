@@ -73,7 +73,7 @@ public class CommandManager implements CommandExecutor {
             arrayList.remove(0); //index 0 はサブコマンド本体
 
             try {
-                target.onCommand(player, args);
+                target.onCommand(player, arrayList.toArray(new String[arrayList.size()]));
             } catch(Exception e) {
                 player.sendMessage(plugin.getHandler().getCaption("error_command"));
 

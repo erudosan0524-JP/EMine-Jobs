@@ -18,7 +18,7 @@ stats_line2: "現在の経験値:&2"
 stats_line3: "レベル:&2"
 
 # "emj join" Command Message
-join_message1: "あなたは"
+join_message1: "あなたは&2"
 join_message2: "に就きました"
 
 # Jobs name

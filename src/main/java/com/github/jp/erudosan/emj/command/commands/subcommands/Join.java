@@ -18,22 +18,27 @@ public class Join extends SubCommand {
     public void onCommand(Player player, String[] args) {
         if(args.length != 0) {
             String job_name = args[0];
+            System.out.println(args[0]);
 
-            JobManager jobManager = new JobManager(plugin);
+            JobManager jobManager = plugin.getJobManager();
 
-            Job job = null;
 
             if(jobManager.jobExists(job_name)) {
-                job = jobManager.getJobFromName(job_name);
-            }
+                Job job = jobManager.getJobFromName(job_name);
 
-            if(plugin.getSql().isSetPlayerJob(player)) {
-                plugin.getSql().updatePlayerJob(player,job);
-            } else {
-                plugin.getSql().setPlayerJob(player,job);
-            }
+                if(plugin.getSql().playerJobExists(player)) {
+                    if(plugin.getSql().isSetPlayerJob(player)) {
+                        plugin.getSql().updatePlayerJob(player,job);
+                    }
+                } else {
+                    if(!plugin.getSql().isSetPlayerJob(player)) {
+                        plugin.getSql().setPlayerJob(player,job);
+                    }
 
-            player.sendMessage(plugin.getHandler().getCaption("join_message1") + job.name() + plugin.getHandler().getCaption("join_message2"));
+                }
+
+                player.sendMessage(plugin.getHandler().getCaption("join_message1") + job.name().toUpperCase() + plugin.getHandler().getCaption("join_message2"));
+            }
         }
     }
 

@@ -15,6 +15,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin {
 
     @Getter
+    @Setter
+    private static Main instance;
+
+    @Getter
     private CaptionHandler handler;
 
     @Getter
@@ -28,6 +32,7 @@ public class Main extends JavaPlugin {
 
     private CommandManager commandManager;
 
+    @Getter
     private  JobManager jobManager;
 
     @Override
@@ -37,19 +42,20 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        setInstance(this);
 
-        sql = new SQLGetterSetter(this);
+        sql = new SQLGetterSetter(getInstance());
 
-        myconfig = new Config(this);
+        myconfig = new Config(getInstance());
 
         dbManager = new DBManager(myconfig.getHost(),myconfig.getUsername(),myconfig.getPassword(),myconfig.getDatabase(),myconfig.getPort());
 
-        handler = new CaptionHandler(this, myconfig.getLanguage());
+        handler = new CaptionHandler(getInstance(), myconfig.getLanguage());
 
-        commandManager = new CommandManager(this);
+        commandManager = new CommandManager(getInstance());
         commandManager.setup();
 
-        jobManager = new JobManager(this);
+        jobManager = new JobManager(getInstance());
         jobManager.setup();
     }
 }

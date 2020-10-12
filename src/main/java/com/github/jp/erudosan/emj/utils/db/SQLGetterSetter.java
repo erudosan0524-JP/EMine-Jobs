@@ -9,6 +9,7 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Objects;
 
 public class SQLGetterSetter {
 
@@ -147,16 +148,14 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("SELECT * FROM " + player_jobs_table + " WHERE uuid=?");
+                    .prepareStatement("SELECT job FROM " + player_jobs_table + " WHERE uuid=?");
             statement.setString(1,player.getUniqueId().toString());
 
             ResultSet results = statement.executeQuery();
-            results.next();
 
-            if(results.getString("job") != null) {
+            if(results.next()) {
                 return true;
             }
-
         } catch (SQLException throwable) {
             throwable.printStackTrace();
         }

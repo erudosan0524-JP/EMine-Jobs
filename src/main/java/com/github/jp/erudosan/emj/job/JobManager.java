@@ -11,7 +11,7 @@ public class JobManager {
 
     private Main plugin;
 
-    private List<Job> jobs = new ArrayList<>();
+    private static List<Job> jobs = new ArrayList<>();
 
     public JobManager(Main plugin) {
         this.plugin = plugin;
@@ -24,11 +24,10 @@ public class JobManager {
 
     public boolean jobExists(String job_name) {
         for(Job job : jobs) {
-            if(job.name().equals(job_name)) {
+            if(job.name().equalsIgnoreCase(job_name)) {
                 return true;
             }
         }
-
         return false;
     }
 
