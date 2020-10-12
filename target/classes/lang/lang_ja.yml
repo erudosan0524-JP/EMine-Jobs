@@ -1,21 +1,25 @@
-length_zero_message: /lts helpでヘルプを表示できます
-invalid_command: &c不正なサブコマンド
-error_command: &cエラーが検出されました
+length_zero_message: "/lts helpでヘルプを表示できます"
+invalid_command: "&c不正なサブコマンド"
+error_command: "&cエラーが検出されました"
 
 # Command Message
-command_firstline: &7===== &2EMine&7-&3Fishing &f[Command help] &7=====
-command_endline:  &7======================================
+command_firstline: "&7===== &2EMine&7-&3Fishing &f[Command help] &7====="
+command_endline:  "&7======================================"
 
 # "/emj help" Command Message
-help_line1: &3/emj stats &f➡ &2現在の職業，レベルを確認
-help_line2: &3/emj join &f[職業名] &f➡ &2指定した職業に就職
-help_line3: &3/emj leave &f➡ &2現在の職業を辞める
-help_line4: &3/emj jobs &f➡ &2就職可能な職業を表示
+help_line1: "&3/emj stats &f➡ &2現在の職業，レベルを確認"
+help_line2: "&3/emj join &f[職業名] &f➡ &2指定した職業に就職"
+help_line3: "&3/emj leave &f➡ &2現在の職業を辞める"
+help_line4: "&3/emj jobs &f➡ &2就職可能な職業を表示"
 
 # "/emj stats" Command Message
 stats_line1: "職業:&2"
 stats_line2: "現在の経験値:&2"
 stats_line3: "レベル:&2"
+
+# "emj join" Command Message
+join_message1: "あなたは"
+join_message2: "に就きました"
 
 # Jobs name
 miner: 鉱夫

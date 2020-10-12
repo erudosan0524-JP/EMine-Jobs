@@ -1,6 +1,6 @@
-length_zero_message: /lts helpでヘルプを表示できます
-invalid_command: &c不正なサブコマンド
-error_command: &cエラーが検出されました
+length_zero_message: "/lts helpでヘルプを表示できます"
+invalid_command: "&c不正なサブコマンド"
+error_command: "&cエラーが検出されました"
 
 # Command Message
 command_firstline: "&7===== &2EMine&7-&3Fishing &f[Command help] &7====="

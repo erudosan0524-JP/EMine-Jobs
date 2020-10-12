@@ -21,17 +21,19 @@ public class Join extends SubCommand {
 
             JobManager jobManager = new JobManager(plugin);
 
+            Job job = null;
+
             if(jobManager.jobExists(job_name)) {
-                Job job = jobManager.getJobFromName(job_name);
-
-                if(plugin.getSql().isSetPlayerJob(player)) {
-                    plugin.getSql().updatePlayerJob(player,job);
-                } else {
-                    plugin.getSql().setPlayerJob(player,job);
-                }
-
-                player.sendMessage(plugin.getHandler().getCaption("join_message1") + job.name() + plugin.getHandler().getCaption("join_message2"));
+                job = jobManager.getJobFromName(job_name);
             }
+
+            if(plugin.getSql().isSetPlayerJob(player)) {
+                plugin.getSql().updatePlayerJob(player,job);
+            } else {
+                plugin.getSql().setPlayerJob(player,job);
+            }
+
+            player.sendMessage(plugin.getHandler().getCaption("join_message1") + job.name() + plugin.getHandler().getCaption("join_message2"));
         }
     }
 

@@ -15,14 +15,18 @@ public class CaptionHandler {
 
     private String path;
 
+    private Lang lang;
+
     private File configFile = null;
     private FileConfiguration config = null;
 
     public CaptionHandler(Plugin plugin,Lang lang)
     {
         this.plugin = plugin;
-        path = plugin.getDataFolder() + "/lang/" + lang.getPath();
+        this.lang = lang;
         this.configFile = new File(this.plugin.getDataFolder(), "/lang/" + lang.getPath());
+
+        System.out.println(this.configFile);
 
         this.reload();
         this.saveDefault();
@@ -32,10 +36,10 @@ public class CaptionHandler {
     {
         this.config = YamlConfiguration.loadConfiguration(this.configFile);
 
-        InputStream defaultConfigStream = this.plugin.getResource(path);
+        InputStream defaultConfigStream = this.plugin.getResource("lang/" + lang.getPath());
         if (defaultConfigStream != null)
         {
-            File file = null;
+            File file = new File(plugin.getDataFolder(), "/lang/" + lang.getPath());
             try {
                 FileUtils.copyInputStreamToFile(defaultConfigStream,file);
             } catch (IOException e) {
@@ -50,7 +54,7 @@ public class CaptionHandler {
     {
         if (!this.configFile.exists())
         {
-            this.plugin.saveResource(path, false);
+            this.plugin.saveResource("lang/" + lang.getPath(), false);
         }
     }
 
