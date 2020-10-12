@@ -182,10 +182,11 @@ public class SQLGetterSetter {
 
             if (!jobExists(job)) {
                 PreparedStatement insert = db.getConnection()
-                        .prepareStatement("INSERT INTO " + jobs_table + " (job_id,job,genre) VALUE (?,?,?)");
+                        .prepareStatement("INSERT INTO " + jobs_table + " (job_id,job,genre,rank) VALUE (?,?,?,?)");
                 insert.setInt(1,job.id());
                 insert.setString(2,job.name());
                 insert.setString(3,job.genre().getGenre());
+                insert.setInt(4,job.rank());
 
                 insert.executeUpdate();
 

@@ -3,7 +3,6 @@ package com.github.jp.erudosan.emj.job.jobs.miner;
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
-import com.github.jp.erudosan.emj.utils.Lang;
 
 public class Miner extends Job {
 
@@ -26,5 +25,10 @@ public class Miner extends Job {
     @Override
     public JobGenre genre() {
         return JobGenre.MINER;
+    }
+
+    @Override
+    public int rank() {
+        return 1;
     }
 }

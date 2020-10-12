@@ -18,4 +18,9 @@ public abstract class Job {
     * @return 職業ジャンル
      */
     public abstract JobGenre genre();
+
+    /*
+    * @return 職業ランク
+     */
+    public abstract int rank();
 }
