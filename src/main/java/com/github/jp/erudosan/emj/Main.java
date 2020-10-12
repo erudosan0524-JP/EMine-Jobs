@@ -15,10 +15,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin {
 
     @Getter
-    @Setter
-    private static Main instance;
-
-    @Getter
     private CaptionHandler handler;
 
     @Getter
@@ -27,7 +23,7 @@ public class Main extends JavaPlugin {
     @Getter
     private DBManager dbManager;
 
-    @Getter
+    s@Getter
     private Config config;
 
     private CommandManager commandManager;
@@ -39,7 +35,6 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        setInstance(this);
 
         sql = new SQLGetterSetter(this);
 

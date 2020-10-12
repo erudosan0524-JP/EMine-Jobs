@@ -15,11 +15,12 @@ public class Help extends SubCommand {
 
     @Override
     public void onCommand(Player player, String[] args) {
-        player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&7===== &2EMine&7-&3Fishing &f[Command help] &7====="));
+        player.sendMessage(plugin.getHandler().getCaption("command_firstline"));
         player.sendMessage(plugin.getHandler().getCaption("help_line1"));
         player.sendMessage(plugin.getHandler().getCaption("help_line2"));
         player.sendMessage(plugin.getHandler().getCaption("help_line3"));
         player.sendMessage(plugin.getHandler().getCaption("help_line4"));
+        player.sendMessage(plugin.getHandler().getCaption("command_endline"));
 
 
     }

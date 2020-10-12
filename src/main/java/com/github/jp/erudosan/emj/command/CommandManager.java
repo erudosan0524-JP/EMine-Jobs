@@ -33,7 +33,7 @@ public class CommandManager implements CommandExecutor {
         plugin.getCommand(mainCommand).setExecutor(this);
 
         this.commands.add(new Help(plugin));
-        this.commands.add(new Stats());
+        this.commands.add(new Stats(plugin));
         this.commands.add(new Join());
         this.commands.add(new Jobs());
 

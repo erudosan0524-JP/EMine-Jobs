@@ -128,7 +128,7 @@ public class SQLGetterSetter {
 
             if (!playerJobExists(player)) {
                 PreparedStatement insert = db.getConnection()
-                        .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,jobs,exp,level,job_id) VALUE (?,?,?,?,?)");
+                        .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,job,exp,level,job_id) VALUE (?,?,?,?,?)");
                 insert.setString(1,player.getUniqueId().toString());
                 insert.setString(2,job.name());
                 insert.setInt(3,0);
@@ -169,6 +169,25 @@ public class SQLGetterSetter {
         } catch (SQLException throwable) {
             throwable.printStackTrace();
         }
+    }
+
+    public String getPlayerJob(Player player) {
+        try {
+            DBManager db = plugin.getDbManager();
+            PreparedStatement statement = db.getConnection()
+                    .prepareStatement("SELECT * FROM " + player_jobs_table + " WHERE uuid=?");
+            statement.setString(1,player.getUniqueId().toString());
+
+            ResultSet results = statement.executeQuery();
+            results.next();
+
+            return results.getString("job");
+
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
+        }
+
+        return "";
     }
 
     public int getExp(Player player) {
