@@ -13,13 +13,16 @@ import java.io.InputStream;
 public class CaptionHandler {
     private Plugin plugin = null;
 
+    private String path;
+
     private File configFile = null;
     private FileConfiguration config = null;
 
     public CaptionHandler(Plugin plugin,Lang lang)
     {
         this.plugin = plugin;
-        this.configFile = new File(this.plugin.getDataFolder(), lang.getPath());
+        path = plugin.getDataFolder() + "/lang/" + lang.getPath();
+        this.configFile = new File(this.plugin.getDataFolder(), "/lang/" + lang.getPath());
 
         this.reload();
         this.saveDefault();
@@ -29,7 +32,7 @@ public class CaptionHandler {
     {
         this.config = YamlConfiguration.loadConfiguration(this.configFile);
 
-        InputStream defaultConfigStream = this.plugin.getResource("lang.yml");
+        InputStream defaultConfigStream = this.plugin.getResource(path);
         if (defaultConfigStream != null)
         {
             File file = null;
@@ -47,7 +50,7 @@ public class CaptionHandler {
     {
         if (!this.configFile.exists())
         {
-            this.plugin.saveResource("lang.yml", false);
+            this.plugin.saveResource(path, false);
         }
     }
 
