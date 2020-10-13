@@ -1,24 +1,23 @@
-package com.github.jp.erudosan.emj.job.jobs.miner;
+package com.github.jp.erudosan.emj.job.jobs.fisher;
 
-import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 
-public class Miner extends Job {
+public class Fisher extends Job {
 
     @Override
     public String name() {
-        return "miner";
+        return "fisher";
     }
 
     @Override
     public int id() {
-        return 1;
+        return 3;
     }
 
     @Override
     public JobGenre genre() {
-        return JobGenre.MINER;
+        return JobGenre.FISHING;
     }
 
     @Override

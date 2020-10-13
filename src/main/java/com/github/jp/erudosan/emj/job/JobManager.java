@@ -1,6 +1,10 @@
 package com.github.jp.erudosan.emj.job;
 
 import com.github.jp.erudosan.emj.Main;
+import com.github.jp.erudosan.emj.job.jobs.chef.Chef;
+import com.github.jp.erudosan.emj.job.jobs.fisher.Fisher;
+import com.github.jp.erudosan.emj.job.jobs.hunter.Hunter;
+import com.github.jp.erudosan.emj.job.jobs.lamber.Lamber;
 import com.github.jp.erudosan.emj.job.jobs.miner.Miner;
 import org.bukkit.entity.Player;
 
@@ -19,7 +23,19 @@ public class JobManager {
 
     public void setup() {
         //Miner
-        setJob(new Miner(plugin));
+        setJob(new Miner());
+
+        //Lamber
+        setJob(new Lamber());
+
+        //Fisher
+        setJob(new Fisher());
+
+        //Chef
+        setJob(new Chef());
+
+        //Hunter
+        setJob(new Hunter());
     }
 
     public boolean jobExists(String job_name) {
@@ -61,8 +77,15 @@ public class JobManager {
         plugin.getSql().setPlayerJob(player,job);
     }
 
+    public Job getPlayerJob(Player player) {
+        String job_name = plugin.getSql().getPlayerJob(player);
+        Job job = getJobFromName(job_name);
+
+        return job;
+    }
+
     public void addExp(Player player, int exp) {
-        plugin.getSql().updateExp(player,exp);
+        plugin.getSql().updateExp(player,plugin.getSql().getExp(player) + exp);
     }
 
     public void levelUp(Player player) {
