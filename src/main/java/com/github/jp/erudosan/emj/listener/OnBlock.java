@@ -10,6 +10,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.inventory.ItemStack;
 
 public class OnBlock implements Listener {
 
@@ -27,11 +28,21 @@ public class OnBlock implements Listener {
         JobManager jobManager = plugin.getJobManager();
         Job job = jobManager.getPlayerJob(player);
 
+        ItemStack itemMainHand = player.getInventory().getItemInMainHand();
+        ItemStack itemOffHand = player.getInventory().getItemInOffHand();
+
         if(job.genre() == JobGenre.MINER) {
-            if(Items.getPickaxes().contains(player.getInventory().getItemInMainHand())
-            || Items.getPickaxes().contains(player.getInventory().getItemInOffHand())) {
-                if(Items.getStones().contains(brokenBlcok)) {
+            if(Items.getPickaxes().contains(itemMainHand) || Items.getPickaxes().contains(itemOffHand)) {
+                if(Items.getStones().contains(brokenBlcok.getType())) {
                     jobManager.addExp(player,1);
+                }
+            }
+        }
+
+        if (job.genre() == JobGenre.LAMBER) {
+            if(Items.getAxes().contains(itemMainHand) || Items.getAxes().contains(itemOffHand)) {
+                if(Items.getWoods().contains(brokenBlcok.getType())) {
+                    jobManager.addExp(player, 1);
                 }
             }
         }
