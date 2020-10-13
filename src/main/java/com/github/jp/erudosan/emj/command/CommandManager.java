@@ -1,11 +1,8 @@
 package com.github.jp.erudosan.emj.command;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.command.commands.subcommands.Jobs;
-import com.github.jp.erudosan.emj.command.commands.subcommands.Stats;
-import com.github.jp.erudosan.emj.command.commands.subcommands.Help;
+import com.github.jp.erudosan.emj.command.commands.subcommands.*;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
-import com.github.jp.erudosan.emj.command.commands.subcommands.Join;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -35,6 +32,7 @@ public class CommandManager implements CommandExecutor {
         this.commands.add(new Help(plugin));
         this.commands.add(new Stats(plugin));
         this.commands.add(new Join(plugin));
+        this.commands.add(new Leave());
         this.commands.add(new Jobs());
 
     }
