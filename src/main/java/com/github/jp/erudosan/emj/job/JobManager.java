@@ -47,6 +47,10 @@ public class JobManager {
         return false;
     }
 
+    public boolean playerJobExists(Player player) {
+        return plugin.getSql().playerJobExists(player);
+    }
+
     public Job getJobFromId(int id) {
         for (Job job : jobs) {
             if(job.id() == id) {

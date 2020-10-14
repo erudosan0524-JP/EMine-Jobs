@@ -17,9 +17,12 @@ stats_line1: "職業:&2"
 stats_line2: "現在の経験値:&2"
 stats_line3: "レベル:&2"
 
-# "emj join" Command Message
+# "/emj join" Command Message
 join_message1: "あなたは&2"
 join_message2: "に就きました"
+
+# "/emj leave" Command Message
+leave_message: "あなたは現在の仕事を辞めました"
 
 # Jobs name
 miner: 鉱夫
