@@ -1,6 +1,7 @@
 package com.github.jp.erudosan.emj.job;
 
 import com.github.jp.erudosan.emj.Main;
+import com.github.jp.erudosan.emj.event.PlayerChangeExpEvent;
 import com.github.jp.erudosan.emj.event.PlayerLevelUpEvent;
 import com.github.jp.erudosan.emj.job.jobs.chef.Chef;
 import com.github.jp.erudosan.emj.job.jobs.fisher.Fisher;
@@ -94,6 +95,9 @@ public class JobManager {
             this.levelUp(player);
             plugin.getSql().updateExp(player,0);
         }
+
+        PlayerChangeExpEvent event = new PlayerChangeExpEvent(player);
+        plugin.getServer().getPluginManager().callEvent(event);
 
         plugin.getSql().updateExp(player,plugin.getSql().getExp(player) + exp);
     }
