@@ -1,6 +1,7 @@
 package com.github.jp.erudosan.emj.job;
 
 import com.github.jp.erudosan.emj.Main;
+import com.github.jp.erudosan.emj.event.PlayerLevelUpEvent;
 import com.github.jp.erudosan.emj.job.jobs.chef.Chef;
 import com.github.jp.erudosan.emj.job.jobs.fisher.Fisher;
 import com.github.jp.erudosan.emj.job.jobs.hunter.Hunter;
@@ -89,10 +90,18 @@ public class JobManager {
     }
 
     public void addExp(Player player, int exp) {
+        if (plugin.getSql().getExp(player) > 100) {
+            this.levelUp(player);
+            plugin.getSql().updateExp(player,0);
+        }
+
         plugin.getSql().updateExp(player,plugin.getSql().getExp(player) + exp);
     }
 
     public void levelUp(Player player) {
+        PlayerLevelUpEvent event = new PlayerLevelUpEvent(player);
+        plugin.getServer().getPluginManager().callEvent(event);
+
         plugin.getSql().updateLevel(player,plugin.getSql().getLevel(player) + 1);
     }
 
