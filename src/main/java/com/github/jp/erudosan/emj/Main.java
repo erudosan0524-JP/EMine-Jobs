@@ -2,7 +2,10 @@ package com.github.jp.erudosan.emj;
 
 
 import com.github.jp.erudosan.emj.command.CommandManager;
+import com.github.jp.erudosan.emj.event.PlayerLevelUpEvent;
 import com.github.jp.erudosan.emj.job.JobManager;
+import com.github.jp.erudosan.emj.listener.OnBlock;
+import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerLevelUp;
 import com.github.jp.erudosan.emj.utils.CaptionHandler;
 import com.github.jp.erudosan.emj.utils.Config;
 import com.github.jp.erudosan.emj.utils.Lang;
@@ -10,7 +13,11 @@ import com.github.jp.erudosan.emj.utils.db.DBManager;
 import com.github.jp.erudosan.emj.utils.db.SQLGetterSetter;
 import lombok.Getter;
 import lombok.Setter;
+import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main extends JavaPlugin {
 
@@ -44,18 +51,27 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         setInstance(this);
 
-        sql = new SQLGetterSetter(getInstance());
-
+        //Setting Config
         myconfig = new Config(getInstance());
 
+        //Setting DB
+        sql = new SQLGetterSetter(getInstance());
         dbManager = new DBManager(myconfig.getHost(),myconfig.getUsername(),myconfig.getPassword(),myconfig.getDatabase(),myconfig.getPort());
 
+        //Setting Lang Handler
         handler = new CaptionHandler(getInstance(), myconfig.getLanguage());
 
+        //Setting Command
         commandManager = new CommandManager(getInstance());
         commandManager.setup();
 
+        //Setting Job
         jobManager = new JobManager(getInstance());
         jobManager.setup();
+
+        //Setting Listeners
+        new OnBlock(this);
+        new OnPlayerLevelUp(this);
+
     }
 }
