@@ -16,6 +16,9 @@ public class Config {
     private String language;
 
     @Getter
+    private int needExpLevelUp;
+
+    @Getter
     private boolean enabledMySQL;
 
     @Getter
@@ -39,6 +42,7 @@ public class Config {
         config = plugin.getConfig();
 
         language = config.getString("language");
+        needExpLevelUp = config.getInt("need-exp-levelup");
         enabledMySQL = config.getBoolean("enabled-mysql");
         host = config.getString("host");
         port = config.getInt("port");

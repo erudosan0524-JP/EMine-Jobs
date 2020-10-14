@@ -90,7 +90,7 @@ public class JobManager {
     }
 
     public void addExp(Player player, int exp) {
-        if (plugin.getSql().getExp(player) > 100) {
+        if (plugin.getSql().getExp(player) > plugin.getMyconfig().getNeedExpLevelUp()) {
             this.levelUp(player);
             plugin.getSql().updateExp(player,0);
         }
