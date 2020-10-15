@@ -23,9 +23,7 @@ import java.util.List;
 
 public class Main extends JavaPlugin {
 
-    @Getter
-    @Setter
-    private static Main instance;
+    private Main instance;
 
     @Getter
     private CaptionHandler handler;
@@ -72,11 +70,18 @@ public class Main extends JavaPlugin {
         jobManager.setup();
 
         //Setting Listeners
-        new OnBlock(this);
-        new OnFish(this);
+        new OnBlock(getInstance());
+        new OnFish(getInstance());
 
-        new OnPlayerLevelUp(this);
-        new OnPlayerChangeExp(this);
+        new OnPlayerLevelUp(getInstance());
+        new OnPlayerChangeExp(getInstance());
+    }
 
+    private Main getInstance() {
+        return this.instance;
+    }
+
+    private void setInstance(Main main) {
+        this.instance = main;
     }
 }

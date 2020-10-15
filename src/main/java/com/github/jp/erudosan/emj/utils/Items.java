@@ -18,6 +18,9 @@ public class Items {
     private static List<Material> woods = new ArrayList<>();
     private static List<Material> ores = new ArrayList<>();
 
+    //Other
+    private static List<Material> foods = new ArrayList<>();
+
     static {
         //Setting pickaxes
         pickaxes.add(Material.DIAMOND_PICKAXE);
@@ -87,6 +90,41 @@ public class Items {
         ores.add(Material.REDSTONE_ORE);
         ores.add(Material.NETHER_GOLD_ORE);
         ores.add(Material.NETHER_QUARTZ_ORE);
+
+        //Setting Foods
+        foods.add(Material.PORKCHOP);
+        foods.add(Material.COOKED_PORKCHOP);
+        foods.add(Material.BEEF);
+        foods.add(Material.COOKED_BEEF);
+        foods.add(Material.CHICKEN);
+        foods.add(Material.COOKED_CHICKEN);
+        foods.add(Material.ROTTEN_FLESH);
+        foods.add(Material.RABBIT);
+        foods.add(Material.COOKED_RABBIT);
+        foods.add(Material.RABBIT_STEW);
+        foods.add(Material.MUTTON);
+        foods.add(Material.COOKED_MUTTON);
+        foods.add(Material.COD);
+        foods.add(Material.SALMON);
+        foods.add(Material.TROPICAL_FISH);
+        foods.add(Material.PUFFERFISH);
+        foods.add(Material.COOKED_COD);
+        foods.add(Material.COOKED_SALMON);
+        foods.add(Material.BREAD);
+        foods.add(Material.MELON_SLICE);
+        foods.add(Material.GOLDEN_APPLE);
+        foods.add(Material.APPLE);
+        foods.add(Material.POTATO);
+        foods.add(Material.BAKED_POTATO);
+        foods.add(Material.CHORUS_FRUIT);
+        foods.add(Material.SWEET_BERRIES);
+        foods.add(Material.CARROT);
+        foods.add(Material.BEETROOT);
+        foods.add(Material.BEETROOT_SOUP);
+        foods.add(Material.CAKE);
+        foods.add(Material.COOKIE);
+        foods.add(Material.PUMPKIN_PIE);
+        foods.add(Material.MUSHROOM_STEW);
     }
 
     public static List<Material> getPickaxes() {
@@ -111,5 +149,9 @@ public class Items {
 
     public static List<Material> getOres() {
         return ores;
+    }
+
+    public static List<Material> getFoods() {
+        return foods;
     }
 }
