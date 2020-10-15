@@ -26,6 +26,11 @@ public class OnBlock implements Listener {
         Player player = e.getPlayer();
         Block brokenBlcok = e.getBlock();
         JobManager jobManager = plugin.getJobManager();
+
+        if(!jobManager.playerJobExists(player)) {
+            return;
+        }
+
         Job job = jobManager.getPlayerJob(player);
 
         ItemStack itemMainHand = player.getInventory().getItemInMainHand();

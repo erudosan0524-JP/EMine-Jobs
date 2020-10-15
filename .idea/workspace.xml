@@ -29,17 +29,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/event/PlayerChangeExpEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/mylistener/OnPlayerChangeExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/mylistener/OnPlayerLevelUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/mylistener/OnPlayerLevelUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/Lang.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/db/DBManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lang/lang_ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lang/lang_ja.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602642420928</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[add] add PlayerChangeExpEvent&#10;&#10;プレイヤーの経験値が変化したときのイベントを追加">
+      <created>1602648178237</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602648178237</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,17 +182,18 @@
     <MESSAGE value="[add] add PlayerLevelUpEvent&#10;&#10;プレイヤーがレベルアップしたときのイベントを追加" />
     <MESSAGE value="[add] add PlayerLevelUp Lister&#10;&#10;プレイヤーがレベルアップしたときのリスナーを追加" />
     <MESSAGE value="[update] update Config to make Level up exp setting&#10;&#10;レベルアップ時に必要なEXPの設定をコンフィグに追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] update Config to make Level up exp setting&#10;&#10;レベルアップ時に必要なEXPの設定をコンフィグに追加" />
+    <MESSAGE value="[add] add PlayerChangeExpEvent&#10;&#10;プレイヤーの経験値が変化したときのイベントを追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] add PlayerChangeExpEvent&#10;&#10;プレイヤーの経験値が変化したときのイベントを追加" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1602647172173">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1602647172173" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1602642422895">
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1602648180482">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602642422895" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602648180482" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602639884212">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
