@@ -1,7 +1,8 @@
-name: "${project.name}"
-version: "0.0.9-SNAPSHOT"
+name: "EMine-Jobs"
+version: "0.1.0-SNAPSHOT"
 main: "com.github.jp.erudosan.emj.Main"
 author: 'erudo'
+api-version: 1.13
 commands:
   emj:
     description: EMine-Jobs Plugin

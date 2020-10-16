@@ -167,7 +167,7 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("UPDATE " + player_jobs_table + "SET 'job'=?, 'exp'=?, 'level'=?, 'job_id'=? WHERE uuid=?");
+                    .prepareStatement("UPDATE " + player_jobs_table + " SET job=?, exp=?, level=?, job_id=? WHERE uuid=?");
             statement.setString(1,job.name());
             statement.setInt(2,0);
             statement.setInt(3,0);
@@ -184,7 +184,7 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("UPDATE " + player_jobs_table + "SET 'exp'=? WHERE uuid=?");
+                    .prepareStatement("UPDATE " + player_jobs_table + " SET exp=? WHERE uuid=?");
             statement.setInt(1,exp);
             statement.setString(2,player.getUniqueId().toString());
             statement.executeUpdate();
@@ -198,7 +198,7 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("UPDATE " + player_jobs_table + "SET 'level'=? WHERE uuid=?");
+                    .prepareStatement("UPDATE " + player_jobs_table + " SET level=? WHERE uuid=?");
             statement.setInt(1,level);
             statement.setString(2,player.getUniqueId().toString());
             statement.executeUpdate();

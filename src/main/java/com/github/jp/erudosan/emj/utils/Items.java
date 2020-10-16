@@ -78,6 +78,18 @@ public class Items {
         woods.add(Material.JUNGLE_PLANKS);
         woods.add(Material.SPRUCE_PLANKS);
         woods.add(Material.WARPED_PLANKS);
+        woods.add(Material.ACACIA_LOG);
+        woods.add(Material.BIRCH_LOG);
+        woods.add(Material.DARK_OAK_LOG);
+        woods.add(Material.JUNGLE_LOG);
+        woods.add(Material.OAK_LOG);
+        woods.add(Material.SPRUCE_LOG);
+        woods.add(Material.STRIPPED_ACACIA_LOG);
+        woods.add(Material.STRIPPED_BIRCH_LOG);
+        woods.add(Material.STRIPPED_DARK_OAK_LOG);
+        woods.add(Material.STRIPPED_JUNGLE_LOG);
+        woods.add(Material.STRIPPED_OAK_LOG);
+        woods.add(Material.STRIPPED_SPRUCE_LOG);
 
 
         //Setting Ores
