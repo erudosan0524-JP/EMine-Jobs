@@ -1,0 +1,12 @@
+com\github\jp\erudosan\emj\job\JobGenre.class
+com\github\jp\erudosan\emj\command\commands\subcommands\Join.class
+com\github\jp\erudosan\emj\job\Job.class
+com\github\jp\erudosan\emj\job\jobs\miner\Miner.class
+com\github\jp\erudosan\emj\utils\db\SQLGetterSetter.class
+com\github\jp\erudosan\emj\command\commands\subcommands\Stats.class
+com\github\jp\erudosan\emj\command\commands\SubCommand.class
+com\github\jp\erudosan\emj\command\commands\subcommands\Jobs.class
+com\github\jp\erudosan\emj\utils\CaptionHandler.class
+com\github\jp\erudosan\emj\command\CommandManager.class
+com\github\jp\erudosan\emj\job\JobManager.class
+com\github\jp\erudosan\emj\command\commands\subcommands\Help.class
