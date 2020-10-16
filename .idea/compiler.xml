@@ -10,5 +10,8 @@
         <module name="EMine-Jobs" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="EMine-Jobs" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
