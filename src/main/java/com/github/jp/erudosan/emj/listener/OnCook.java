@@ -4,10 +4,12 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import com.github.jp.erudosan.emj.job.JobManager;
+import com.github.jp.erudosan.emj.utils.Items;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.FurnaceExtractEvent;
+import org.bukkit.event.player.PlayerItemConsumeEvent;
 
 public class OnCook implements Listener {
 
@@ -32,8 +34,26 @@ public class OnCook implements Listener {
         Job job = jobManager.getPlayerJob(player);
 
         if(job.genre() == JobGenre.CHEF) {
+            if(Items.getFoods().contains(e.getItemType())) {
+                jobManager.addExp(player, 1);
+            }
+        }
+    }
 
-            jobManager.addExp(player,1);
+    @EventHandler
+    public void onEat(PlayerItemConsumeEvent e){
+        Player player = e.getPlayer();
+
+        if(!jobManager.playerJobExists(player)) {
+            return;
+        }
+
+        Job job = jobManager.getPlayerJob(player);
+
+        if(job.genre() == JobGenre.CHEF) {
+            if(Items.getFoods().contains(e.getItem().getType())) {
+                jobManager.addExp(player,1);
+            }
         }
     }
 }

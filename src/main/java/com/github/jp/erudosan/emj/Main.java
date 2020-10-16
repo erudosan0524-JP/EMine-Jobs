@@ -5,6 +5,7 @@ import com.github.jp.erudosan.emj.command.CommandManager;
 import com.github.jp.erudosan.emj.event.PlayerLevelUpEvent;
 import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.listener.OnBlock;
+import com.github.jp.erudosan.emj.listener.OnCook;
 import com.github.jp.erudosan.emj.listener.OnFish;
 import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerChangeExp;
 import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerLevelUp;
@@ -72,6 +73,7 @@ public class Main extends JavaPlugin {
         //Setting Listeners
         new OnBlock(getInstance());
         new OnFish(getInstance());
+        new OnCook(getInstance());
 
         new OnPlayerLevelUp(getInstance());
         new OnPlayerChangeExp(getInstance());
