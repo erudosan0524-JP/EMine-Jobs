@@ -12,10 +12,6 @@ public class Chef extends Job {
         return "chef";
     }
 
-    @Override
-    public int id() {
-        return 4;
-    }
 
     @Override
     public JobGenre genre() {

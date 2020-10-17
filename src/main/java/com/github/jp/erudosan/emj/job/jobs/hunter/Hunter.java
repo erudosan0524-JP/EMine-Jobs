@@ -13,11 +13,6 @@ public class Hunter extends Job {
     }
 
     @Override
-    public int id() {
-        return 5;
-    }
-
-    @Override
     public JobGenre genre() {
         return JobGenre.HUNTER;
     }

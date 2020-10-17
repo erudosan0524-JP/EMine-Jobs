@@ -12,10 +12,6 @@ public class Fisher extends Job {
         return "fisher";
     }
 
-    @Override
-    public int id() {
-        return 3;
-    }
 
     @Override
     public JobGenre genre() {

@@ -16,11 +16,6 @@ public class Miner extends Job {
     }
 
     @Override
-    public int id() {
-        return 1;
-    }
-
-    @Override
     public JobGenre genre() {
         return JobGenre.MINER;
     }

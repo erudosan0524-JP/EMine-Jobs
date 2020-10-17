@@ -13,11 +13,6 @@ public abstract class Job {
     public abstract  String name();
 
     /*
-    * @return 職業ID
-     */
-    public abstract int id();
-
-    /*
     * @return 職業ジャンル
      */
     public abstract JobGenre genre();

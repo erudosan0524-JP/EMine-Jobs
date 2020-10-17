@@ -65,8 +65,8 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("SELECT * FROM " + jobs_table + " WHERE job_id=?");
-            statement.setInt(1,job.id());
+                    .prepareStatement("SELECT * FROM " + jobs_table + " WHERE job=?");
+            statement.setString(1,job.name());
 
             ResultSet results = statement.executeQuery();
 
@@ -129,12 +129,11 @@ public class SQLGetterSetter {
 
             if (!playerJobExists(player)) {
                 PreparedStatement insert = db.getConnection()
-                        .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,job,exp,level,job_id) VALUE (?,?,?,?,?)");
+                        .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,job,exp,level) VALUE (?,?,?,?)");
                 insert.setString(1,player.getUniqueId().toString());
                 insert.setString(2,job.name());
                 insert.setInt(3,0);
                 insert.setInt(4,0);
-                insert.setInt(5,job.id());
 
                 insert.executeUpdate();
 
@@ -167,11 +166,10 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("UPDATE " + player_jobs_table + " SET job=?, exp=?, level=?, job_id=? WHERE uuid=?");
+                    .prepareStatement("UPDATE " + player_jobs_table + " SET job=?, exp=?, level=? WHERE uuid=?");
             statement.setString(1,job.name());
             statement.setInt(2,0);
             statement.setInt(3,0);
-            statement.setInt(4,job.id());
             statement.setString(5,player.getUniqueId().toString());
             statement.executeUpdate();
 
@@ -269,15 +267,14 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("SELECT * FROM " + jobs_table + " WHERE job_id=?");
-            statement.setInt(1, job.id());
+                    .prepareStatement("SELECT * FROM " + jobs_table + " WHERE job=?");
+            statement.setString(1, job.name());
             ResultSet results = statement.executeQuery();
             results.next();
 
             if (!jobExists(job)) {
                 PreparedStatement insert = db.getConnection()
-                        .prepareStatement("INSERT INTO " + jobs_table + " (job_id,job,genre,rank) VALUE (?,?,?,?)");
-                insert.setInt(1,job.id());
+                        .prepareStatement("INSERT INTO " + jobs_table + " (job,genre,rank) VALUE (?,?,?)");
                 insert.setString(2,job.name());
                 insert.setString(3,job.genre().getGenre());
                 insert.setInt(4,job.rank());
