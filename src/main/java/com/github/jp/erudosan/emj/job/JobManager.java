@@ -103,10 +103,11 @@ public class JobManager {
     }
 
     public void levelUp(Player player) {
-        PlayerLevelUpEvent event = new PlayerLevelUpEvent(player);
+        int level = plugin.getSql().getLevel(player) + 1;
+        PlayerLevelUpEvent event = new PlayerLevelUpEvent(player,level);
         plugin.getServer().getPluginManager().callEvent(event);
 
-        plugin.getSql().updateLevel(player,plugin.getSql().getLevel(player) + 1);
+        plugin.getSql().updateLevel(player,level);
     }
 
 }

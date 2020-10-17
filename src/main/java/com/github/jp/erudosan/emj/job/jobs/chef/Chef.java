@@ -1,7 +1,9 @@
 package com.github.jp.erudosan.emj.job.jobs.chef;
 
+import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
+import org.bukkit.entity.Player;
 
 public class Chef extends Job {
 
@@ -24,4 +26,10 @@ public class Chef extends Job {
     public int rank() {
         return 1;
     }
+
+    @Override
+    public void onLevelUp(Main plugin, Player player, int level) {
+
+    }
+
 }

@@ -3,6 +3,10 @@ package com.github.jp.erudosan.emj.job.jobs.miner;
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 public class Miner extends Job {
 
@@ -25,4 +29,11 @@ public class Miner extends Job {
     public int rank() {
         return 1;
     }
+
+    @Override
+    public void onLevelUp(Main plugin, Player player, int level) {
+
+    }
+
+
 }
