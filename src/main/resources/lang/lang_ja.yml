@@ -2,6 +2,13 @@ length_zero_message: "/lts helpでヘルプを表示できます"
 invalid_command: "&c不正なサブコマンド"
 error_command: "&cエラーが検出されました"
 
+# join event Message
+player_join_message: "さんがログインしました。"
+player_join_message1: "お久しぶり！"
+player_join_message2: "日ぶりですね！"
+player_firstjoin_message: "&dさんが初めてログインしました！"
+
+
 # Command Message
 command_firstline: "&7============= &2EMine&7-&3Jobs &7============="
 command_endline:  "&7======================================"
@@ -33,6 +40,10 @@ lamber: 木こり師
 fisher: 釣り師
 chef: 調理師
 hunter: ハンター
+
+# Menu stick
+menu_stick: "&5メニュー棒"
+menu_stick_lore: "右クリックでメニューが開けます。"
 
 # when miner's level is up
 miner-level50-item-name: "ﾁｮｯﾄﾂﾖｲつるはし"

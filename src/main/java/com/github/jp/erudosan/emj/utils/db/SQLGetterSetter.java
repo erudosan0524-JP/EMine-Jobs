@@ -7,6 +7,8 @@ import lombok.NonNull;
 import org.bukkit.entity.Player;
 
 import java.sql.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Objects;
 
 public class SQLGetterSetter {
@@ -106,7 +108,7 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("UPDATE " + player_table + "SET 'last_login'=? WHERE uuid=?");
+                    .prepareStatement("UPDATE " + player_table + " SET last_login=? WHERE uuid=?");
             statement.setDate(1,date);
             statement.setString(2,player.getUniqueId().toString());
             statement.executeUpdate();
@@ -114,6 +116,26 @@ public class SQLGetterSetter {
         } catch (SQLException throwable) {
             throwable.printStackTrace();
         }
+    }
+
+    public Date getDate(Player player) {
+        try {
+            DBManager db = plugin.getDbManager();
+            PreparedStatement statement = db.getConnection()
+                    .prepareStatement("SELECT * FROM " + player_table + " WHERE uuid=?");
+            statement.setString(1,player.getUniqueId().toString());
+
+            ResultSet results = statement.executeQuery();
+            results.next();
+
+            return results.getDate("last_login");
+
+
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
+        }
+
+        return null;
     }
 
     public void setPlayerJob(Player player, Job job) {
@@ -131,7 +153,7 @@ public class SQLGetterSetter {
                     PreparedStatement insert = db.getConnection()
                             .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,job,exp,level) VALUE (?,?,?,?)");
                     insert.setString(1,player.getUniqueId().toString());
-                    insert.setString(2, "");
+                    insert.setNull(2, Types.NULL);
                     insert.setInt(3,0);
                     insert.setInt(4,0);
 
@@ -296,5 +318,6 @@ public class SQLGetterSetter {
             throwable.printStackTrace();
         }
     }
+
 
 }
