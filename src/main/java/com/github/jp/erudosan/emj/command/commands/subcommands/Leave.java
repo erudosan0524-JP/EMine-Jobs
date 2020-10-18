@@ -18,8 +18,6 @@ public class Leave extends SubCommand {
     public void onCommand(Player player, String[] args) {
         JobManager jobManager = plugin.getJobManager();
 
-        //TODO 仕事辞めれないバグ修正
-
         if (jobManager.playerJobExists(player)) {
             player.sendMessage(plugin.getHandler().getCaption("leave_message"));
             jobManager.setPlayerJob(player,null);

@@ -5,8 +5,7 @@ public enum JobGenre {
     LAMBER("LAMBER"),
     FISHING("FISHING"),
     CHEF("CHEF"),
-    HUNTER("HUNTER"),
-    NONE("NONE");
+    HUNTER("HUNTER");
 
     private String genre;
 
