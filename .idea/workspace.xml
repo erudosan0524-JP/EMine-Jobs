@@ -30,25 +30,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Leave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Leave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobGenre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobGenre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/event/PlayerLevelUpEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/event/PlayerLevelUpEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/Job.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/chef/Chef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/chef/Chef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/Fisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/Fisher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/hunter/Hunter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/hunter/Hunter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/Lamber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/Lamber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/Miner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/Miner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/mylistener/OnPlayerLevelUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/mylistener/OnPlayerLevelUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Miner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Miner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602922361312</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="[update] update Leave Command&#10;&#10;leaveコマンドのアップデート1">
+      <created>1603009059229</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1603009059229</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,7 +257,8 @@
     <MESSAGE value="[update] update Items.java&#10;&#10;Items.javaに食べ物のListを追加" />
     <MESSAGE value="[update] update Job System&#10;&#10;Jobにレベルアップ処理を追加" />
     <MESSAGE value="[remove] remove job_id from DB&#10;&#10;DBからjob_idカラムを削除" />
-    <option name="LAST_COMMIT_MESSAGE" value="[remove] remove job_id from DB&#10;&#10;DBからjob_idカラムを削除" />
+    <MESSAGE value="[update] update Leave Command&#10;&#10;leaveコマンドのアップデート1" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] update Leave Command&#10;&#10;leaveコマンドのアップデート1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">

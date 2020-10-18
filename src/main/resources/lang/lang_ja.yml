@@ -3,7 +3,7 @@ invalid_command: "&c不正なサブコマンド"
 error_command: "&cエラーが検出されました"
 
 # Command Message
-command_firstline: "&7===== &2EMine&7-&3Fishing &f[Command help] &7====="
+command_firstline: "&7============= &2EMine&7-&3Jobs &7============="
 command_endline:  "&7======================================"
 
 #LevelUp Message
@@ -33,3 +33,7 @@ lamber: 木こり師
 fisher: 釣り師
 chef: 調理師
 hunter: ハンター
+
+# when miner's level is up
+miner-level50-item-name: "ﾁｮｯﾄﾂﾖｲつるはし"
+miner-level50-item-lore: "かなりつおい（大嘘）"
