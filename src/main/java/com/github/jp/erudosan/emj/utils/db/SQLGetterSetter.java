@@ -2,13 +2,11 @@ package com.github.jp.erudosan.emj.utils.db;
 
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
+import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type;
 import lombok.NonNull;
 import org.bukkit.entity.Player;
 
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Objects;
 
 public class SQLGetterSetter {
@@ -128,20 +126,32 @@ public class SQLGetterSetter {
             results.next();
 
             if (!playerJobExists(player)) {
-                PreparedStatement insert = db.getConnection()
-                        .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,job,exp,level) VALUE (?,?,?,?)");
-                insert.setString(1,player.getUniqueId().toString());
-                insert.setString(2,job.name());
-                insert.setInt(3,0);
-                insert.setInt(4,0);
 
-                insert.executeUpdate();
+                if(Objects.isNull(job)) {
+                    PreparedStatement insert = db.getConnection()
+                            .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,job,exp,level) VALUE (?,?,?,?)");
+                    insert.setString(1,player.getUniqueId().toString());
+                    insert.setString(2, "");
+                    insert.setInt(3,0);
+                    insert.setInt(4,0);
 
+                    insert.executeUpdate();
+                }else {
+                    PreparedStatement insert = db.getConnection()
+                            .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,job,exp,level) VALUE (?,?,?,?)");
+                    insert.setString(1,player.getUniqueId().toString());
+                    insert.setString(2,job.name());
+                    insert.setInt(3,0);
+                    insert.setInt(4,0);
+
+                    insert.executeUpdate();
+                }
             }
         } catch (SQLException throwable) {
             throwable.printStackTrace();
         }
     }
+
 
     public boolean isSetPlayerJob(Player player) {
         try {

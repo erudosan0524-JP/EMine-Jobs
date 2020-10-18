@@ -53,16 +53,6 @@ public class JobManager {
         return plugin.getSql().playerJobExists(player);
     }
 
-    public Job getJobFromId(int id) {
-        for (Job job : jobs) {
-            if(job.id() == id) {
-                return job;
-            }
-        }
-
-        return null;
-    }
-
     public Job getJobFromName(String name) {
         for (Job job : jobs) {
             if(job.name().equals(name)) {
