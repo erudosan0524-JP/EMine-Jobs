@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class JobManager {
 
@@ -70,7 +71,12 @@ public class JobManager {
     }
 
     public void setPlayerJob(Player player, Job job) {
-        plugin.getSql().setPlayerJob(player,job);
+        if(Objects.isNull(job)) {
+            plugin.getSql().leavePlayerJob(player);
+        } else {
+            plugin.getSql().setPlayerJob(player,job);
+        }
+
     }
 
     public Job getPlayerJob(Player player) {

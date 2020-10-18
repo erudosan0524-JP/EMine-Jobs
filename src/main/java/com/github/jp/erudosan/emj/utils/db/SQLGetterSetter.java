@@ -148,31 +148,36 @@ public class SQLGetterSetter {
             results.next();
 
             if (!playerJobExists(player)) {
+                PreparedStatement insert = db.getConnection()
+                        .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,job,exp,level) VALUE (?,?,?,?)");
+                insert.setString(1,player.getUniqueId().toString());
+                insert.setString(2,job.name());
+                insert.setInt(3,0);
+                insert.setInt(4,1);
 
-                if(Objects.isNull(job)) {
-                    PreparedStatement insert = db.getConnection()
-                            .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,job,exp,level) VALUE (?,?,?,?)");
-                    insert.setString(1,player.getUniqueId().toString());
-                    insert.setNull(2, Types.NULL);
-                    insert.setInt(3,0);
-                    insert.setInt(4,0);
+                insert.executeUpdate();
 
-                    insert.executeUpdate();
-                }else {
-                    PreparedStatement insert = db.getConnection()
-                            .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,job,exp,level) VALUE (?,?,?,?)");
-                    insert.setString(1,player.getUniqueId().toString());
-                    insert.setString(2,job.name());
-                    insert.setInt(3,0);
-                    insert.setInt(4,0);
-
-                    insert.executeUpdate();
-                }
             }
         } catch (SQLException throwable) {
             throwable.printStackTrace();
         }
     }
+    public void leavePlayerJob(Player player) {
+        try {
+            DBManager db = plugin.getDbManager();
+            PreparedStatement statement = db.getConnection()
+                    .prepareStatement("UPDATE " + player_jobs_table + " SET job=?, exp=?, level=? WHERE uuid=?");
+            statement.setNull(1,Types.NULL);
+            statement.setInt(2,0);
+            statement.setInt(3,0);
+            statement.setString(4,player.getUniqueId().toString());
+            statement.executeUpdate();
+
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
+        }
+    }
+
 
 
     public boolean isSetPlayerJob(Player player) {
@@ -201,8 +206,8 @@ public class SQLGetterSetter {
                     .prepareStatement("UPDATE " + player_jobs_table + " SET job=?, exp=?, level=? WHERE uuid=?");
             statement.setString(1,job.name());
             statement.setInt(2,0);
-            statement.setInt(3,0);
-            statement.setString(5,player.getUniqueId().toString());
+            statement.setInt(3,1);
+            statement.setString(4,player.getUniqueId().toString());
             statement.executeUpdate();
 
         } catch (SQLException throwable) {
@@ -318,6 +323,7 @@ public class SQLGetterSetter {
             throwable.printStackTrace();
         }
     }
+
 
 
 }
