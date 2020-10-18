@@ -16,7 +16,7 @@ public class Stats extends SubCommand {
     public void onCommand(Player player, String[] args) {
         if (plugin.getSql().playerJobExists(player)) {
             player.sendMessage(plugin.getHandler().getCaption("command_firstline"));
-            player.sendMessage(plugin.getHandler().getCaption("stats_line1") + plugin.getSql().getPlayerJob(player));
+            player.sendMessage(plugin.getHandler().getCaption("stats_line1") + plugin.getHandler().getCaption(plugin.getSql().getPlayerJob(player).toLowerCase()));
             player.sendMessage(plugin.getHandler().getCaption("stats_line2") + plugin.getSql().getExp(player));
             player.sendMessage(plugin.getHandler().getCaption("stats_line3") + plugin.getSql().getLevel(player));
             player.sendMessage(plugin.getHandler().getCaption("command_endline"));
