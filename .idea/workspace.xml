@@ -23,29 +23,21 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnJoin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EMine-Jobs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EMine-Jobs.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Leave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Leave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/CommandManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Join.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Join.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/Miner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/Miner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/OnJoin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/OnJoin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +200,49 @@
       <option name="project" value="LOCAL" />
       <updated>1602739157983</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[update] update Job System&#10;&#10;Jobにレベルアップ処理を追加">
+      <created>1602921887626</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602921887626</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[remove] remove job_id from DB&#10;&#10;DBからjob_idカラムを削除">
+      <created>1602922361312</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602922361312</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[update] update Leave Command&#10;&#10;leaveコマンドのアップデート1">
+      <created>1603009059229</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1603009059229</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[update] update Miner level up event&#10;&#10;Minerのレベルアップ時のイベントを追加">
+      <created>1603009910981</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603009910981</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[add] add PlayerJoinEvent&#10;&#10;PlayerJoinEventの処理追加">
+      <created>1603010096580</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603010096580</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[update] update join event&#10;&#10;joinイベントのアップデート">
+      <created>1603023315766</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1603023315766</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,7 +256,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -248,7 +282,13 @@
     <MESSAGE value="[add] add PlayerChangeExpEvent&#10;&#10;プレイヤーの経験値が変化したときのイベントを追加" />
     <MESSAGE value="[add] add Fish Listener&#10;&#10;Fish Listener の追加" />
     <MESSAGE value="[update] update Items.java&#10;&#10;Items.javaに食べ物のListを追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] update Items.java&#10;&#10;Items.javaに食べ物のListを追加" />
+    <MESSAGE value="[update] update Job System&#10;&#10;Jobにレベルアップ処理を追加" />
+    <MESSAGE value="[remove] remove job_id from DB&#10;&#10;DBからjob_idカラムを削除" />
+    <MESSAGE value="[update] update Leave Command&#10;&#10;leaveコマンドのアップデート1" />
+    <MESSAGE value="[update] update Miner level up event&#10;&#10;Minerのレベルアップ時のイベントを追加" />
+    <MESSAGE value="[add] add PlayerJoinEvent&#10;&#10;PlayerJoinEventの処理追加" />
+    <MESSAGE value="[update] update join event&#10;&#10;joinイベントのアップデート" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] update join event&#10;&#10;joinイベントのアップデート" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
@@ -259,30 +299,40 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1602842817246" />
-    <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1602736941591">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1603008295175">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1602736941591" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1602845271258">
+    <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603008295175" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603009000016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1602845271258" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1602845271258">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603009000016" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603022539679">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1602845271258" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1602845271258">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603022539679" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603024187481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1602845271258" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1602845271258">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603024187481" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603024187481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1602845271258" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1602739160745">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603024187481" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603024187481">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603024187481" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603024187481">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603024187481" />
+    <state x="427" y="205" key="Vcs.Push.Dialog.v2" timestamp="1603023321340">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602739160745" />
+    <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603023321340" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602639884212">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

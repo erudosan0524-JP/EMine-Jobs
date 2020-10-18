@@ -2,13 +2,13 @@ package com.github.jp.erudosan.emj.utils.db;
 
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
+import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type;
 import lombok.NonNull;
 import org.bukkit.entity.Player;
 
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Objects;
 
 public class SQLGetterSetter {
@@ -65,8 +65,8 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("SELECT * FROM " + jobs_table + " WHERE job_id=?");
-            statement.setInt(1,job.id());
+                    .prepareStatement("SELECT * FROM " + jobs_table + " WHERE job=?");
+            statement.setString(1,job.name());
 
             ResultSet results = statement.executeQuery();
 
@@ -108,7 +108,7 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("UPDATE " + player_table + "SET 'last_login'=? WHERE uuid=?");
+                    .prepareStatement("UPDATE " + player_table + " SET last_login=? WHERE uuid=?");
             statement.setDate(1,date);
             statement.setString(2,player.getUniqueId().toString());
             statement.executeUpdate();
@@ -116,6 +116,26 @@ public class SQLGetterSetter {
         } catch (SQLException throwable) {
             throwable.printStackTrace();
         }
+    }
+
+    public Date getDate(Player player) {
+        try {
+            DBManager db = plugin.getDbManager();
+            PreparedStatement statement = db.getConnection()
+                    .prepareStatement("SELECT * FROM " + player_table + " WHERE uuid=?");
+            statement.setString(1,player.getUniqueId().toString());
+
+            ResultSet results = statement.executeQuery();
+            results.next();
+
+            return results.getDate("last_login");
+
+
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
+        }
+
+        return null;
     }
 
     public void setPlayerJob(Player player, Job job) {
@@ -129,12 +149,11 @@ public class SQLGetterSetter {
 
             if (!playerJobExists(player)) {
                 PreparedStatement insert = db.getConnection()
-                        .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,job,exp,level,job_id) VALUE (?,?,?,?,?)");
+                        .prepareStatement("INSERT INTO " + player_jobs_table + " (uuid,job,exp,level) VALUE (?,?,?,?)");
                 insert.setString(1,player.getUniqueId().toString());
                 insert.setString(2,job.name());
                 insert.setInt(3,0);
-                insert.setInt(4,0);
-                insert.setInt(5,job.id());
+                insert.setInt(4,1);
 
                 insert.executeUpdate();
 
@@ -143,6 +162,23 @@ public class SQLGetterSetter {
             throwable.printStackTrace();
         }
     }
+    public void leavePlayerJob(Player player) {
+        try {
+            DBManager db = plugin.getDbManager();
+            PreparedStatement statement = db.getConnection()
+                    .prepareStatement("UPDATE " + player_jobs_table + " SET job=?, exp=?, level=? WHERE uuid=?");
+            statement.setNull(1,Types.NULL);
+            statement.setInt(2,0);
+            statement.setInt(3,0);
+            statement.setString(4,player.getUniqueId().toString());
+            statement.executeUpdate();
+
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
+        }
+    }
+
+
 
     public boolean isSetPlayerJob(Player player) {
         try {
@@ -167,12 +203,11 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("UPDATE " + player_jobs_table + " SET job=?, exp=?, level=?, job_id=? WHERE uuid=?");
+                    .prepareStatement("UPDATE " + player_jobs_table + " SET job=?, exp=?, level=? WHERE uuid=?");
             statement.setString(1,job.name());
             statement.setInt(2,0);
-            statement.setInt(3,0);
-            statement.setInt(4,job.id());
-            statement.setString(5,player.getUniqueId().toString());
+            statement.setInt(3,1);
+            statement.setString(4,player.getUniqueId().toString());
             statement.executeUpdate();
 
         } catch (SQLException throwable) {
@@ -269,15 +304,14 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("SELECT * FROM " + jobs_table + " WHERE job_id=?");
-            statement.setInt(1, job.id());
+                    .prepareStatement("SELECT * FROM " + jobs_table + " WHERE job=?");
+            statement.setString(1, job.name());
             ResultSet results = statement.executeQuery();
             results.next();
 
             if (!jobExists(job)) {
                 PreparedStatement insert = db.getConnection()
-                        .prepareStatement("INSERT INTO " + jobs_table + " (job_id,job,genre,rank) VALUE (?,?,?,?)");
-                insert.setInt(1,job.id());
+                        .prepareStatement("INSERT INTO " + jobs_table + " (job,genre,rank) VALUE (?,?,?)");
                 insert.setString(2,job.name());
                 insert.setString(3,job.genre().getGenre());
                 insert.setInt(4,job.rank());
@@ -289,5 +323,7 @@ public class SQLGetterSetter {
             throwable.printStackTrace();
         }
     }
+
+
 
 }

@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class JobManager {
 
@@ -53,16 +54,6 @@ public class JobManager {
         return plugin.getSql().playerJobExists(player);
     }
 
-    public Job getJobFromId(int id) {
-        for (Job job : jobs) {
-            if(job.id() == id) {
-                return job;
-            }
-        }
-
-        return null;
-    }
-
     public Job getJobFromName(String name) {
         for (Job job : jobs) {
             if(job.name().equals(name)) {
@@ -80,7 +71,12 @@ public class JobManager {
     }
 
     public void setPlayerJob(Player player, Job job) {
-        plugin.getSql().setPlayerJob(player,job);
+        if(Objects.isNull(job)) {
+            plugin.getSql().leavePlayerJob(player);
+        } else {
+            plugin.getSql().setPlayerJob(player,job);
+        }
+
     }
 
     public Job getPlayerJob(Player player) {
@@ -103,10 +99,11 @@ public class JobManager {
     }
 
     public void levelUp(Player player) {
-        PlayerLevelUpEvent event = new PlayerLevelUpEvent(player);
+        int level = plugin.getSql().getLevel(player) + 1;
+        PlayerLevelUpEvent event = new PlayerLevelUpEvent(player,level);
         plugin.getServer().getPluginManager().callEvent(event);
 
-        plugin.getSql().updateLevel(player,plugin.getSql().getLevel(player) + 1);
+        plugin.getSql().updateLevel(player,level);
     }
 
 }

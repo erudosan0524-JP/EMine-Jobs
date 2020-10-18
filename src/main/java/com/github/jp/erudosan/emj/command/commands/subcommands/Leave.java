@@ -2,6 +2,7 @@ package com.github.jp.erudosan.emj.command.commands.subcommands;
 
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
+import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobManager;
 import org.bukkit.entity.Player;
 
@@ -16,6 +17,8 @@ public class Leave extends SubCommand {
     @Override
     public void onCommand(Player player, String[] args) {
         JobManager jobManager = plugin.getJobManager();
+
+        //TODO 仕事辞めれないバグ修正
 
         if (jobManager.playerJobExists(player)) {
             player.sendMessage(plugin.getHandler().getCaption("leave_message"));
