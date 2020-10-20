@@ -38,50 +38,55 @@ public class OnPlayerLevelUp implements Listener {
 
         int level = plugin.getSql().getLevel(player);
 
-        if(level > 30) {
-            List<Job> canJoinJobs = new ArrayList<>();
+        List<Job> canJoinJobs = new ArrayList<>();
 
-            for (Job job1 : jobManager.getJobs()){
-                if(job1.rank() == 2){
-                    if(job1.genre() == job.genre()) {
-                        canJoinJobs.add(job1);
+        //TODO: ここのコード整形
+        if(job.rank() == 1) {
+            if(level > 30) {
+                for(Job job1 : jobManager.getJobs()) {
+                    if(job.genre() == job1.genre()) {
+                        if(job1.rank() == 2) {
+                            canJoinJobs.add(job1);
+                        }
                     }
                 }
             }
+        }
 
-        } else if (level > 50) {
-            List<Job> canJoinJobs = new ArrayList<>();
-
-            for (Job job1 : jobManager.getJobs()){
-                if(job1.rank() == 3){
-                    if(job1.genre() == job.genre()) {
-                        canJoinJobs.add(job1);
+        if(job.rank() == 2) {
+            if(level > 40) {
+                for(Job job1 : jobManager.getJobs()) {
+                    if(job.genre() == job1.genre()) {
+                        if(job1.rank() == 3) {
+                            canJoinJobs.add(job1);
+                        }
                     }
                 }
             }
+        }
 
-        } else if (level > 80) {
-            List<Job> canJoinJobs = new ArrayList<>();
-
-            for (Job job1 : jobManager.getJobs()){
-                if(job1.rank() == 4){
-                    if(job1.genre() == job.genre()) {
-                        canJoinJobs.add(job1);
+        if(job.rank() == 3) {
+            if(level > 25) {
+                for(Job job1 : jobManager.getJobs()) {
+                    if(job.genre() == job1.genre()) {
+                        if(job1.rank() == 4) {
+                            canJoinJobs.add(job1);
+                        }
                     }
                 }
             }
+        }
 
-        } else if (level > 100) {
-            List<Job> canJoinJobs = new ArrayList<>();
-
-            for (Job job1 : jobManager.getJobs()){
-                if(job1.rank() == 5){
-                    if(job1.genre() == job.genre()) {
-                        canJoinJobs.add(job1);
+        if(job.rank() == 4) {
+            if(level > 30) {
+                for(Job job1 : jobManager.getJobs()) {
+                    if(job.genre() == job1.genre()) {
+                        if(job1.rank() == 5) {
+                            canJoinJobs.add(job1);
+                        }
                     }
                 }
             }
-
         }
 
         job.onLevelUp(plugin,player,e.getLevel());

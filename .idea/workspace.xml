@@ -29,11 +29,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/MinePro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/mylistener/OnPlayerLevelUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/mylistener/OnPlayerLevelUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/CommandManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Jobs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Jobs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Leave.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Leave.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Stats.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Stats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/event/PlayerChangeExpEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/event/PlayerChangeExpEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/event/PlayerLevelUpEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/event/PlayerLevelUpEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobGenre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobGenre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/mylistener/OnPlayerLevelUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/mylistener/OnPlayerLevelUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lang/lang_ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lang/lang_ja.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602739157983</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[update] update Job levelUp system&#10;&#10;jobのレベルアップシステムのアップデート">
+      <created>1603167732842</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603167732842</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +228,8 @@
     <MESSAGE value="[add] add PlayerChangeExpEvent&#10;&#10;プレイヤーの経験値が変化したときのイベントを追加" />
     <MESSAGE value="[add] add Fish Listener&#10;&#10;Fish Listener の追加" />
     <MESSAGE value="[update] update Items.java&#10;&#10;Items.javaに食べ物のListを追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] update Items.java&#10;&#10;Items.javaに食べ物のListを追加" />
+    <MESSAGE value="[update] update Job levelUp system&#10;&#10;jobのレベルアップシステムのアップデート" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] update Job levelUp system&#10;&#10;jobのレベルアップシステムのアップデート" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1603167133738">
