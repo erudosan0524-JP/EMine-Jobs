@@ -7,7 +7,9 @@ import com.github.jp.erudosan.emj.job.jobs.chef.Chef;
 import com.github.jp.erudosan.emj.job.jobs.fisher.Fisher;
 import com.github.jp.erudosan.emj.job.jobs.hunter.Hunter;
 import com.github.jp.erudosan.emj.job.jobs.lamber.Lamber;
+import com.github.jp.erudosan.emj.job.jobs.miner.MinePro;
 import com.github.jp.erudosan.emj.job.jobs.miner.Miner;
+import lombok.Getter;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
@@ -18,7 +20,8 @@ public class JobManager {
 
     private Main plugin;
 
-    private static List<Job> jobs = new ArrayList<>();
+    @Getter
+    private List<Job> jobs = new ArrayList<>();
 
     public JobManager(Main plugin) {
         this.plugin = plugin;
@@ -26,19 +29,22 @@ public class JobManager {
 
     public void setup() {
         //Miner
-        setJob(new Miner());
+        jobs.add(new Miner());
+        jobs.add(new MinePro());
 
         //Lamber
-        setJob(new Lamber());
+        jobs.add(new Lamber());
 
         //Fisher
-        setJob(new Fisher());
+        jobs.add(new Fisher());
 
         //Chef
-        setJob(new Chef());
+        jobs.add(new Chef());
 
         //Hunter
-        setJob(new Hunter());
+        jobs.add(new Hunter());
+
+        setJob(jobs);
     }
 
     public boolean jobExists(String job_name) {
@@ -65,9 +71,8 @@ public class JobManager {
     }
 
 
-    private void setJob(Job job) {
-        jobs.add(job);
-        plugin.getSql().setJob(job);
+    private void setJob(List<Job> jobs) {
+        jobs.stream().forEach(job -> plugin.getSql().setJob(job));
     }
 
     public void setPlayerJob(Player player, Job job) {

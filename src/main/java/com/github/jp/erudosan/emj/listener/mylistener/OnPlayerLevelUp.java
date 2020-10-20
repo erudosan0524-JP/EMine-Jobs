@@ -3,11 +3,16 @@ package com.github.jp.erudosan.emj.listener.mylistener;
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.event.PlayerLevelUpEvent;
 import com.github.jp.erudosan.emj.job.Job;
+import com.github.jp.erudosan.emj.job.JobGenre;
 import com.github.jp.erudosan.emj.job.JobManager;
+import com.github.jp.erudosan.emj.job.jobs.miner.MinePro;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class OnPlayerLevelUp implements Listener {
 
@@ -30,6 +35,54 @@ public class OnPlayerLevelUp implements Listener {
         }
 
         Job job = jobManager.getPlayerJob(player);
+
+        int level = plugin.getSql().getLevel(player);
+
+        if(level > 30) {
+            List<Job> canJoinJobs = new ArrayList<>();
+
+            for (Job job1 : jobManager.getJobs()){
+                if(job1.rank() == 2){
+                    if(job1.genre() == job.genre()) {
+                        canJoinJobs.add(job1);
+                    }
+                }
+            }
+
+        } else if (level > 50) {
+            List<Job> canJoinJobs = new ArrayList<>();
+
+            for (Job job1 : jobManager.getJobs()){
+                if(job1.rank() == 3){
+                    if(job1.genre() == job.genre()) {
+                        canJoinJobs.add(job1);
+                    }
+                }
+            }
+
+        } else if (level > 80) {
+            List<Job> canJoinJobs = new ArrayList<>();
+
+            for (Job job1 : jobManager.getJobs()){
+                if(job1.rank() == 4){
+                    if(job1.genre() == job.genre()) {
+                        canJoinJobs.add(job1);
+                    }
+                }
+            }
+
+        } else if (level > 100) {
+            List<Job> canJoinJobs = new ArrayList<>();
+
+            for (Job job1 : jobManager.getJobs()){
+                if(job1.rank() == 5){
+                    if(job1.genre() == job.genre()) {
+                        canJoinJobs.add(job1);
+                    }
+                }
+            }
+
+        }
 
         job.onLevelUp(plugin,player,e.getLevel());
 
