@@ -42,7 +42,7 @@ public class OnPlayerLevelUp implements Listener {
 
         //TODO: ここのコード整形
         if(job.rank() == 1) {
-            if(level > 30) {
+            if(level > plugin.getMyconfig().getNeedLevelTo2()) {
                 for(Job job1 : jobManager.getJobs()) {
                     if(job.genre() == job1.genre()) {
                         if(job1.rank() == 2) {
@@ -54,7 +54,7 @@ public class OnPlayerLevelUp implements Listener {
         }
 
         if(job.rank() == 2) {
-            if(level > 40) {
+            if(level > plugin.getMyconfig().getNeedLevelTo3()) {
                 for(Job job1 : jobManager.getJobs()) {
                     if(job.genre() == job1.genre()) {
                         if(job1.rank() == 3) {
@@ -66,7 +66,7 @@ public class OnPlayerLevelUp implements Listener {
         }
 
         if(job.rank() == 3) {
-            if(level > 25) {
+            if(level > plugin.getMyconfig().getNeedLevelTo4()) {
                 for(Job job1 : jobManager.getJobs()) {
                     if(job.genre() == job1.genre()) {
                         if(job1.rank() == 4) {
@@ -78,7 +78,7 @@ public class OnPlayerLevelUp implements Listener {
         }
 
         if(job.rank() == 4) {
-            if(level > 30) {
+            if(level > plugin.getMyconfig().getNeedLevelTo5()) {
                 for(Job job1 : jobManager.getJobs()) {
                     if(job.genre() == job1.genre()) {
                         if(job1.rank() == 5) {

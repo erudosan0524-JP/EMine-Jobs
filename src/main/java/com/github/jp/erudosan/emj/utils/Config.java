@@ -19,6 +19,9 @@ public class Config {
     private int needExpLevelUp;
 
     @Getter
+    private int needLevelTo2, needLevelTo3, needLevelTo4, needLevelTo5;
+
+    @Getter
     private boolean enabledMySQL;
 
     @Getter
@@ -43,6 +46,10 @@ public class Config {
 
         language = config.getString("language");
         needExpLevelUp = config.getInt("need-exp-levelup");
+        needLevelTo2 = config.getInt("need-level-to2");
+        needLevelTo3 = config.getInt("need-level-to3");
+        needLevelTo4 = config.getInt("need-level-to4");
+        needLevelTo5 = config.getInt("need-level-to5");
         enabledMySQL = config.getBoolean("enabled-mysql");
         host = config.getString("host");
         port = config.getInt("port");
