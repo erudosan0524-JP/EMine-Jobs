@@ -23,6 +23,12 @@ public class JobManager {
     @Getter
     private List<Job> jobs = new ArrayList<>();
 
+    private List<Job> MinerRank2Jobs = new ArrayList<>();
+    private List<Job> LamberRank2Jobs = new ArrayList<>();
+    private List<Job> FisherRank2Jobs = new ArrayList<>();
+    private List<Job> ChefRank2Jobs = new ArrayList<>();
+    private List<Job> HunterRank2Jobs = new ArrayList<>();
+
     public JobManager(Main plugin) {
         this.plugin = plugin;
     }
