@@ -72,7 +72,7 @@ public class CaptionHandler {
     }
 
     public String getCaption(Player player, String name) {
-        return this.getCaption(player,name);
+        return this.getCaptionPlayer(player,name);
     }
 
     public String getCaption(String name, boolean color)
@@ -103,9 +103,9 @@ public class CaptionHandler {
         caption = ChatColor.translateAlternateColorCodes('&', caption);
 
         if(caption.contains("{player}")) {
-            caption.replace("{player}",player.getName());
+            caption = caption.replace("{player}",player.getName());
         } else if(caption.contains("{job}")) {
-            caption.replace("{job}",plugin.getJobManager().getPlayerJob(player).name().toUpperCase());
+            caption = caption.replace("{job}",plugin.getJobManager().getPlayerJob(player).name().toUpperCase());
         }
 
         return caption;

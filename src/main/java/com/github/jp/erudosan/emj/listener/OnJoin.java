@@ -31,7 +31,7 @@ public class OnJoin implements Listener {
         Player player = e.getPlayer();
         JobManager jobManager = plugin.getJobManager();
 
-        e.setJoinMessage(ChatColor.BOLD + player.getName() + plugin.getHandler().getCaption("player_join_message"));
+        e.setJoinMessage(ChatColor.BOLD + plugin.getHandler().getCaption(player,"player_join_message"));
 
         final Calendar calendar = Calendar.getInstance();
         final int now = calendar.get(Calendar.DAY_OF_YEAR);
@@ -46,11 +46,11 @@ public class OnJoin implements Listener {
 
             int diff = lastLoginDate - now;
 
-            player.sendMessage(plugin.getHandler().getCaption("player_join_message1") + player.getName() + ". "
+            player.sendMessage(plugin.getHandler().getCaption(player,"player_join_message1")
                     + diff + plugin.getHandler().getCaption("player_join_message2"));
             plugin.getSql().updatePlayer(player,sqlDate);
         } else {
-            player.sendMessage(player.getName() + plugin.getHandler().getCaption("player_firstjoin_message"));
+            player.sendMessage(plugin.getHandler().getCaption(player,"player_firstjoin_message"));
 
             ItemStack menuStick = new ItemStack(Material.STICK, 1);
             ItemMeta stickMeta = menuStick.getItemMeta();

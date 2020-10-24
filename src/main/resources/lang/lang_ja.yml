@@ -3,10 +3,10 @@ invalid_command: "&c不正なサブコマンド"
 error_command: "&cエラーが検出されました"
 
 # join event Message
-player_join_message: "さんがログインしました。"
-player_join_message1: "お久しぶり！"
+player_join_message: "{player}さんがログインしました。"
+player_join_message1: "お久しぶり！{player}さん！"
 player_join_message2: "日ぶりですね！"
-player_firstjoin_message: "&dさんが初めてログインしました！"
+player_firstjoin_message: "&d{player}sさんが初めてログインしました！"
 
 
 # Command Message
