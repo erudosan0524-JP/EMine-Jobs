@@ -4,6 +4,7 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import com.github.jp.erudosan.emj.job.JobManager;
+import com.github.jp.erudosan.emj.job.JobPlayer;
 import com.github.jp.erudosan.emj.utils.Items;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -26,15 +27,13 @@ public class OnBlock implements Listener {
     public void onBlockBreak(BlockBreakEvent e) {
         Player player = e.getPlayer();
         Block brokenBlcok = e.getBlock();
-        JobManager jobManager = plugin.getJobManager();
+        JobPlayer jobPlayer = plugin.getJobPlayer();
 
-        if(!jobManager.playerJobExists(player)) {
+        if(!jobPlayer.playerJobExists(player)) {
             return;
         }
 
-        Job job = jobManager.getPlayerJob(player);
-
-        System.out.println("job=" + job.genre());
+        Job job = jobPlayer.getPlayerJob(player);
 
         Material itemMainHand = player.getInventory().getItemInMainHand().getType();
         Material itemOffHand = player.getInventory().getItemInOffHand().getType();
@@ -42,8 +41,7 @@ public class OnBlock implements Listener {
         if(job.genre() == JobGenre.MINER) {
             if(Items.getPickaxes().contains(itemMainHand) || Items.getPickaxes().contains(itemOffHand)) {
                 if(Items.getStones().contains(brokenBlcok.getType())) {
-                    jobManager.addExp(player,1);
-                    System.out.print("true");
+                    jobPlayer.addExp(player,1);
                 }
             }
         }
@@ -51,8 +49,7 @@ public class OnBlock implements Listener {
         if (job.genre() == JobGenre.LAMBER) {
             if(Items.getAxes().contains(itemMainHand) || Items.getAxes().contains(itemOffHand)) {
                 if(Items.getWoods().contains(brokenBlcok.getType())) {
-                    jobManager.addExp(player, 1);
-                    System.out.print("true");
+                    jobPlayer.addExp(player, 1);
                 }
             }
         }

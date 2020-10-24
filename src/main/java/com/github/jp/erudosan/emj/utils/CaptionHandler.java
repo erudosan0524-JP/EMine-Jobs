@@ -105,7 +105,7 @@ public class CaptionHandler {
         if(caption.contains("{player}")) {
             caption = caption.replace("{player}",player.getName());
         } else if(caption.contains("{job}")) {
-            caption = caption.replace("{job}",plugin.getJobManager().getPlayerJob(player).name().toUpperCase());
+            caption = caption.replace("{job}",plugin.getJobPlayer().getPlayerJob(player).name().toUpperCase());
         }
 
         return caption;

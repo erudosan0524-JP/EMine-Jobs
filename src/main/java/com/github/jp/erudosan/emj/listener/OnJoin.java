@@ -29,7 +29,7 @@ public class OnJoin implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
         Player player = e.getPlayer();
-        JobManager jobManager = plugin.getJobManager();
+        JobManager jobManager = plugin.getJobPlayer();
 
         e.setJoinMessage(ChatColor.BOLD + plugin.getHandler().getCaption(player,"player_join_message"));
 

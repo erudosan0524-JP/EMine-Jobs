@@ -4,6 +4,7 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobManager;
+import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.entity.Player;
 
 public class Join extends SubCommand {
@@ -18,13 +19,17 @@ public class Join extends SubCommand {
     public void onCommand(Player player, String[] args) {
         if(args.length != 0) {
             String job_name = args[0];
-            System.out.println(args[0]);
 
-            JobManager jobManager = plugin.getJobManager();
+            JobPlayer jobPlayer = plugin.getJobPlayer();
 
 
-            if(jobManager.jobExists(job_name)) {
-                Job job = jobManager.getJobFromName(job_name);
+            if(jobPlayer.jobExists(job_name)) {
+                Job job = jobPlayer.getJobFromName(job_name);
+
+                if(!jobPlayer.canJoinJobs(player).contains(job)) {
+                    player.sendMessage(plugin.getHandler().getCaption("join_error_message"));
+                    return;
+                }
 
                 if(plugin.getSql().playerJobExists(player)) {
                     if(plugin.getSql().isSetPlayerJob(player)) {

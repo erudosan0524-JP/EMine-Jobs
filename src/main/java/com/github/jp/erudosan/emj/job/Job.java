@@ -22,5 +22,6 @@ public abstract class Job {
      */
     public abstract int rank();
 
+    //レベルアップ時の報酬処理
     public abstract void onLevelUp(Main plugin, Player player, int level);
 }

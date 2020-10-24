@@ -9,6 +9,8 @@ import org.bukkit.entity.Player;
 import java.sql.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class SQLGetterSetter {
@@ -253,6 +255,7 @@ public class SQLGetterSetter {
             ResultSet results = statement.executeQuery();
             results.next();
 
+
             return results.getString("job");
 
         } catch (SQLException throwable) {
@@ -322,6 +325,30 @@ public class SQLGetterSetter {
         } catch (SQLException throwable) {
             throwable.printStackTrace();
         }
+    }
+
+    public List<String> getJobsFromRank(int rank) {
+        try {
+            DBManager db = plugin.getDbManager();
+            PreparedStatement statement = db.getConnection()
+                    .prepareStatement("SELECT * FROM " + jobs_table + " WHERE rank=?");
+            statement.setInt(1,rank);
+
+            ResultSet results = statement.executeQuery();
+
+            List<String> list = new ArrayList<>();
+
+            while(results.next()) {
+                list.add(results.getString("job"));
+            }
+
+            return list;
+
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
+        }
+
+        return null;
     }
 
 

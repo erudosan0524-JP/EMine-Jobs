@@ -4,6 +4,7 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import com.github.jp.erudosan.emj.job.JobManager;
+import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -22,16 +23,16 @@ public class OnFish implements Listener {
     public void onFish(PlayerFishEvent e) {
         Player player = e.getPlayer();
 
-        JobManager jobManager = plugin.getJobManager();
+        JobPlayer jobPlayer = plugin.getJobPlayer();
 
-        if(!jobManager.playerJobExists(player)) {
+        if(!jobPlayer.playerJobExists(player)) {
             return;
         }
 
-        Job job = jobManager.getPlayerJob(player);
+        Job job = jobPlayer.getPlayerJob(player);
 
         if(job.genre() == JobGenre.FISHING) {
-            jobManager.addExp(player,1);
+            jobPlayer.addExp(player,1);
         }
 
     }

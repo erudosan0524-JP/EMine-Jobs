@@ -2,32 +2,43 @@ package com.github.jp.erudosan.emj.command.commands.subcommands;
 
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
-import com.github.jp.erudosan.emj.job.Job;
-import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.job.JobPlayer;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
-public class Leave extends SubCommand {
+import java.io.IOException;
+
+public class AddLevel extends SubCommand {
 
     private Main plugin;
 
-    public Leave(Main plugin) {
+    public AddLevel(Main plugin) {
         this.plugin = plugin;
     }
 
     @Override
     public void onCommand(Player player, String[] args) {
-        JobPlayer jobPlayer = plugin.getJobPlayer();
+        if (args.length != 0) {
 
-        if (jobPlayer.playerJobExists(player)) {
-            player.sendMessage(plugin.getHandler().getCaption("leave_message"));
-            jobPlayer.setPlayerJob(player,null);
+            int level = 0;
+            Player _player = null;
+
+            try {
+                _player = Bukkit.getPlayer(args[1]);
+                level = Integer.parseInt(args[2]);
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+            }
+
+            JobPlayer jobPlayer = plugin.getJobPlayer();
+            jobPlayer.addLevel(_player, level);
         }
+
     }
 
     @Override
     public String name() {
-        return "leave";
+        return "addlevel";
     }
 
     @Override

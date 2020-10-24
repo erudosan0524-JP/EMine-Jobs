@@ -4,6 +4,7 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import com.github.jp.erudosan.emj.job.JobManager;
+import com.github.jp.erudosan.emj.job.JobPlayer;
 import com.github.jp.erudosan.emj.utils.Items;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -15,11 +16,11 @@ public class OnCook implements Listener {
 
     private Main plugin;
 
-    private JobManager jobManager;
+    private JobPlayer jobPlayer;
 
     public OnCook(Main plugin) {
         this.plugin = plugin;
-        jobManager = plugin.getJobManager();
+        jobPlayer = plugin.getJobPlayer();
         plugin.getServer().getPluginManager().registerEvents(this,plugin);
     }
 
@@ -27,15 +28,15 @@ public class OnCook implements Listener {
     public void onFurnaceExtract(FurnaceExtractEvent e) {
         Player player = e.getPlayer();
 
-        if(!jobManager.playerJobExists(player)) {
+        if(!jobPlayer.playerJobExists(player)) {
             return;
         }
 
-        Job job = jobManager.getPlayerJob(player);
+        Job job = jobPlayer.getPlayerJob(player);
 
         if(job.genre() == JobGenre.CHEF) {
             if(Items.getFoods().contains(e.getItemType())) {
-                jobManager.addExp(player, 1);
+                jobPlayer.addExp(player, 1);
             }
         }
     }
@@ -44,15 +45,15 @@ public class OnCook implements Listener {
     public void onEat(PlayerItemConsumeEvent e){
         Player player = e.getPlayer();
 
-        if(!jobManager.playerJobExists(player)) {
+        if(!jobPlayer.playerJobExists(player)) {
             return;
         }
 
-        Job job = jobManager.getPlayerJob(player);
+        Job job = jobPlayer.getPlayerJob(player);
 
         if(job.genre() == JobGenre.CHEF) {
             if(Items.getFoods().contains(e.getItem().getType())) {
-                jobManager.addExp(player,1);
+                jobPlayer.addExp(player,1);
             }
         }
     }
