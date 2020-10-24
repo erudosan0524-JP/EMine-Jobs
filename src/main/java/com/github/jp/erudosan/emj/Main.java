@@ -46,9 +46,6 @@ public class Main extends JavaPlugin {
     private CommandManager commandManager;
 
     @Getter
-    private  JobManager jobManager;
-
-    @Getter
     private JobPlayer jobPlayer;
 
     @Getter
@@ -78,10 +75,8 @@ public class Main extends JavaPlugin {
         commandManager.setup();
 
         //Setting Job
-        jobManager = new JobManager(getInstance());
-        jobManager.setup();
-
         jobPlayer = new JobPlayer(getInstance());
+        jobPlayer.setup();
 
         //Setting Listeners
         new OnBlock(getInstance());

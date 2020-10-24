@@ -19,14 +19,12 @@ public class Join extends SubCommand {
     public void onCommand(Player player, String[] args) {
         if(args.length != 0) {
             String job_name = args[0];
-            System.out.println(args[0]);
 
-            JobManager jobManager = plugin.getJobManager();
             JobPlayer jobPlayer = plugin.getJobPlayer();
 
 
-            if(jobManager.jobExists(job_name)) {
-                Job job = jobManager.getJobFromName(job_name);
+            if(jobPlayer.jobExists(job_name)) {
+                Job job = jobPlayer.getJobFromName(job_name);
 
                 if(!jobPlayer.canJoinJobs(player).contains(job)) {
                     player.sendMessage(plugin.getHandler().getCaption("join_error_message"));

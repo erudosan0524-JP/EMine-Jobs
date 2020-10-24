@@ -13,12 +13,9 @@ import java.util.Objects;
 
 public class JobPlayer extends JobManager{
 
-    private Main plugin;
-
     public JobPlayer(Main plugin) {
         super(plugin);
     }
-
 
     public boolean playerJobExists(Player player) {
         return plugin.getSql().playerJobExists(player);
@@ -36,7 +33,6 @@ public class JobPlayer extends JobManager{
     public Job getPlayerJob(Player player) {
         String job_name = plugin.getSql().getPlayerJob(player);
         Job job = getJobFromName(job_name);
-
         return job;
     }
 
@@ -90,6 +86,11 @@ public class JobPlayer extends JobManager{
                         case HUNTER:
                             jobList.addAll(HunterJobs.get(i + 1));
                             break;
+                    }
+                } else {
+                    for(String s : getJobsFromRank(i)) {
+                        Job j = getJobFromName(s);
+                        jobList.add(j);
                     }
                 }
             }

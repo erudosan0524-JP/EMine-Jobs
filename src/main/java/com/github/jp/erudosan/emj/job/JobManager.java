@@ -16,7 +16,7 @@ import java.util.*;
 
 public class JobManager {
 
-    private Main plugin;
+    protected Main plugin;
 
     @Getter
     private List<Job> jobs = new ArrayList<>();
@@ -29,6 +29,12 @@ public class JobManager {
     protected HashMap<Integer,List<Job>> FisherJobs = new HashMap<>();
     protected HashMap<Integer,List<Job>> ChefJobs = new HashMap<>();
     protected HashMap<Integer,List<Job>> HunterJobs = new HashMap<>();
+
+    private List<Job> miners = new ArrayList<>();
+    private List<Job> lambers = new ArrayList<>();
+    private List<Job> fishers = new ArrayList<>();
+    private List<Job> chefs = new ArrayList<>();
+    private List<Job> hunters = new ArrayList<>();
 
     private Set<JobGenre> jobGenres = new HashSet<>();
     protected Iterator<JobGenre> jobGenreIterator;
@@ -55,17 +61,18 @@ public class JobManager {
         //Hunter
         jobs.add(new Hunter());
 
+
+
         //Setting Over rank2 Jobs
         for(int i=1; i <= 5; i++) {
-            List<Job> miners = new ArrayList<>();
-            List<Job> lambers = new ArrayList<>();
-            List<Job> fishers = new ArrayList<>();
-            List<Job> chefs = new ArrayList<>();
-            List<Job> hunters = new ArrayList<>();
-
 
             //ランクi職業一覧を取得
             for(String s : getJobsFromRank(i)) {
+
+                if(Objects.isNull(s)) {
+                    continue;
+                }
+
                 Job job = getJobFromName(s);
 
                 switch (job.genre()) {
@@ -94,6 +101,7 @@ public class JobManager {
             HunterJobs.put(i,hunters);
 
         }
+
 
         jobGenres.add(JobGenre.MINER);
         jobGenres.add(JobGenre.LAMBER);
@@ -130,7 +138,7 @@ public class JobManager {
         jobs.stream().forEach(job -> plugin.getSql().setJob(job));
     }
 
-    private List<String> getJobsFromRank(int rank) {
+    protected List<String> getJobsFromRank(int rank) {
         return plugin.getSql().getJobsFromRank(rank);
     }
 }

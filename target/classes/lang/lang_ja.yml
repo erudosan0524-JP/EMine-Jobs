@@ -10,7 +10,7 @@ player_firstjoin_message: "&d{player}sさんが初めてログインしました
 
 
 # Command Message
-command_firstline: "&7============= &2EMine&7-&3Jobs &7============="
+command_firstline: "&7============= &2EMine&7-&3Jobs &7=============" 13 4 5 13 2
 command_endline:  "&7======================================"
 
 #LevelUp Message
@@ -29,9 +29,15 @@ stats_line3: "レベル:&2"
 
 # "/emj join" Command Message
 join_message: "あなたは{job}に就きました"
+join_error_message: "あなたが指定した職業はまだ就くことができません！"
 
 # "/emj leave" Command Message
 leave_message: "あなたは現在の仕事を辞めました"
+
+# "/emj jobs" Command Message
+jobs_message_first: "&7=========== &2現在就くことができる職業 &7==========="
+jobs_message_end:  "&7======================================"
+jobs_message_none: "現在あなたが就ける上位職業はありません。"
 
 # Menu stick
 menu_stick: "&5メニュー棒"

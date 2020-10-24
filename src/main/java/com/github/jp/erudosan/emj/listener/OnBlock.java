@@ -35,8 +35,6 @@ public class OnBlock implements Listener {
 
         Job job = jobPlayer.getPlayerJob(player);
 
-        System.out.println("job=" + job.genre());
-
         Material itemMainHand = player.getInventory().getItemInMainHand().getType();
         Material itemOffHand = player.getInventory().getItemInOffHand().getType();
 
@@ -44,7 +42,6 @@ public class OnBlock implements Listener {
             if(Items.getPickaxes().contains(itemMainHand) || Items.getPickaxes().contains(itemOffHand)) {
                 if(Items.getStones().contains(brokenBlcok.getType())) {
                     jobPlayer.addExp(player,1);
-                    System.out.print("true");
                 }
             }
         }
@@ -53,7 +50,6 @@ public class OnBlock implements Listener {
             if(Items.getAxes().contains(itemMainHand) || Items.getAxes().contains(itemOffHand)) {
                 if(Items.getWoods().contains(brokenBlcok.getType())) {
                     jobPlayer.addExp(player, 1);
-                    System.out.print("true");
                 }
             }
         }

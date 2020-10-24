@@ -1,5 +1,5 @@
-name: "${project.name}"
-version: "0.1.5-SNAPSHOT"
+name: "EMine-Jobs"
+version: "0.1.7-SNAPSHOT"
 main: "com.github.jp.erudosan.emj.Main"
 author: 'erudo'
 api-version: 1.13

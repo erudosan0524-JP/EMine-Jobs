@@ -255,6 +255,7 @@ public class SQLGetterSetter {
             ResultSet results = statement.executeQuery();
             results.next();
 
+
             return results.getString("job");
 
         } catch (SQLException throwable) {
@@ -337,8 +338,7 @@ public class SQLGetterSetter {
 
             List<String> list = new ArrayList<>();
 
-            if(results.next()) {
-                results.next();
+            while(results.next()) {
                 list.add(results.getString("job"));
             }
 
