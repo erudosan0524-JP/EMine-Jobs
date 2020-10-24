@@ -60,6 +60,10 @@ public class JobPlayer extends JobManager{
         plugin.getSql().updateLevel(player,level);
     }
 
+    public int getLevel(Player player) {
+        return plugin.getSql().getLevel(player);
+    }
+
 
     public List<Job> canJoinJobs(Player player) {
         List<Job> jobList = new ArrayList<>();
@@ -67,22 +71,26 @@ public class JobPlayer extends JobManager{
 
         for(int i=1; i <= 5; i++) {
             if(job.rank() == i) {
-                switch(job.genre()) {
-                    case MINER:
-                        jobList.addAll(MinerJobs.get(i+1));
-                        break;
-                    case LAMBER:
-                        jobList.addAll(LamberJobs.get(i+1));
-                        break;
-                    case FISHING:
-                        jobList.addAll(FisherJobs.get(i+1));
-                        break;
-                    case CHEF:
-                        jobList.addAll(ChefJobs.get(i+1));
-                        break;
-                    case HUNTER:
-                        jobList.addAll(HunterJobs.get(i+1));
-                        break;
+                double level = Math.sqrt(1000 * Math.log(i + 1));
+
+                if(getLevel(player) > level) {
+                    switch (job.genre()) {
+                        case MINER:
+                            jobList.addAll(MinerJobs.get(i + 1));
+                            break;
+                        case LAMBER:
+                            jobList.addAll(LamberJobs.get(i + 1));
+                            break;
+                        case FISHING:
+                            jobList.addAll(FisherJobs.get(i + 1));
+                            break;
+                        case CHEF:
+                            jobList.addAll(ChefJobs.get(i + 1));
+                            break;
+                        case HUNTER:
+                            jobList.addAll(HunterJobs.get(i + 1));
+                            break;
+                    }
                 }
             }
         }
