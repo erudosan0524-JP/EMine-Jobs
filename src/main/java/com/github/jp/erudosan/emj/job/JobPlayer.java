@@ -99,6 +99,7 @@ public class JobPlayer extends JobManager{
     }
 
 
-
-
+    public void addLevel(Player player, int level) {
+        plugin.getSql().updateLevel(player,plugin.getSql().getLevel(player) + level);
+    }
 }
