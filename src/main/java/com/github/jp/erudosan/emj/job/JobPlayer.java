@@ -88,7 +88,7 @@ public class JobPlayer extends JobManager{
                             break;
                     }
                 } else {
-                    for(String s : getJobsFromRank(i)) {
+                    for(String s : getJobsFromRank(1)) {
                         Job j = getJobFromName(s);
                         jobList.add(j);
                     }
