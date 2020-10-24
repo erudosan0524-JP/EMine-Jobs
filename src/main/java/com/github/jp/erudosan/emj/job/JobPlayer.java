@@ -31,6 +31,8 @@ public class JobPlayer extends JobManager{
     }
 
     public Job getPlayerJob(Player player) {
+
+
         String job_name = plugin.getSql().getPlayerJob(player);
         Job job = getJobFromName(job_name);
         return job;
@@ -63,6 +65,14 @@ public class JobPlayer extends JobManager{
 
     public List<Job> canJoinJobs(Player player) {
         List<Job> jobList = new ArrayList<>();
+
+        if(!playerJobExists(player)) {
+            for(String s : getJobsFromRank(1)) {
+                Job j = getJobFromName(s);
+                jobList.add(j);
+            }
+        }
+
         Job job = getPlayerJob(player);
 
         for(int i=1; i <= 5; i++) {
