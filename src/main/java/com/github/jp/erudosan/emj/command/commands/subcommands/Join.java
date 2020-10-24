@@ -34,7 +34,6 @@ public class Join extends SubCommand {
                     if(!plugin.getSql().isSetPlayerJob(player)) {
                         plugin.getSql().setPlayerJob(player,job);
                     }
-
                 }
 
                 player.sendMessage(plugin.getHandler().getCaption(player,"join_message"));

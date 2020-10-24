@@ -2,50 +2,52 @@ package com.github.jp.erudosan.emj.utils;
 
 import com.github.jp.erudosan.emj.Main;
 import org.bukkit.ChatColor;
+import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.craftbukkit.libs.org.apache.commons.io.FileUtils;
 import org.bukkit.entity.Player;
-import org.bukkit.plugin.Plugin;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class CaptionHandler {
-    private Main plugin = null;
+    private Main plugin;
 
     private String path;
 
     private Lang lang;
 
-    private File configFile = null;
-    private FileConfiguration config = null;
+    private File configFile;
+    private FileConfiguration config;
 
     public CaptionHandler(Main plugin, Lang lang)
     {
         this.plugin = plugin;
         this.lang = lang;
-        this.configFile = new File(this.plugin.getDataFolder(), "/lang/" + lang.getPath());
+        this.configFile = new File(this.plugin.getDataFolder(), "/lang/" + this.lang.getPath());
 
-        System.out.println(this.configFile);
+        System.out.println(this.configFile.getPath());
 
-        this.reload();
+        config = new YamlConfiguration();
+
         this.saveDefault();
+        this.reload();
     }
 
     public void reload()
     {
-        this.config = YamlConfiguration.loadConfiguration(this.configFile);
+        try {
+            this.config.load(configFile);
+        } catch (IOException | InvalidConfigurationException e) {
+            e.printStackTrace();
+        }
 
-        InputStream defaultConfigStream = this.plugin.getResource("lang/" + lang.getPath());
+        InputStream defaultConfigStream = this.plugin.getResource("/lang/" + lang.getPath());
         if (defaultConfigStream != null)
         {
-            File file = new File(plugin.getDataFolder(), "/lang/" + lang.getPath());
+            File file = new File(plugin.getDataFolder(), "lang/" + lang.getPath());
             try {
                 FileUtils.copyInputStreamToFile(defaultConfigStream,file);
             } catch (IOException e) {

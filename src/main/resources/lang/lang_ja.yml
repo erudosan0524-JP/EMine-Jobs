@@ -41,12 +41,9 @@ menu_stick_lore: "右クリックでメニューが開けます。"
 miner-level50-item-name: "ﾁｮｯﾄﾂﾖｲつるはし"
 miner-level50-item-lore: "かなりつおい（大嘘）"
 
-
 # Jobs name (rank1)
 miner: "鉱夫"
 lamber: "木こり師"
 fisher: "釣り師"
 chef: "調理師"
 hunter: "ハンター"
-null: "職業なし"
-#Jobs name (rank2)
