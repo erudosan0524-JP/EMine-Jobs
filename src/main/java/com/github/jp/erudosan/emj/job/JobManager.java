@@ -13,6 +13,7 @@ import lombok.Getter;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
@@ -23,11 +24,21 @@ public class JobManager {
     @Getter
     private List<Job> jobs = new ArrayList<>();
 
-    private List<Job> MinerRank2Jobs = new ArrayList<>();
-    private List<Job> LamberRank2Jobs = new ArrayList<>();
-    private List<Job> FisherRank2Jobs = new ArrayList<>();
-    private List<Job> ChefRank2Jobs = new ArrayList<>();
-    private List<Job> HunterRank2Jobs = new ArrayList<>();
+    /*
+    * HashMap<rank,jobs>
+     */
+
+    @Getter
+    private HashMap<Integer,List<Job>> MinerJobs = new HashMap<>();
+    @Getter
+    private HashMap<Integer,List<Job>> LamberJobs = new HashMap<>();
+    @Getter
+    private HashMap<Integer,List<Job>> FisherJobs = new HashMap<>();
+    @Getter
+    private HashMap<Integer,List<Job>> ChefJobs = new HashMap<>();
+    @Getter
+    private HashMap<Integer,List<Job>> HunterJobs = new HashMap<>();
+
 
     public JobManager(Main plugin) {
         this.plugin = plugin;
@@ -49,6 +60,46 @@ public class JobManager {
 
         //Hunter
         jobs.add(new Hunter());
+
+        //Setting Over rank2 Jobs
+        for(int i=1; i <= 5; i++) {
+            List<Job> miners = new ArrayList<>();
+            List<Job> lambers = new ArrayList<>();
+            List<Job> fishers = new ArrayList<>();
+            List<Job> chefs = new ArrayList<>();
+            List<Job> hunters = new ArrayList<>();
+
+
+            //ランクi職業一覧を取得
+            for(String s : getJobsFromRank(i)) {
+                Job job = getJobFromName(s);
+
+                switch (job.genre()) {
+                    case MINER:
+                        miners.add(job);
+                        break;
+                    case LAMBER:
+                        lambers.add(job);
+                        break;
+                    case FISHING:
+                        fishers.add(job);
+                        break;
+                    case CHEF:
+                        chefs.add(job);
+                        break;
+                    case HUNTER:
+                        hunters.add(job);
+                        break;
+                }
+            }
+
+            MinerJobs.put(i,miners);
+            LamberJobs.put(i,lambers);
+            FisherJobs.put(i,fishers);
+            ChefJobs.put(i,chefs);
+            HunterJobs.put(i,hunters);
+
+        }
 
         setJob(jobs);
     }
@@ -79,6 +130,10 @@ public class JobManager {
 
     private void setJob(List<Job> jobs) {
         jobs.stream().forEach(job -> plugin.getSql().setJob(job));
+    }
+
+    private List<String> getJobsFromRank(int rank) {
+        return plugin.getSql().getJobsFromRank(rank);
     }
 
     public void setPlayerJob(Player player, Job job) {
