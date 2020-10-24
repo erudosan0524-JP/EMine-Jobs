@@ -1,17 +1,23 @@
 package com.github.jp.erudosan.emj.utils;
 
+import com.github.jp.erudosan.emj.Main;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.craftbukkit.libs.org.apache.commons.io.FileUtils;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class CaptionHandler {
-    private Plugin plugin = null;
+    private Main plugin = null;
 
     private String path;
 
@@ -20,7 +26,7 @@ public class CaptionHandler {
     private File configFile = null;
     private FileConfiguration config = null;
 
-    public CaptionHandler(Plugin plugin,Lang lang)
+    public CaptionHandler(Main plugin, Lang lang)
     {
         this.plugin = plugin;
         this.lang = lang;
@@ -63,6 +69,10 @@ public class CaptionHandler {
         return this.getCaption(name, true);
     }
 
+    public String getCaption(Player player, String name) {
+        return this.getCaption(player,name);
+    }
+
     public String getCaption(String name, boolean color)
     {
         String caption = this.config.getString(name);
@@ -76,6 +86,26 @@ public class CaptionHandler {
         {
             caption = ChatColor.translateAlternateColorCodes('&', caption);
         }
+        return caption;
+    }
+
+    public String getCaptionPlayer(Player player, String name) {
+        String caption = this.config.getString(name);
+
+        if (caption == null)
+        {
+            this.plugin.getLogger().warning("Missing caption: " + name);
+            caption = "&c[missing caption]";
+        }
+
+        caption = ChatColor.translateAlternateColorCodes('&', caption);
+
+        if(caption.contains("{player}")) {
+            caption.replace("{player}",player.getName());
+        } else if(caption.contains("{job}")) {
+            caption.replace("{job}",plugin.getJobManager().getPlayerJob(player).name().toUpperCase());
+        }
+
         return caption;
     }
 

@@ -37,7 +37,7 @@ public class Join extends SubCommand {
 
                 }
 
-                player.sendMessage(plugin.getHandler().getCaption("join_message1") + job.name().toUpperCase() + plugin.getHandler().getCaption("join_message2"));
+                player.sendMessage(plugin.getHandler().getCaption(player,"join_message"));
             }
         }
     }
