@@ -5,6 +5,7 @@ import com.github.jp.erudosan.emj.command.CommandManager;
 import com.github.jp.erudosan.emj.event.PlayerLevelUpEvent;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobManager;
+import com.github.jp.erudosan.emj.job.JobPlayer;
 import com.github.jp.erudosan.emj.listener.OnBlock;
 import com.github.jp.erudosan.emj.listener.OnCook;
 import com.github.jp.erudosan.emj.listener.OnFish;
@@ -48,6 +49,9 @@ public class Main extends JavaPlugin {
     private  JobManager jobManager;
 
     @Getter
+    private JobPlayer jobPlayer;
+
+    @Getter
     private HashMap<Player, List<Job>> canJoinJobs = new HashMap<>();
 
     @Override
@@ -76,6 +80,8 @@ public class Main extends JavaPlugin {
         //Setting Job
         jobManager = new JobManager(getInstance());
         jobManager.setup();
+
+        jobPlayer = new JobPlayer(getInstance());
 
         //Setting Listeners
         new OnBlock(getInstance());

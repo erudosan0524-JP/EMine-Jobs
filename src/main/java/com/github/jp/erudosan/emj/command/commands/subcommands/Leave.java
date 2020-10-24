@@ -4,6 +4,7 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobManager;
+import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.entity.Player;
 
 public class Leave extends SubCommand {
@@ -16,11 +17,11 @@ public class Leave extends SubCommand {
 
     @Override
     public void onCommand(Player player, String[] args) {
-        JobManager jobManager = plugin.getJobManager();
+        JobPlayer jobPlayer = plugin.getJobPlayer();
 
-        if (jobManager.playerJobExists(player)) {
+        if (jobPlayer.playerJobExists(player)) {
             player.sendMessage(plugin.getHandler().getCaption("leave_message"));
-            jobManager.setPlayerJob(player,null);
+            jobPlayer.setPlayerJob(player,null);
         }
     }
 

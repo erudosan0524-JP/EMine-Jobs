@@ -12,10 +12,7 @@ import com.github.jp.erudosan.emj.job.jobs.miner.Miner;
 import lombok.Getter;
 import org.bukkit.entity.Player;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class JobManager {
 
@@ -27,17 +24,14 @@ public class JobManager {
     /*
     * HashMap<rank,jobs>
      */
+    protected HashMap<Integer,List<Job>> MinerJobs = new HashMap<>();
+    protected HashMap<Integer,List<Job>> LamberJobs = new HashMap<>();
+    protected HashMap<Integer,List<Job>> FisherJobs = new HashMap<>();
+    protected HashMap<Integer,List<Job>> ChefJobs = new HashMap<>();
+    protected HashMap<Integer,List<Job>> HunterJobs = new HashMap<>();
 
-    @Getter
-    private HashMap<Integer,List<Job>> MinerJobs = new HashMap<>();
-    @Getter
-    private HashMap<Integer,List<Job>> LamberJobs = new HashMap<>();
-    @Getter
-    private HashMap<Integer,List<Job>> FisherJobs = new HashMap<>();
-    @Getter
-    private HashMap<Integer,List<Job>> ChefJobs = new HashMap<>();
-    @Getter
-    private HashMap<Integer,List<Job>> HunterJobs = new HashMap<>();
+    private Set<JobGenre> jobGenres = new HashSet<>();
+    protected Iterator<JobGenre> jobGenreIterator;
 
 
     public JobManager(Main plugin) {
@@ -101,6 +95,14 @@ public class JobManager {
 
         }
 
+        jobGenres.add(JobGenre.MINER);
+        jobGenres.add(JobGenre.LAMBER);
+        jobGenres.add(JobGenre.CHEF);
+        jobGenres.add(JobGenre.FISHING);
+        jobGenres.add(JobGenre.HUNTER);
+
+        jobGenreIterator = jobGenres.iterator();
+
         setJob(jobs);
     }
 
@@ -111,10 +113,6 @@ public class JobManager {
             }
         }
         return false;
-    }
-
-    public boolean playerJobExists(Player player) {
-        return plugin.getSql().playerJobExists(player);
     }
 
     public Job getJobFromName(String name) {
@@ -135,41 +133,4 @@ public class JobManager {
     private List<String> getJobsFromRank(int rank) {
         return plugin.getSql().getJobsFromRank(rank);
     }
-
-    public void setPlayerJob(Player player, Job job) {
-        if(Objects.isNull(job)) {
-            plugin.getSql().leavePlayerJob(player);
-        } else {
-            plugin.getSql().setPlayerJob(player,job);
-        }
-
-    }
-
-    public Job getPlayerJob(Player player) {
-        String job_name = plugin.getSql().getPlayerJob(player);
-        Job job = getJobFromName(job_name);
-
-        return job;
-    }
-
-    public void addExp(Player player, int exp) {
-        if (plugin.getSql().getExp(player) > plugin.getMyconfig().getNeedExpLevelUp()) {
-            this.levelUp(player);
-            plugin.getSql().updateExp(player,0);
-        }
-
-        PlayerChangeExpEvent event = new PlayerChangeExpEvent(player);
-        plugin.getServer().getPluginManager().callEvent(event);
-
-        plugin.getSql().updateExp(player,plugin.getSql().getExp(player) + exp);
-    }
-
-    public void levelUp(Player player) {
-        int level = plugin.getSql().getLevel(player) + 1;
-        PlayerLevelUpEvent event = new PlayerLevelUpEvent(player,level);
-        plugin.getServer().getPluginManager().callEvent(event);
-
-        plugin.getSql().updateLevel(player,level);
-    }
-
 }

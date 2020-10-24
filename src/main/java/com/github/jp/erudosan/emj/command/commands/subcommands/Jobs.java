@@ -3,6 +3,7 @@ package com.github.jp.erudosan.emj.command.commands.subcommands;
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
 import com.github.jp.erudosan.emj.job.JobManager;
+import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.entity.Player;
 
 public class Jobs extends SubCommand {
@@ -15,9 +16,9 @@ public class Jobs extends SubCommand {
 
     @Override
     public void onCommand(Player player, String[] args) {
-        JobManager jobManager = plugin.getJobManager();
+        JobPlayer jobPlayer = plugin.getJobPlayer();
 
-        if(!jobManager.playerJobExists(player)) {
+        if(!jobPlayer.playerJobExists(player)) {
             return;
         }
 
