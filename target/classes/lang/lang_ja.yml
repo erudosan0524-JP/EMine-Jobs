@@ -6,11 +6,11 @@ error_command: "&cエラーが検出されました"
 player_join_message: "{player}さんがログインしました。"
 player_join_message1: "お久しぶり！{player}さん！"
 player_join_message2: "日ぶりですね！"
-player_firstjoin_message: "&d{player}sさんが初めてログインしました！"
+player_firstjoin_message: "&d{player}さんが初めてログインしました！"
 
 
 # Command Message
-command_firstline: "&7============= &2EMine&7-&3Jobs &7=============" 13 4 5 13 2
+command_firstline: "&7============= &2EMine&7-&3Jobs &7============="
 command_endline:  "&7======================================"
 
 #LevelUp Message
@@ -35,7 +35,7 @@ join_error_message: "あなたが指定した職業はまだ就くことがで�
 leave_message: "あなたは現在の仕事を辞めました"
 
 # "/emj jobs" Command Message
-jobs_message_first: "&7=========== &2現在就くことができる職業 &7==========="
+jobs_message_first: "&7========= &2現在就くことができる職業 &7=========="
 jobs_message_end:  "&7======================================"
 jobs_message_none: "現在あなたが就ける上位職業はありません。"
 

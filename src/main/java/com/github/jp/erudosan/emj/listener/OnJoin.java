@@ -2,6 +2,7 @@ package com.github.jp.erudosan.emj.listener;
 
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.JobManager;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -44,13 +45,13 @@ public class OnJoin implements Listener {
             calendar2.setTime(lastLogin);
             int lastLoginDate = calendar2.get(Calendar.DAY_OF_YEAR);
 
-            int diff = lastLoginDate - now;
+            int diff = now - lastLoginDate;
 
             player.sendMessage(plugin.getHandler().getCaption(player,"player_join_message1")
                     + diff + plugin.getHandler().getCaption("player_join_message2"));
             plugin.getSql().updatePlayer(player,sqlDate);
         } else {
-            player.sendMessage(plugin.getHandler().getCaption(player,"player_firstjoin_message"));
+            Bukkit.broadcastMessage(plugin.getHandler().getCaption(player, "player_firstjoin_message"));
 
             ItemStack menuStick = new ItemStack(Material.STICK, 1);
             ItemMeta stickMeta = menuStick.getItemMeta();
