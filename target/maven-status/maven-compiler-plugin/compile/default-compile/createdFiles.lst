@@ -19,6 +19,7 @@ com\github\jp\erudosan\emj\listener\OnFish.class
 com\github\jp\erudosan\emj\utils\Config.class
 com\github\jp\erudosan\emj\job\jobs\lamber\Lamber.class
 com\github\jp\erudosan\emj\command\commands\subcommands\Stats.class
+com\github\jp\erudosan\emj\job\JobPlayer.class
 com\github\jp\erudosan\emj\command\commands\SubCommand.class
 com\github\jp\erudosan\emj\command\commands\subcommands\Jobs.class
 com\github\jp\erudosan\emj\listener\OnBlock.class

@@ -34,10 +34,9 @@ public class Join extends SubCommand {
                     if(!plugin.getSql().isSetPlayerJob(player)) {
                         plugin.getSql().setPlayerJob(player,job);
                     }
-
                 }
 
-                player.sendMessage(plugin.getHandler().getCaption("join_message1") + job.name().toUpperCase() + plugin.getHandler().getCaption("join_message2"));
+                player.sendMessage(plugin.getHandler().getCaption(player,"join_message"));
             }
         }
     }

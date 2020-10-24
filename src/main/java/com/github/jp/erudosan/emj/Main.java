@@ -3,6 +3,7 @@ package com.github.jp.erudosan.emj;
 
 import com.github.jp.erudosan.emj.command.CommandManager;
 import com.github.jp.erudosan.emj.event.PlayerLevelUpEvent;
+import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.listener.OnBlock;
 import com.github.jp.erudosan.emj.listener.OnCook;
@@ -17,10 +18,12 @@ import com.github.jp.erudosan.emj.utils.db.DBManager;
 import com.github.jp.erudosan.emj.utils.db.SQLGetterSetter;
 import lombok.Getter;
 import lombok.Setter;
+import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Main extends JavaPlugin {
@@ -43,6 +46,9 @@ public class Main extends JavaPlugin {
 
     @Getter
     private  JobManager jobManager;
+
+    @Getter
+    private HashMap<Player, List<Job>> canJoinJobs = new HashMap<>();
 
     @Override
     public void onDisable() {
