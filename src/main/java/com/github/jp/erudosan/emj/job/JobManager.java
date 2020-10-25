@@ -4,9 +4,10 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.event.PlayerChangeExpEvent;
 import com.github.jp.erudosan.emj.event.PlayerLevelUpEvent;
 import com.github.jp.erudosan.emj.job.jobs.chef.Chef;
-import com.github.jp.erudosan.emj.job.jobs.fisher.Fisher;
+import com.github.jp.erudosan.emj.job.jobs.fisher.*;
 import com.github.jp.erudosan.emj.job.jobs.hunter.Hunter;
-import com.github.jp.erudosan.emj.job.jobs.lamber.Lamber;
+import com.github.jp.erudosan.emj.job.jobs.lamber.*;
+import com.github.jp.erudosan.emj.job.jobs.miner.Gunner;
 import com.github.jp.erudosan.emj.job.jobs.miner.MinePro;
 import com.github.jp.erudosan.emj.job.jobs.miner.Miner;
 import lombok.Getter;
@@ -48,12 +49,21 @@ public class JobManager {
         //Miner
         jobs.add(new Miner());
         jobs.add(new MinePro());
+        jobs.add(new Gunner());
 
         //Lamber
         jobs.add(new Lamber());
+        jobs.add(new LamberPro());
+        jobs.add(new Farmer());
+        jobs.add(new Crafter());
+        jobs.add(new Ork());
 
         //Fisher
         jobs.add(new Fisher());
+        jobs.add(new FishPro());
+        jobs.add(new Enchanter());
+        jobs.add(new Wizard());
+        jobs.add(new Mage());
 
         //Chef
         jobs.add(new Chef());
