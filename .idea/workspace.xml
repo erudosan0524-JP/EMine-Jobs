@@ -29,18 +29,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Enchanter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/FishPro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Mage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Wizard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Crafter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Farmer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/LamberPro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Ork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/CanonShooter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Gunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/event/PlayerJobJoinEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/event/PlayerJobLeaveEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Join.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Join.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Leave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Leave.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603547950196</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="[add] add many job&#10;&#10;実装していなかった職業クラスの追加">
+      <created>1603627096941</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1603627096941</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -348,7 +348,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] add /leave command&#10;&#10;leaveコマンドの追加修正" />
     <MESSAGE value="[update] update Leave.java&#10;&#10;leaveコマンドの処理アップデート" />
     <MESSAGE value="[add] add IDEA project files.&#10;&#10;IDEAのプロジェクトファイルの追加" />
     <MESSAGE value="[add] add PlayerLevelUpEvent&#10;&#10;プレイヤーがレベルアップしたときのイベントを追加" />
@@ -373,7 +372,8 @@
     <MESSAGE value="[add] add add level Command&#10;&#10;／emj addlevel [player] [level] の追加" />
     <MESSAGE value="[fix] fix many bugs&#10;&#10;多くのバグを修正" />
     <MESSAGE value="[fix] fix lang_ja.yml&#10;&#10;lang_ja.ymlに書いてあった内容を変更" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix] fix lang_ja.yml&#10;&#10;lang_ja.ymlに書いてあった内容を変更" />
+    <MESSAGE value="[add] add many job&#10;&#10;実装していなかった職業クラスの追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] add many job&#10;&#10;実装していなかった職業クラスの追加" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
@@ -384,11 +384,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1602842817246" />
-    <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1603627048516">
+    <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1603632275414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1602736941591" />
-    <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603627048516" />
+    <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603632275414" />
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603614907800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -425,11 +425,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="225" width="582" height="586" key="RefactorJ.ExtractClass/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603526724221" />
-    <state x="427" y="205" key="Vcs.Push.Dialog.v2" timestamp="1603556324567">
+    <state x="427" y="205" key="Vcs.Push.Dialog.v2" timestamp="1603627099532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602739160745" />
-    <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603556324567" />
+    <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603627099532" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602639884212">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

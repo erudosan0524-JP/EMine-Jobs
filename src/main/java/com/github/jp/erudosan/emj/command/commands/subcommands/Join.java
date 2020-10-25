@@ -2,6 +2,7 @@ package com.github.jp.erudosan.emj.command.commands.subcommands;
 
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
+import com.github.jp.erudosan.emj.event.PlayerJobJoinEvent;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.job.JobPlayer;
@@ -40,6 +41,9 @@ public class Join extends SubCommand {
                         plugin.getSql().setPlayerJob(player,job);
                     }
                 }
+
+                PlayerJobJoinEvent event = new PlayerJobJoinEvent(player,job);
+                plugin.getServer().getPluginManager().callEvent(event);
 
                 player.sendMessage(plugin.getHandler().getCaption(player,"join_message"));
             }

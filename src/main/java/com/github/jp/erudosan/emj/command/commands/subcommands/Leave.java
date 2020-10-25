@@ -2,6 +2,7 @@ package com.github.jp.erudosan.emj.command.commands.subcommands;
 
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
+import com.github.jp.erudosan.emj.event.PlayerJobLeaveEvent;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.job.JobPlayer;
@@ -22,6 +23,9 @@ public class Leave extends SubCommand {
         if (jobPlayer.playerJobExists(player)) {
             player.sendMessage(plugin.getHandler().getCaption("leave_message"));
             jobPlayer.setPlayerJob(player,null);
+
+            PlayerJobLeaveEvent event = new PlayerJobLeaveEvent(player);
+            plugin.getServer().getPluginManager().callEvent(event);
         }
     }
 
