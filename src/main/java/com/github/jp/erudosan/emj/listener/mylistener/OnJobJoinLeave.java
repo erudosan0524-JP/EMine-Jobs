@@ -12,6 +12,10 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Random;
+
 public class OnJobJoinLeave implements Listener {
 
     private Main plugin;
@@ -27,10 +31,9 @@ public class OnJobJoinLeave implements Listener {
         Job job = e.getJob();
 
         if(job instanceof Gunner) {
-            Gun AK47 = QualityArmory.getGunByName("AK-47");
+            Gun gun = QualityArmory.getGunByName("ak47");
 
-            player.getInventory().addItem(AK47.getItemStack());
-            player.getInventory().addItem(AK47.getAmmoType().getItemStack());
+            player.getInventory().addItem(gun.getItemStack());
 
             player.sendMessage("報酬として銃を手に入れた！");
         }

@@ -168,11 +168,8 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("UPDATE " + player_jobs_table + " SET job=?, exp=?, level=? WHERE uuid=?");
-            statement.setNull(1,Types.NULL);
-            statement.setInt(2,0);
-            statement.setInt(3,0);
-            statement.setString(4,player.getUniqueId().toString());
+                    .prepareStatement("DELETE FROM " + player_jobs_table + " WHERE uuid=?");
+            statement.setString(1,player.getUniqueId().toString());
             statement.executeUpdate();
 
         } catch (SQLException throwable) {
