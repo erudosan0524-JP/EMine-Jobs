@@ -4,7 +4,6 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
 import com.github.jp.erudosan.emj.event.PlayerJobJoinEvent;
 import com.github.jp.erudosan.emj.job.Job;
-import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.entity.Player;
 
