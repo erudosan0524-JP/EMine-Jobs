@@ -23,9 +23,10 @@ public class AddLevel extends SubCommand {
             int level = 0;
             Player _player = null;
 
+            //emj addlevel [player] [level]
             try {
-                _player = Bukkit.getPlayer(args[1]);
-                level = Integer.parseInt(args[2]);
+                _player = Bukkit.getPlayer(args[0]);
+                level = Integer.parseInt(args[1]);
             } catch (NumberFormatException e) {
                 e.printStackTrace();
             }

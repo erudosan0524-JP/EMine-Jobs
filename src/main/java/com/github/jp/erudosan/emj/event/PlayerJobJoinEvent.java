@@ -23,7 +23,7 @@ public class PlayerJobJoinEvent extends Event {
     }
 
     public Job getJob() {
-        return this.getJob();
+        return this.job;
     }
 
     public static HandlerList getHandlerList() {
