@@ -10,6 +10,7 @@ import com.github.jp.erudosan.emj.listener.OnBlock;
 import com.github.jp.erudosan.emj.listener.OnCook;
 import com.github.jp.erudosan.emj.listener.OnFish;
 import com.github.jp.erudosan.emj.listener.OnJoin;
+import com.github.jp.erudosan.emj.listener.mylistener.OnJobJoinLeave;
 import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerChangeExp;
 import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerLevelUp;
 import com.github.jp.erudosan.emj.utils.CaptionHandler;
@@ -86,6 +87,7 @@ public class Main extends JavaPlugin {
 
         new OnPlayerLevelUp(getInstance());
         new OnPlayerChangeExp(getInstance());
+        new OnJobJoinLeave(getInstance());
     }
 
     private Main getInstance() {

@@ -7,6 +7,7 @@ import com.github.jp.erudosan.emj.job.JobGenre;
 import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.job.JobPlayer;
 import com.github.jp.erudosan.emj.job.jobs.miner.MinePro;
+import org.bukkit.Effect;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -29,7 +30,7 @@ public class OnPlayerLevelUp implements Listener {
         Player player = e.getPlayer();
         JobPlayer jobPlayer = plugin.getJobPlayer();
         player.sendMessage(plugin.getHandler().getCaption("level_up_message"));
-        player.playSound(player.getLocation(), Sound.ENTITY_ENDER_DRAGON_DEATH,1F,0.5F);
+        player.getWorld().playEffect(player.getLocation(), Effect.FIREWORK_SHOOT,0,10);
 
         if(!jobPlayer.playerJobExists(player)) {
             return;
