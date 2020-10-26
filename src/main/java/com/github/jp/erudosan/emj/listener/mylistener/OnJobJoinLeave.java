@@ -61,6 +61,16 @@ public class OnJobJoinLeave implements Listener {
 
     @EventHandler
     public void onJobLeave(PlayerJobLeaveEvent e) {
+        Player player = e.getPlayer();
+        Job job = e.getJob();
+
+        if(job instanceof Gunner) {
+            Gun gun = QualityArmory.getGunByName("ak47");
+
+            if(player.getInventory().contains(gun.getItemStack())) {
+                player.getInventory().remove(gun.getItemStack());
+            }
+        }
 
     }
 }
