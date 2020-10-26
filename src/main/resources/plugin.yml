@@ -3,6 +3,7 @@ version: "${project.version}"
 main: "${project.groupId}.Main"
 author: 'erudo'
 api-version: 1.13
+depend: [QualityArmory]
 commands:
   emj:
     description: EMine-Jobs Plugin

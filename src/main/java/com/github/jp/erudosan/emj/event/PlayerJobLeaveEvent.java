@@ -1,10 +1,9 @@
 package com.github.jp.erudosan.emj.event;
 
-import com.github.jp.erudosan.emj.job.Job;
+import com.sun.istack.internal.NotNull;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
-import org.jetbrains.annotations.NotNull;
 
 public class PlayerJobLeaveEvent extends Event {
 
