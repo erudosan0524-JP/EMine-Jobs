@@ -22,9 +22,12 @@ public class Leave extends SubCommand {
 
         if (jobPlayer.playerJobExists(player)) {
             player.sendMessage(plugin.getHandler().getCaption("leave_message"));
+
+            Job job = jobPlayer.getPlayerJob(player);
+
             jobPlayer.setPlayerJob(player,null);
 
-            PlayerJobLeaveEvent event = new PlayerJobLeaveEvent(player);
+            PlayerJobLeaveEvent event = new PlayerJobLeaveEvent(player,job);
             plugin.getServer().getPluginManager().callEvent(event);
         }
     }
