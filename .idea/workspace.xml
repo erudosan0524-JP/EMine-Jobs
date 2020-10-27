@@ -29,12 +29,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/FarmMaster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Goblin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/LamberMaster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/MineCrafter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Alchemist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/ArkMage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/DemonAvenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/FishMaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/GunMaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/MineMaster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnDeath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnDeath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,10 +249,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="[add] add OnDeath listener&#10;&#10;OnDeathリスナーの追加" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1603768144445">
+    <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1603768938641">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1603768144445" />
+    <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1603768938641" />
     <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1603696024944">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -259,10 +261,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1603160737606" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1603697067495">
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1603768344357">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1603697067495" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1603768344357" />
     <state x="771" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603166594448">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
