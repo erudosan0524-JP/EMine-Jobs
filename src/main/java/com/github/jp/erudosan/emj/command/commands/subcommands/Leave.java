@@ -21,9 +21,9 @@ public class Leave extends SubCommand {
         JobPlayer jobPlayer = plugin.getJobPlayer();
 
         if (jobPlayer.playerJobExists(player)) {
-            player.sendMessage(plugin.getHandler().getCaption("leave_message"));
-
             Job job = jobPlayer.getPlayerJob(player);
+
+            player.sendMessage(plugin.getHandler().getCaption("leave_message"));
 
             jobPlayer.setPlayerJob(player,null);
 

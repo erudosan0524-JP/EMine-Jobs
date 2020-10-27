@@ -71,6 +71,5 @@ public class OnJobJoinLeave implements Listener {
                 player.getInventory().remove(gun.getItemStack());
             }
         }
-
     }
 }

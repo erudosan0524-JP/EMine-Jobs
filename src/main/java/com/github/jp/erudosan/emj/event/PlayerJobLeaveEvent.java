@@ -13,15 +13,17 @@ public class PlayerJobLeaveEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
 
     public PlayerJobLeaveEvent(Player player, Job job) {
-        this.job = job;
         this.player = player;
+        this.job = job;
     }
 
     public Player getPlayer() {
         return this.player;
     }
 
-    public Job getJob() {return this.job;}
+    public Job getJob() {
+        return this.job;
+    }
 
     public static HandlerList getHandlerList() {
         return handlers;
