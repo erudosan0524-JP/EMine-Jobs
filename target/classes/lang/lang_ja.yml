@@ -8,7 +8,6 @@ player_join_message1: "お久しぶり！{player}さん！"
 player_join_message2: "日ぶりですね！"
 player_firstjoin_message: "&d{player}さんが初めてログインしました！"
 
-
 # Command Message
 command_firstline: "&7============= &2EMine&7-&3Jobs &7============="
 command_endline:  "&7======================================"
@@ -53,3 +52,33 @@ lamber: "木こり師"
 fisher: "釣り師"
 chef: "調理師"
 hunter: "ハンター"
+
+#Jobs name (rank2)
+mine-pro: "マインプロ"
+lamber-pro: "ランバープロ"
+fish-pro: "フィッシュプロ"
+enchanter: "エンチャンター"
+
+#Jobs name (rank3)
+gunner: "ガンナー"
+farmer: "農夫"
+crafter: "クラフター"
+wizard: "ウィザード"
+
+#Jobs name (rank4)
+canon-shooter: "キャノンシューター"
+ork: "オーク"
+mage: "メイジ"
+
+#Jobs name (rank5)
+canon-master: "キャノンマスター"
+gun-master: "ガンマスター"
+mine-master: "マインマスター"
+goblin: "ゴブリン"
+farm-master: "ファームマスター"
+lamber-master: "ランバーマスター"
+minecrafter: "マインクラフター"
+fish-master: "フィッシュマスター"
+demon-avenger: "デーモンアベンジャー"
+ark-mage: "アークメイジ"
+alchemist: "錬金術師"
