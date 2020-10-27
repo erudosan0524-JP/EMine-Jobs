@@ -7,9 +7,7 @@ import com.github.jp.erudosan.emj.job.jobs.chef.Chef;
 import com.github.jp.erudosan.emj.job.jobs.fisher.*;
 import com.github.jp.erudosan.emj.job.jobs.hunter.Hunter;
 import com.github.jp.erudosan.emj.job.jobs.lamber.*;
-import com.github.jp.erudosan.emj.job.jobs.miner.Gunner;
-import com.github.jp.erudosan.emj.job.jobs.miner.MinePro;
-import com.github.jp.erudosan.emj.job.jobs.miner.Miner;
+import com.github.jp.erudosan.emj.job.jobs.miner.*;
 import lombok.Getter;
 import org.bukkit.entity.Player;
 
@@ -50,6 +48,9 @@ public class JobManager {
         jobs.add(new Miner());
         jobs.add(new MinePro());
         jobs.add(new Gunner());
+        jobs.add(new CanonShooter());
+        jobs.add(new GunMaster());
+        jobs.add(new MineMaster());
 
         //Lamber
         jobs.add(new Lamber());
@@ -68,6 +69,10 @@ public class JobManager {
         jobs.add(new Enchanter());
         jobs.add(new Wizard());
         jobs.add(new Mage());
+        jobs.add(new DemonAvenger());
+        jobs.add(new ArkMage());
+        jobs.add(new Alchemist());
+        jobs.add(new FishMaster());
 
         //Chef
         jobs.add(new Chef());
