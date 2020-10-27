@@ -57,6 +57,10 @@ public class JobManager {
         jobs.add(new Farmer());
         jobs.add(new Crafter());
         jobs.add(new Ork());
+        jobs.add(new Goblin());
+        jobs.add(new FarmMaster());
+        jobs.add(new LamberMaster());
+        jobs.add(new MineCrafter());
 
         //Fisher
         jobs.add(new Fisher());

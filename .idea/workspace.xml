@@ -29,7 +29,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnDeath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/FarmMaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Goblin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/LamberMaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/MineCrafter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnDeath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnDeath.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603696648975</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[add] add OnDeath listener&#10;&#10;OnDeathリスナーの追加">
+      <created>1603697065354</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603697065354</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,13 +243,14 @@
     <MESSAGE value="[update] update Job levelUp system&#10;&#10;jobのレベルアップシステムのアップデート" />
     <MESSAGE value="[update] update OnJobJoin Listener&#10;&#10;OnJobJoinLeave.javaのアップデート" />
     <MESSAGE value="[update] update OnJobJoinLeave.java&#10;&#10;OnJobJoinLeave.javaのアップデート" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] update OnJobJoinLeave.java&#10;&#10;OnJobJoinLeave.javaのアップデート" />
+    <MESSAGE value="[add] add OnDeath listener&#10;&#10;OnDeathリスナーの追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] add OnDeath listener&#10;&#10;OnDeathリスナーの追加" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1603167133738">
+    <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1603768144445">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1603167133738" />
+    <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1603768144445" />
     <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1603696024944">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -246,18 +259,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1603160737606" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1603696651380">
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1603697067495">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1603696651380" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1603697067495" />
     <state x="771" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603166594448">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="771" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1603166594448" />
-    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603160713962">
+    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603767047205">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1603160713962" />
+    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1603767047205" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602735309206">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
