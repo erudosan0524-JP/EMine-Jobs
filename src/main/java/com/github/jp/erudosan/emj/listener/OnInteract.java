@@ -16,6 +16,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class OnInteract implements Listener {
 
@@ -23,7 +24,7 @@ public class OnInteract implements Listener {
 
     public OnInteract(Main plugin) {
         this.plugin = plugin;
-        plugin.getServer().getPluginManager().registerEvents(this,plugin);
+        plugin.getServer().getPluginManager().registerEvents(this, plugin);
     }
 
     @EventHandler
@@ -31,13 +32,21 @@ public class OnInteract implements Listener {
         Player player = e.getPlayer();
         JobPlayer jobPlayer = plugin.getJobPlayer();
 
-        if(e.getAction() == Action.RIGHT_CLICK_BLOCK || e.getAction() == Action.RIGHT_CLICK_AIR) {
-            if (e.getItem() == Items.getCrafterItem()) {
-                if(jobPlayer.playerJobExists(player)) {
+        if (e.getMaterial() != Items.getCrafterItem().getType()) {
+            return;
+        }
+
+        if (!Objects.requireNonNull(e.getItem().getItemMeta()).hasDisplayName()) {
+            return;
+        }
+
+        if (e.getAction() == Action.RIGHT_CLICK_BLOCK || e.getAction() == Action.RIGHT_CLICK_AIR) {
+            if (e.getItem().getItemMeta().getDisplayName().equals(Objects.requireNonNull(Items.getCrafterItem().getItemMeta()).getDisplayName())) {
+                if (jobPlayer.playerJobExists(player)) {
                     Job job = jobPlayer.getPlayerJob(player);
 
-                    if(job.name().equalsIgnoreCase("crafter")) {
-                        player.openWorkbench(player.getLocation(),true);
+                    if (job.name().equalsIgnoreCase("crafter")) {
+                        player.openWorkbench(player.getLocation(), true);
                     }
                 }
             }
