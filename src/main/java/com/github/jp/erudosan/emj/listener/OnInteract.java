@@ -32,21 +32,31 @@ public class OnInteract implements Listener {
         Player player = e.getPlayer();
         JobPlayer jobPlayer = plugin.getJobPlayer();
 
-        if (e.getMaterial() != Items.getCrafterItem().getType()) {
-            return;
-        }
-
         if (!Objects.requireNonNull(e.getItem().getItemMeta()).hasDisplayName()) {
             return;
         }
 
-        if (e.getAction() == Action.RIGHT_CLICK_BLOCK || e.getAction() == Action.RIGHT_CLICK_AIR) {
-            if (e.getItem().getItemMeta().getDisplayName().equals(Objects.requireNonNull(Items.getCrafterItem().getItemMeta()).getDisplayName())) {
+        if (e.getAction() != Action.RIGHT_CLICK_BLOCK || e.getAction() != Action.RIGHT_CLICK_AIR) {
+            return;
+        }
+
+        if (e.getItem().getItemMeta().getDisplayName().equals(Objects.requireNonNull(Items.getCrafterItem().getItemMeta()).getDisplayName())) {
+            if(e.getMaterial() == Items.getCrafterItem().getType()) {
                 if (jobPlayer.playerJobExists(player)) {
                     Job job = jobPlayer.getPlayerJob(player);
 
                     if (job.name().equalsIgnoreCase("crafter")) {
                         player.openWorkbench(player.getLocation(), true);
+                    }
+                }
+            }
+        } else if(e.getItem().getItemMeta().getDisplayName().equals(Objects.requireNonNull(Items.getEnchanterItem().getItemMeta()).getDisplayName())) {
+            if(e.getMaterial() == Items.getEnchanterItem().getType()) {
+                if (jobPlayer.playerJobExists(player)) {
+                    Job job = jobPlayer.getPlayerJob(player);
+
+                    if (job.name().equalsIgnoreCase("enchanter")) {
+                        player.openEnchanting(player.getLocation(), true);
                     }
                 }
             }

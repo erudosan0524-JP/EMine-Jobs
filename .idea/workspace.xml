@@ -23,7 +23,7 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -31,7 +31,9 @@
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnInteract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/mylistener/OnJobJoinLeave.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/mylistener/OnJobJoinLeave.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/mylistener/OnJobJoinLeave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/mylistener/OnJobJoinLeave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/職業プラグイン企画書.md" beforeDir="false" afterPath="$PROJECT_DIR$/職業プラグイン企画書.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -381,7 +383,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -476,11 +478,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="225" width="582" height="586" key="RefactorJ.ExtractClass/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603526724221" />
-    <state x="427" y="205" key="Vcs.Push.Dialog.v2" timestamp="1603632456667">
+    <state x="427" y="205" key="Vcs.Push.Dialog.v2" timestamp="1603783493041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602739160745" />
-    <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603632456667" />
+    <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603783493041" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602639884212">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
