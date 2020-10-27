@@ -31,19 +31,16 @@ public class OnInteract implements Listener {
         Player player = e.getPlayer();
         JobPlayer jobPlayer = plugin.getJobPlayer();
 
-        if(e.getAction() != Action.RIGHT_CLICK_BLOCK || e.getAction() != Action.RIGHT_CLICK_AIR) {
-            return;
-        }
+        if(e.getAction() == Action.RIGHT_CLICK_BLOCK || e.getAction() == Action.RIGHT_CLICK_AIR) {
+            if (e.getItem() == Items.getCrafterItem()) {
+                if(jobPlayer.playerJobExists(player)) {
+                    Job job = jobPlayer.getPlayerJob(player);
 
-        if (e.getItem() == Items.getCrafterItem()) {
-            if(jobPlayer.playerJobExists(player)) {
-                Job job = jobPlayer.getPlayerJob(player);
-
-                if(job.name().equalsIgnoreCase("crafter")) {
-                    player.openWorkbench(player.getLocation(),true);
+                    if(job.name().equalsIgnoreCase("crafter")) {
+                        player.openWorkbench(player.getLocation(),true);
+                    }
                 }
             }
         }
-
     }
 }

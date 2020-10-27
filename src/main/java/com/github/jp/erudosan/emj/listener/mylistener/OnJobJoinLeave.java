@@ -48,10 +48,14 @@ public class OnJobJoinLeave implements Listener {
             itemName = "AK-47";
 
         } else if(job instanceof FishPro) {
+            itemName = Objects.requireNonNull(Items.getFisherProItem().getItemMeta()).getDisplayName();
             player.getInventory().addItem(Items.getFisherProItem());
 
         } else if(job instanceof Crafter) {
+            itemName = Objects.requireNonNull(Items.getCrafterItem().getItemMeta()).getDisplayName();
             player.getInventory().addItem(Items.getCrafterItem());
+        } else {
+            return;
         }
 
         player.sendMessage("報酬として" + itemName +ChatColor.WHITE + "を手に入れた！");

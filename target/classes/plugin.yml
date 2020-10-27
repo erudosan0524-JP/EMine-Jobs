@@ -1,5 +1,5 @@
 name: "EMine-Jobs"
-version: "0.1.8-SNAPSHOT"
+version: "0.1.9-SNAPSHOT"
 main: "com.github.jp.erudosan.emj.Main"
 author: 'erudo'
 api-version: 1.13
