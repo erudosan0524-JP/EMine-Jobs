@@ -23,7 +23,7 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -31,9 +31,10 @@
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnInteract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/mylistener/OnJobJoinLeave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/mylistener/OnJobJoinLeave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/職業プラグイン企画書.md" beforeDir="false" afterPath="$PROJECT_DIR$/職業プラグイン企画書.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/OnInteract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/OnInteract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/mylistener/OnJobJoinLeave.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/mylistener/OnJobJoinLeave.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/Items.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -369,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603782120448</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="[update] update OnJobJoinLeave listener&#10;&#10;Enchanterの就職アイテムの追加">
+      <created>1603787843816</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1603787843816</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -383,7 +391,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -397,7 +405,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[update] update Items.java&#10;&#10;Items.javaに食べ物のListを追加" />
     <MESSAGE value="[update] update Job System&#10;&#10;Jobにレベルアップ処理を追加" />
     <MESSAGE value="[remove] remove job_id from DB&#10;&#10;DBからjob_idカラムを削除" />
     <MESSAGE value="[update] update Leave Command&#10;&#10;leaveコマンドのアップデート1" />
@@ -422,7 +429,8 @@
     <MESSAGE value="[update] update" />
     <MESSAGE value="[add] OnInteract Event Listener&#10;&#10;InteractEventのListenerを追加" />
     <MESSAGE value="[update] update OnInteract&#10;&#10;OnInteractのアップデート" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] update OnInteract&#10;&#10;OnInteractのアップデート" />
+    <MESSAGE value="[update] update OnJobJoinLeave listener&#10;&#10;Enchanterの就職アイテムの追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] update OnJobJoinLeave listener&#10;&#10;Enchanterの就職アイテムの追加" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
@@ -450,22 +458,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603022539679" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603782785759">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603792205936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603782785759" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603782785759">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603792205936" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603792205936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603782785759" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603782785759">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603792205936" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603792205935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603782785759" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603782785759">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603792205935" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603792205936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603782785759" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603792205936" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1603679086037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
