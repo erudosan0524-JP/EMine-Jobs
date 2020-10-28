@@ -205,4 +205,20 @@ public class Items {
 
         return CraftTool;
     }
+
+    public static ItemStack getEnchanterItem() {
+        ItemStack EnchantItem = new ItemStack(Material.BOOK,1);
+        ItemMeta meta = EnchantItem.getItemMeta();
+
+        String itemName = ChatColor.AQUA + "エンチャントツール";
+        meta.setDisplayName(itemName);
+        List<String> lore = new ArrayList<>();
+        lore.add(ChatColor.GRAY + "右クリックで使用できる");
+        lore.add(ChatColor.GRAY + "携帯型エンチャントテーブル");
+        meta.setLore(lore);
+
+        EnchantItem.setItemMeta(meta);
+
+        return EnchantItem;
+    }
 }

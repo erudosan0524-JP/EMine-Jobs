@@ -32,21 +32,39 @@ public class OnInteract implements Listener {
         Player player = e.getPlayer();
         JobPlayer jobPlayer = plugin.getJobPlayer();
 
-        if (e.getMaterial() != Items.getCrafterItem().getType()) {
+        ItemStack itemMain = player.getInventory().getItemInMainHand();
+        ItemStack itemOff = player.getInventory().getItemInOffHand();
+
+        if (!itemMain.hasItemMeta() || !itemOff.hasItemMeta()) {
             return;
         }
 
-        if (!Objects.requireNonNull(e.getItem().getItemMeta()).hasDisplayName()) {
+        if(!itemMain.getItemMeta().hasDisplayName() || !itemOff.getItemMeta().hasDisplayName()) {
             return;
         }
 
         if (e.getAction() == Action.RIGHT_CLICK_BLOCK || e.getAction() == Action.RIGHT_CLICK_AIR) {
-            if (e.getItem().getItemMeta().getDisplayName().equals(Objects.requireNonNull(Items.getCrafterItem().getItemMeta()).getDisplayName())) {
-                if (jobPlayer.playerJobExists(player)) {
-                    Job job = jobPlayer.getPlayerJob(player);
 
-                    if (job.name().equalsIgnoreCase("crafter")) {
-                        player.openWorkbench(player.getLocation(), true);
+            if (itemMain.getItemMeta().getDisplayName().equals(Items.getCrafterItem().getItemMeta().hasDisplayName())
+                    || itemOff.getItemMeta().getDisplayName().equals(Items.getCrafterItem().getItemMeta().hasDisplayName())) {
+                if(itemMain.getType() == Items.getCrafterItem().getType() || itemOff.getType() == Items.getCrafterItem().getType()) {
+                    if (jobPlayer.playerJobExists(player)) {
+                        Job job = jobPlayer.getPlayerJob(player);
+
+                        if (job.name().equalsIgnoreCase("crafter")) {
+                            player.openWorkbench(player.getLocation(), true);
+                        }
+                    }
+                }
+            } else if(itemMain.getItemMeta().getDisplayName().equals(Items.getEnchanterItem().getItemMeta().hasDisplayName())
+                    || itemOff.getItemMeta().getDisplayName().equals(Items.getEnchanterItem().getItemMeta().hasDisplayName())) {
+                if(itemMain.getType() == Items.getEnchanterItem().getType() || itemOff.getType() == Items.getEnchanterItem().getType()) {
+                    if (jobPlayer.playerJobExists(player)) {
+                        Job job = jobPlayer.getPlayerJob(player);
+
+                        if (job.name().equalsIgnoreCase("enchanter")) {
+                            player.openEnchanting(player.getLocation(), true);
+                        }
                     }
                 }
             }

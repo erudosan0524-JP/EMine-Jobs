@@ -4,6 +4,7 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.event.PlayerJobJoinEvent;
 import com.github.jp.erudosan.emj.event.PlayerJobLeaveEvent;
 import com.github.jp.erudosan.emj.job.Job;
+import com.github.jp.erudosan.emj.job.jobs.fisher.Enchanter;
 import com.github.jp.erudosan.emj.job.jobs.fisher.FishPro;
 import com.github.jp.erudosan.emj.job.jobs.lamber.Crafter;
 import com.github.jp.erudosan.emj.job.jobs.miner.Gunner;
@@ -36,7 +37,7 @@ public class OnJobJoinLeave implements Listener {
         Player player = e.getPlayer();
         Job job = e.getJob();
 
-        String itemName = null;
+        String itemName = "";
         List<String> lores = new ArrayList<>();
 
         if(job instanceof Gunner) {
@@ -54,6 +55,9 @@ public class OnJobJoinLeave implements Listener {
         } else if(job instanceof Crafter) {
             itemName = Objects.requireNonNull(Items.getCrafterItem().getItemMeta()).getDisplayName();
             player.getInventory().addItem(Items.getCrafterItem());
+        } else if(job instanceof Enchanter){
+            itemName = Objects.requireNonNull(Items.getEnchanterItem().getItemMeta()).getDisplayName();
+            player.getInventory().addItem(Items.getEnchanterItem());
         } else {
             return;
         }
