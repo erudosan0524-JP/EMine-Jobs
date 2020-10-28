@@ -35,7 +35,11 @@ public class OnInteract implements Listener {
         ItemStack itemMain = player.getInventory().getItemInMainHand();
         ItemStack itemOff = player.getInventory().getItemInOffHand();
 
-        if (!itemMain.getItemMeta().hasDisplayName() || itemOff.getItemMeta().hasDisplayName()) {
+        if (!itemMain.hasItemMeta() || !itemOff.hasItemMeta()) {
+            return;
+        }
+
+        if(!itemMain.getItemMeta().hasDisplayName() || !itemOff.getItemMeta().hasDisplayName()) {
             return;
         }
 

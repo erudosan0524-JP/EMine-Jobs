@@ -32,9 +32,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnInteract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/OnInteract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/OnInteract.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/mylistener/OnJobJoinLeave.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/mylistener/OnJobJoinLeave.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/Items.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -377,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603787843816</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="[update] update OnInteract &#10;&#10;OnInteractのアップデート">
+      <created>1603868013817</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1603868013817</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -405,7 +409,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[update] update Job System&#10;&#10;Jobにレベルアップ処理を追加" />
     <MESSAGE value="[remove] remove job_id from DB&#10;&#10;DBからjob_idカラムを削除" />
     <MESSAGE value="[update] update Leave Command&#10;&#10;leaveコマンドのアップデート1" />
     <MESSAGE value="[update] update Miner level up event&#10;&#10;Minerのレベルアップ時のイベントを追加" />
@@ -430,7 +433,8 @@
     <MESSAGE value="[add] OnInteract Event Listener&#10;&#10;InteractEventのListenerを追加" />
     <MESSAGE value="[update] update OnInteract&#10;&#10;OnInteractのアップデート" />
     <MESSAGE value="[update] update OnJobJoinLeave listener&#10;&#10;Enchanterの就職アイテムの追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] update OnJobJoinLeave listener&#10;&#10;Enchanterの就職アイテムの追加" />
+    <MESSAGE value="[update] update OnInteract &#10;&#10;OnInteractのアップデート" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] update OnInteract &#10;&#10;OnInteractのアップデート" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
@@ -486,11 +490,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="225" width="582" height="586" key="RefactorJ.ExtractClass/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603526724221" />
-    <state x="427" y="205" key="Vcs.Push.Dialog.v2" timestamp="1603783493041">
+    <state x="427" y="205" key="Vcs.Push.Dialog.v2" timestamp="1603868015629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602739160745" />
-    <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603783493041" />
+    <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603868015629" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602639884212">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
