@@ -83,6 +83,7 @@ public class Main extends JavaPlugin {
         new OnJoin(getInstance());
         new OnDeath(getInstance());
         new OnInteract(getInstance());
+        new OnDropItem(getInstance());
 
         new OnPlayerLevelUp(getInstance());
         new OnPlayerChangeExp(getInstance());

@@ -23,15 +23,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnDropItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/mylistener/OnJobJoinLeave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/mylistener/OnJobJoinLeave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -381,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603868013817</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="[add] add Gui.java&#10;&#10;Gui.javaの追加">
+      <created>1603947933100</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1603947933100</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -395,7 +402,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -409,8 +416,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[remove] remove job_id from DB&#10;&#10;DBからjob_idカラムを削除" />
-    <MESSAGE value="[update] update Leave Command&#10;&#10;leaveコマンドのアップデート1" />
     <MESSAGE value="[update] update Miner level up event&#10;&#10;Minerのレベルアップ時のイベントを追加" />
     <MESSAGE value="[add] add PlayerJoinEvent&#10;&#10;PlayerJoinEventの処理追加" />
     <MESSAGE value="[update] update join event&#10;&#10;joinイベントのアップデート" />
@@ -434,7 +439,9 @@
     <MESSAGE value="[update] update OnInteract&#10;&#10;OnInteractのアップデート" />
     <MESSAGE value="[update] update OnJobJoinLeave listener&#10;&#10;Enchanterの就職アイテムの追加" />
     <MESSAGE value="[update] update OnInteract &#10;&#10;OnInteractのアップデート" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] update OnInteract &#10;&#10;OnInteractのアップデート" />
+    <MESSAGE value="[add]" />
+    <MESSAGE value="[add] add Gui.java&#10;&#10;Gui.javaの追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] add Gui.java&#10;&#10;Gui.javaの追加" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
