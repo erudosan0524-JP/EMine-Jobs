@@ -29,7 +29,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnDropItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/CMIGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/CMIGuiButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiRows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" afterDir="false" />
     </list>
@@ -76,6 +79,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.github.jp.erudosan.emj.gui" />
       <recent name="com.github.jp.erudosan.emj.job.jobs.fisher" />
     </key>
   </component>
@@ -388,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603947933100</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="[add] add OnDropItem&#10;&#10;プレイヤーがアイテムをDROPしたときの処理追加">
+      <created>1603948800540</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1603948800540</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -416,7 +427,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[update] update Miner level up event&#10;&#10;Minerのレベルアップ時のイベントを追加" />
     <MESSAGE value="[add] add PlayerJoinEvent&#10;&#10;PlayerJoinEventの処理追加" />
     <MESSAGE value="[update] update join event&#10;&#10;joinイベントのアップデート" />
     <MESSAGE value="[update] update job name in Stats&#10;&#10;ステータスの職業名を日本語対応に" />
@@ -441,7 +451,8 @@
     <MESSAGE value="[update] update OnInteract &#10;&#10;OnInteractのアップデート" />
     <MESSAGE value="[add]" />
     <MESSAGE value="[add] add Gui.java&#10;&#10;Gui.javaの追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] add Gui.java&#10;&#10;Gui.javaの追加" />
+    <MESSAGE value="[add] add OnDropItem&#10;&#10;プレイヤーがアイテムをDROPしたときの処理追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] add OnDropItem&#10;&#10;プレイヤーがアイテムをDROPしたときの処理追加" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
