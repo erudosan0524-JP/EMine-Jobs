@@ -23,18 +23,20 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:dev" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/CMIGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/CMIGuiButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiRows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUIRows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiIcon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnClickInv.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/CMIGui.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/CMIGuiButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiRows.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +46,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -51,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -399,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603948800540</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="[add] add Gui class&#10;&#10;Guiクラスの追加">
+      <created>1603952751601</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1603952751601</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -413,7 +423,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="dev" />
                       </list>
                     </value>
                   </entry>
@@ -427,7 +437,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] add PlayerJoinEvent&#10;&#10;PlayerJoinEventの処理追加" />
     <MESSAGE value="[update] update join event&#10;&#10;joinイベントのアップデート" />
     <MESSAGE value="[update] update job name in Stats&#10;&#10;ステータスの職業名を日本語対応に" />
     <MESSAGE value="[update] update CaptionHandler&#10;&#10;プレイヤー名と職業をlang.ymlで設定できるように" />
@@ -452,7 +461,8 @@
     <MESSAGE value="[add]" />
     <MESSAGE value="[add] add Gui.java&#10;&#10;Gui.javaの追加" />
     <MESSAGE value="[add] add OnDropItem&#10;&#10;プレイヤーがアイテムをDROPしたときの処理追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] add OnDropItem&#10;&#10;プレイヤーがアイテムをDROPしたときの処理追加" />
+    <MESSAGE value="[add] add Gui class&#10;&#10;Guiクラスの追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] add Gui class&#10;&#10;Guiクラスの追加" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
@@ -472,10 +482,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603614907800" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603009000016">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2610" y="431" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603954270024">
+      <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603009000016" />
+    <state x="2610" y="431" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1603954270024" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603022539679">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

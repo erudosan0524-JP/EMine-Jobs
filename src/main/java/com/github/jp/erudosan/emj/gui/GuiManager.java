@@ -1,61 +1,53 @@
 package com.github.jp.erudosan.emj.gui;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.job.Job;
-import com.github.jp.erudosan.emj.job.JobPlayer;
-import org.bukkit.entity.Player;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.inventory.Inventory;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Objects;
-import java.util.UUID;
+import java.util.*;
 
 public class GuiManager {
 
     private Main plugin;
 
-    private static HashMap<UUID,CMIGui> map = new HashMap<>();
+    private Inventory inv;
+    private GUIRows guiRows;
 
-    public GuiManager(Main plugin){
+    private HashMap<Integer, GuiIcon> icons = new HashMap<Integer, GuiIcon>();
+
+    public GuiManager(Main plugin) {
         this.plugin = plugin;
     }
 
-    public void openJobBrowseGUI(Player player) {
-        ArrayList<Job> jobList = new ArrayList<>();
-        JobPlayer jobPlayer = plugin.getJobPlayer();
-
-        jobList.addAll(jobPlayer.canJoinJobs(player));
-
+    public void generateInventory(GUIRows rows) {
+        inv = Bukkit.createInventory(null,rows.getRows(), ChatColor.BOLD + "TEST Inventory");
 
 
     }
 
-    public static boolean isOpenedGui(Player player) {
-        CMIGui gui = map.get(player.getUniqueId());
+    public void autoResize() {
+        int max = 0;
 
-        if(Objects.isNull(gui)) {
-            return false;
+        for(Map.Entry<Integer, GuiIcon> one : this.icons.entrySet()) {
+            if(one.getKey() > max) {
+                max = one.getKey();
+            }
         }
 
-        if(Objects.isNull(player.getOpenInventory())) {
-            return false;
+        if(max < 9) {
+            this.guiRows = GUIRows.r1;
+        } else if(max < 18) {
+            this.guiRows = GUIRows.r2;
+        } else if(max < 27) {
+            this.guiRows = GUIRows.r3;
+        } else if(max < 36) {
+            this.guiRows = GUIRows.r4;
+        } else if(max < 45) {
+            this.guiRows = GUIRows.r5;
+        } else {
+            this.guiRows = GUIRows.r6;
         }
 
-        return true;
-    }
-
-    public static CMIGui getGui(Player player) {
-        return map.get(player.getUniqueId());
-    }
-
-    public static void openGui(CMIGui gui) {
-        Player player = gui.getPlayer();
-
-        if(player.isSleeping()) return;
-
-        CMIGui oldGui = null;
-        if(isOpenedGui(player)) {
-            oldGui = getGui(player);
-        }
     }
 }
