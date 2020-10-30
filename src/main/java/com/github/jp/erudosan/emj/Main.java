@@ -47,10 +47,6 @@ public class Main extends JavaPlugin {
     @Getter
     private JobPlayer jobPlayer;
 
-    @Getter
-    private GuiManager guiManager;
-
-
     @Override
     public void onDisable() {
         super.onDisable();
@@ -77,9 +73,6 @@ public class Main extends JavaPlugin {
         //Setting Job
         jobPlayer = new JobPlayer(getInstance());
         jobPlayer.setup();
-        
-        //Setting GUI
-        guiManager = new GuiManager(getInstance());
 
         //Setting Listeners
         new OnBlock(getInstance());

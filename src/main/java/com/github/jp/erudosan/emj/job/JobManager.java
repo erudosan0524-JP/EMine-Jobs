@@ -45,40 +45,40 @@ public class JobManager {
 
     public void setup() {
         //Miner
-        jobs.add(new Miner());
-        jobs.add(new MinePro());
-        jobs.add(new Gunner());
-        jobs.add(new CanonShooter());
-        jobs.add(new GunMaster());
-        jobs.add(new MineMaster());
+        jobs.add(new Miner(plugin));
+        jobs.add(new MinePro(plugin));
+        jobs.add(new Gunner(plugin));
+        jobs.add(new CanonShooter(plugin));
+        jobs.add(new GunMaster(plugin));
+        jobs.add(new MineMaster(plugin));
 
         //Lamber
-        jobs.add(new Lamber());
-        jobs.add(new LamberPro());
-        jobs.add(new Farmer());
-        jobs.add(new Crafter());
-        jobs.add(new Ork());
-        jobs.add(new Goblin());
-        jobs.add(new FarmMaster());
-        jobs.add(new LamberMaster());
-        jobs.add(new MineCrafter());
+        jobs.add(new Lamber(plugin));
+        jobs.add(new LamberPro(plugin));
+        jobs.add(new Farmer(plugin));
+        jobs.add(new Crafter(plugin));
+        jobs.add(new Ork(plugin));
+        jobs.add(new Goblin(plugin));
+        jobs.add(new FarmMaster(plugin));
+        jobs.add(new LamberMaster(plugin));
+        jobs.add(new MineCrafter(plugin));
 
         //Fisher
-        jobs.add(new Fisher());
-        jobs.add(new FishPro());
-        jobs.add(new Enchanter());
-        jobs.add(new Wizard());
-        jobs.add(new Mage());
-        jobs.add(new DemonAvenger());
-        jobs.add(new ArkMage());
-        jobs.add(new Alchemist());
-        jobs.add(new FishMaster());
+        jobs.add(new Fisher(plugin));
+        jobs.add(new FishPro(plugin));
+        jobs.add(new Enchanter(plugin));
+        jobs.add(new Wizard(plugin));
+        jobs.add(new Mage(plugin));
+        jobs.add(new DemonAvenger(plugin));
+        jobs.add(new ArkMage(plugin));
+        jobs.add(new Alchemist(plugin));
+        jobs.add(new FishMaster(plugin));
 
         //Chef
-        jobs.add(new Chef());
+        jobs.add(new Chef(plugin));
 
         //Hunter
-        jobs.add(new Hunter());
+        jobs.add(new Hunter(plugin));
 
 
 

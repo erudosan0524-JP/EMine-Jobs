@@ -3,27 +3,46 @@ package com.github.jp.erudosan.emj.gui;
 import com.github.jp.erudosan.emj.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
 
 import java.util.*;
 
 public class GuiManager {
 
-    private Main plugin;
-
     private Inventory inv;
+    private Player player;
     private GUIRows guiRows;
+    private String title;
 
     private HashMap<Integer, GuiIcon> icons = new HashMap<Integer, GuiIcon>();
 
-    public GuiManager(Main plugin) {
-        this.plugin = plugin;
+    public GuiManager(Player player,GUIRows guiRows,String title) {
+        this.player = player;
+        this.guiRows = guiRows;
+        this.title = title;
+
+        generateInventory();
     }
 
-    public void generateInventory(GUIRows rows) {
-        inv = Bukkit.createInventory(null,rows.getRows(), ChatColor.BOLD + "TEST Inventory");
+    public GuiManager(Player player,String title) {
+        this.player = player;
+        this.title = title;
+    }
 
+    public void generateInventory() {
+        autoResize();
 
+        inv = Bukkit.createInventory(null,this.guiRows.getRows(), ChatColor.translateAlternateColorCodes('&',title));
+
+        initItems();
+    }
+
+    public void initItems() {
+        for(Map.Entry<Integer,GuiIcon> one : this.icons.entrySet()) {
+            inv.addItem(one.getValue().getItem());
+        }
     }
 
     public void autoResize() {
@@ -48,6 +67,21 @@ public class GuiManager {
         } else {
             this.guiRows = GUIRows.r6;
         }
-
     }
+
+    public void openInventory(Player player) {
+        player.openInventory(inv);
+    }
+
+    public void setIcons(List<GuiIcon> icons) {
+        for(int i=0; i < icons.size(); i++) {
+            this.icons.put(i,icons.get(i));
+        }
+    }
+
+    public void putIcon(GuiIcon icon) {
+        this.icons.put(icon.getSlot(),icon);
+    }
+
+
 }

@@ -4,7 +4,6 @@ import javafx.beans.binding.ObjectExpression;
 import lombok.Data;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.entity.Item;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -41,6 +40,12 @@ public class GuiIcon {
             meta.setDisplayName(ChatColor.translateAlternateColorCodes('&',name));
             this.item.setItemMeta(meta);
         }
+    }
+
+    public GuiIcon setItem(ItemStack item) {
+        this.item = item == null ? null : item.clone();
+
+        return this;
     }
 
 
