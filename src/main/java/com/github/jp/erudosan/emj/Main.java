@@ -3,6 +3,7 @@ package com.github.jp.erudosan.emj;
 
 import com.github.jp.erudosan.emj.command.CommandManager;
 import com.github.jp.erudosan.emj.event.PlayerLevelUpEvent;
+import com.github.jp.erudosan.emj.gui.GuiManager;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.job.JobPlayer;
@@ -46,9 +47,6 @@ public class Main extends JavaPlugin {
     @Getter
     private JobPlayer jobPlayer;
 
-    @Getter
-    private HashMap<Player, List<Job>> canJoinJobs = new HashMap<>();
-
     @Override
     public void onDisable() {
         super.onDisable();
@@ -83,6 +81,7 @@ public class Main extends JavaPlugin {
         new OnJoin(getInstance());
         new OnDeath(getInstance());
         new OnInteract(getInstance());
+        new OnDropItem(getInstance());
 
         new OnPlayerLevelUp(getInstance());
         new OnPlayerChangeExp(getInstance());
