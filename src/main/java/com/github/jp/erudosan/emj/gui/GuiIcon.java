@@ -42,6 +42,15 @@ public class GuiIcon {
         }
     }
 
+    public GuiIcon(Material material, String name) {
+        this.item = new ItemStack(material,1);
+        if(Objects.nonNull(name)) {
+            ItemMeta meta = this.item.getItemMeta();
+            meta.setDisplayName(ChatColor.translateAlternateColorCodes('&',name));
+            this.item.setItemMeta(meta);
+        }
+    }
+
     public GuiIcon setItem(ItemStack item) {
         this.item = item == null ? null : item.clone();
 

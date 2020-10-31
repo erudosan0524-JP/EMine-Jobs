@@ -22,10 +22,11 @@ public class Gui extends SubCommand {
         //TODO: 職業一覧のGUIの実装。アイテムをクリックしたら職業に就ける
         GuiManager gui = new GuiManager(player,"Test");
         JobPlayer jobPlayer = plugin.getJobPlayer();
-        for(Job job : jobPlayer.getJobs()) {
-            gui.putIcon(job.ItemIcon());
+        for(Job job : jobPlayer.canJoinJobs(player)) {
+            gui.addIcon(job.ItemIcon());
         }
         gui.generateInventory();
+        gui.openInventory();
     }
 
     @Override

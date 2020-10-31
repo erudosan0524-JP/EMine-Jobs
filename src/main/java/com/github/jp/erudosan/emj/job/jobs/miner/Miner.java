@@ -36,7 +36,7 @@ public class Miner extends Job {
 
     @Override
     public GuiIcon ItemIcon() {
-        return null;
+        return new GuiIcon(Material.STONE_PICKAXE,plugin.getHandler().getCaption("miner"));
     }
 
     @Override

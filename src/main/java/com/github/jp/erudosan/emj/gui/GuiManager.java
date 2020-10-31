@@ -16,7 +16,8 @@ public class GuiManager {
     private GUIRows guiRows;
     private String title;
 
-    private HashMap<Integer, GuiIcon> icons = new HashMap<Integer, GuiIcon>();
+    private final HashMap<Integer, GuiIcon> icons = new HashMap<>();
+    private final List<GuiIcon> iconList = new ArrayList<>();
 
     public GuiManager(Player player,GUIRows guiRows,String title) {
         this.player = player;
@@ -36,6 +37,7 @@ public class GuiManager {
 
         inv = Bukkit.createInventory(null,this.guiRows.getRows(), ChatColor.translateAlternateColorCodes('&',title));
 
+        setIcons(iconList);
         initItems();
     }
 
@@ -69,18 +71,24 @@ public class GuiManager {
         }
     }
 
-    public void openInventory(Player player) {
+    public void openInventory() {
         player.openInventory(inv);
     }
 
     public void setIcons(List<GuiIcon> icons) {
         for(int i=0; i < icons.size(); i++) {
-            this.icons.put(i,icons.get(i));
+            if(Objects.isNull(icons.get(i).getSlot())) {
+                this.icons.put(i+1,icons.get(i));
+            }
         }
     }
 
-    public void putIcon(GuiIcon icon) {
-        this.icons.put(icon.getSlot(),icon);
+    public void addIcon(GuiIcon icon) {
+        if(Objects.isNull(icon.getSlot())) {
+            iconList.add(icon);
+        } else {
+            this.icons.put(icon.getSlot(),icon);
+        }
     }
 
 
