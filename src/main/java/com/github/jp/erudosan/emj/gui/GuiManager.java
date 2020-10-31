@@ -35,7 +35,7 @@ public class GuiManager {
     public void generateInventory() {
         autoResize();
 
-        inv = Bukkit.createInventory(null,this.guiRows.getRows(), ChatColor.translateAlternateColorCodes('&',title));
+        inv = Bukkit.createInventory(null,this.guiRows.getRows() * 9, ChatColor.translateAlternateColorCodes('&',title));
 
         setIcons(iconList);
         initItems();

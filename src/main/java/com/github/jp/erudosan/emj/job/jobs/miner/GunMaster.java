@@ -4,6 +4,8 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.gui.GuiIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
+import me.zombie_striker.qg.api.QualityArmory;
+import me.zombie_striker.qg.guns.Gun;
 import org.bukkit.entity.Player;
 
 public class GunMaster extends Job {
@@ -29,7 +31,8 @@ public class GunMaster extends Job {
 
     @Override
     public GuiIcon ItemIcon() {
-        return null;
+        Gun gun = QualityArmory.getGunByName("ak47");
+        return new GuiIcon(gun.getItemStack());
     }
 
     @Override

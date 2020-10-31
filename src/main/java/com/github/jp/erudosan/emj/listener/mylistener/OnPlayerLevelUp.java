@@ -38,7 +38,7 @@ public class OnPlayerLevelUp implements Listener {
 
         Job job = jobPlayer.getPlayerJob(player);
 
-        job.onLevelUp(plugin,player,e.getLevel());
+        job.onLevelUp(player,e.getLevel());
 
     }
 }

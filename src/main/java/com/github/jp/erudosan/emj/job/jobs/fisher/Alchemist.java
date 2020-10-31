@@ -31,7 +31,7 @@ public class Alchemist extends Job {
 
     @Override
     public GuiIcon ItemIcon() {
-        return new GuiIcon(2, Material.POTION, plugin.getHandler().getCaption("chef"));
+        return new GuiIcon(Material.EXPERIENCE_BOTTLE, plugin.getHandler().getCaption("chef"));
     }
 
     @Override

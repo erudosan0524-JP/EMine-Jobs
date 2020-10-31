@@ -4,6 +4,7 @@ import javafx.beans.binding.ObjectExpression;
 import lombok.Data;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -38,8 +39,17 @@ public class GuiIcon {
         if(Objects.nonNull(name)) {
             ItemMeta meta = this.item.getItemMeta();
             meta.setDisplayName(ChatColor.translateAlternateColorCodes('&',name));
+            meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+            meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
+            meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+            meta.addItemFlags(ItemFlag.HIDE_DESTROYS);
+            meta.addItemFlags(ItemFlag.HIDE_DYE);
             this.item.setItemMeta(meta);
         }
+    }
+
+    public GuiIcon(ItemStack item) {
+        this.item = item;
     }
 
     public GuiIcon(Material material, String name) {
@@ -47,6 +57,11 @@ public class GuiIcon {
         if(Objects.nonNull(name)) {
             ItemMeta meta = this.item.getItemMeta();
             meta.setDisplayName(ChatColor.translateAlternateColorCodes('&',name));
+            meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+            meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
+            meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+            meta.addItemFlags(ItemFlag.HIDE_DESTROYS);
+            meta.addItemFlags(ItemFlag.HIDE_DYE);
             this.item.setItemMeta(meta);
         }
     }

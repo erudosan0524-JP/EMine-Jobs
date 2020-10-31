@@ -4,7 +4,10 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.gui.GuiIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 public class Mage extends Job {
     public Mage(Main plugin) {
@@ -28,7 +31,7 @@ public class Mage extends Job {
 
     @Override
     public GuiIcon ItemIcon() {
-        return null;
+        return new GuiIcon(Material.STICK,plugin.getHandler().getCaption("mage"));
     }
 
     @Override
