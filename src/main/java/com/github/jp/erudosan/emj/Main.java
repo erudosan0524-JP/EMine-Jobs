@@ -3,13 +3,11 @@ package com.github.jp.erudosan.emj;
 
 import com.github.jp.erudosan.emj.command.CommandManager;
 import com.github.jp.erudosan.emj.event.PlayerLevelUpEvent;
+import com.github.jp.erudosan.emj.gui.GuiManager;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.job.JobPlayer;
-import com.github.jp.erudosan.emj.listener.OnBlock;
-import com.github.jp.erudosan.emj.listener.OnCook;
-import com.github.jp.erudosan.emj.listener.OnFish;
-import com.github.jp.erudosan.emj.listener.OnJoin;
+import com.github.jp.erudosan.emj.listener.*;
 import com.github.jp.erudosan.emj.listener.mylistener.OnJobJoinLeave;
 import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerChangeExp;
 import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerLevelUp;
@@ -49,9 +47,6 @@ public class Main extends JavaPlugin {
     @Getter
     private JobPlayer jobPlayer;
 
-    @Getter
-    private HashMap<Player, List<Job>> canJoinJobs = new HashMap<>();
-
     @Override
     public void onDisable() {
         super.onDisable();
@@ -84,6 +79,9 @@ public class Main extends JavaPlugin {
         new OnFish(getInstance());
         new OnCook(getInstance());
         new OnJoin(getInstance());
+        new OnDeath(getInstance());
+        new OnInteract(getInstance());
+        new OnDropItem(getInstance());
 
         new OnPlayerLevelUp(getInstance());
         new OnPlayerChangeExp(getInstance());

@@ -35,6 +35,8 @@ public class CommandManager implements CommandExecutor {
         this.commands.add(new Leave(plugin));
         this.commands.add(new Jobs(plugin));
         this.commands.add(new AddLevel(plugin));
+        this.commands.add(new Gui(plugin));
+
 
     }
 
