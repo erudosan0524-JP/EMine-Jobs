@@ -207,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603769571230</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="[update] update OnDeath listener&#10;&#10;OnDeathListenerのアップデート">
+      <created>1603770081699</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1603770081699</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +260,8 @@
     <MESSAGE value="[add] add OnDeath listener&#10;&#10;OnDeathリスナーの追加" />
     <MESSAGE value="[add] add many jobs&#10;&#10;多くのJobを追加" />
     <MESSAGE value="[update] update lang_ja.yml&#10;&#10;lang_ja.ymlに新しいjobsの設定追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] update lang_ja.yml&#10;&#10;lang_ja.ymlに新しいjobsの設定追加" />
+    <MESSAGE value="[update] update OnDeath listener&#10;&#10;OnDeathListenerのアップデート" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] update OnDeath listener&#10;&#10;OnDeathListenerのアップデート" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1603768938641">
@@ -268,10 +276,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1603160737606" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1603769094563">
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1603770083121">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1603769094563" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1603770083121" />
     <state x="771" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603166594448">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
