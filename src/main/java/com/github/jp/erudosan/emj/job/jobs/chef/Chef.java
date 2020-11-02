@@ -1,13 +1,11 @@
 package com.github.jp.erudosan.emj.job.jobs.chef;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.command.commands.subcommands.Gui;
-import com.github.jp.erudosan.emj.gui.GuiIcon;
+import com.github.jp.erudosan.emj.utils.gui.GuiIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 
 public class Chef extends Job {
 

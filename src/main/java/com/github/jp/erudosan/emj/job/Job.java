@@ -1,9 +1,8 @@
 package com.github.jp.erudosan.emj.job;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.gui.GuiIcon;
+import com.github.jp.erudosan.emj.utils.gui.GuiIcon;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 
 public abstract class Job {
 

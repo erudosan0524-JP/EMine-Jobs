@@ -29,20 +29,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/Gui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiClickType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiIconCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUIManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiIcon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUIRows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/gui/GUIRows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/gui/Gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiClickType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/gui/GuiClickType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/gui/GuiIcon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiIconCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/gui/GuiIconCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/gui/GuiLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GuiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/gui/GuiManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/chef/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/chef/Chef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Alchemist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Alchemist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/ArkMage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/ArkMage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/DemonAvenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/DemonAvenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Enchanter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Enchanter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/FishMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/FishMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/FishPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/FishPro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Fisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Fisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Mage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/hunter/Hunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/hunter/Hunter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Crafter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Crafter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/FarmMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/FarmMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Farmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Farmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Goblin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Goblin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Lamber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Lamber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/LamberMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/LamberMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/LamberPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/LamberPro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/MineCrafter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/MineCrafter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Ork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Ork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/CanonShooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/CanonShooter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/GunMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/GunMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Gunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Gunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/MineMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/MineMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/MinePro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/MinePro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Miner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Miner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,6 +93,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -76,15 +111,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.github.jp.erudosan.emj.gui.elements" />
       <recent name="com.github.jp.erudosan.emj.gui" />
       <recent name="com.github.jp.erudosan.emj.job.jobs.fisher" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\utils" />
     </key>
   </component>
   <component name="RunManager">
@@ -424,7 +464,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604148634774</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="[update] GUI muri&#10;&#10;GUIのシステムのアップデート（もう無理）">
+      <created>1604221546995</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1604221546995</updated>
+    </task>
+    <task id="LOCAL-00045" summary="[delete] delete Gui System&#10;&#10;GUI関連のシステムを削除">
+      <created>1604322466346</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1604322466346</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -452,8 +506,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[update] update CaptionHandler&#10;&#10;プレイヤー名と職業をlang.ymlで設定できるように" />
-    <MESSAGE value="[fix] fix CaptionHandler&#10;&#10;ぬるぽが出ていたのを修正" />
     <MESSAGE value="[fix] fix CaptionHandler &#10;&#10;ただしく認識されてなかった文字の修正" />
     <MESSAGE value="[update] update JobManager to rank up&#10;&#10;ランクアップ処理追加のためのJobManagerアップデート" />
     <MESSAGE value="[update] update JobPlayer&#10;&#10;その人が就くことができる職業一覧のListを追加" />
@@ -477,7 +529,9 @@
     <MESSAGE value="[add] add Gui class&#10;&#10;Guiクラスの追加" />
     <MESSAGE value="[update] update jobs&#10;&#10;職業関連のアップデート" />
     <MESSAGE value="[update] update Gui&#10;&#10;Guiのアップデート" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] update Gui&#10;&#10;Guiのアップデート" />
+    <MESSAGE value="[update] GUI muri&#10;&#10;GUIのシステムのアップデート（もう無理）" />
+    <MESSAGE value="[delete] delete Gui System&#10;&#10;GUI関連のシステムを削除" />
+    <option name="LAST_COMMIT_MESSAGE" value="[delete] delete Gui System&#10;&#10;GUI関連のシステムを削除" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
@@ -488,12 +542,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1602842817246" />
-    <state x="2631" y="352" key="#com.intellij.ide.util.MemberChooser" timestamp="1604055425043">
+    <state x="2631" y="352" key="#com.intellij.ide.util.MemberChooser" timestamp="1604323423441">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1602736941591" />
     <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603871868444" />
-    <state x="2631" y="352" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604055425043" />
+    <state x="2631" y="352" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604323423441" />
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603614907800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -502,11 +556,11 @@
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="2639" y="553" width="482" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604150660163" />
-    <state x="2610" y="431" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603954270024">
+    <state x="2610" y="431" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604322414649">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603009000016" />
-    <state x="2610" y="431" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1603954270024" />
+    <state x="2610" y="431" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604322414649" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603022539679">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -543,12 +597,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="225" width="582" height="586" key="RefactorJ.ExtractClass/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603526724221" />
-    <state x="2347" y="369" key="Vcs.Push.Dialog.v2" timestamp="1604151609366">
+    <state x="2092" y="238" key="SettingsEditor" timestamp="1604323834476">
+      <screen x="1920" y="164" width="1920" height="1040" />
+    </state>
+    <state x="2092" y="238" key="SettingsEditor/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604323834476" />
+    <state x="2601" y="425" width="540" height="524" key="StructurePopup" timestamp="1604323726203">
+      <screen x="1920" y="164" width="1920" height="1040" />
+    </state>
+    <state x="2601" y="425" width="540" height="524" key="StructurePopup/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604323726203" />
+    <state x="2347" y="369" key="Vcs.Push.Dialog.v2" timestamp="1604321798091">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602739160745" />
     <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603868619383" />
-    <state x="2347" y="369" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604151609366" />
+    <state x="2347" y="369" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604321798091" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602639884212">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
