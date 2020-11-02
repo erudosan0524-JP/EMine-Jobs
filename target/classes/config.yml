@@ -10,6 +10,9 @@ need-level-to3: 40
 need-level-to4: 25
 need-level-to5: 30
 
+#SETTING GUI
+gui-size: 6
+
 #Settings for Database
 enabled-mysql: true
 host: localhost

@@ -1,11 +1,11 @@
 com\github\jp\erudosan\emj\command\commands\subcommands\Join.class
 com\github\jp\erudosan\emj\job\jobs\miner\GunMaster.class
-com\github\jp\erudosan\emj\gui\GuiManager.class
 com\github\jp\erudosan\emj\job\jobs\fisher\FishMaster.class
 com\github\jp\erudosan\emj\event\PlayerChangeExpEvent.class
 com\github\jp\erudosan\emj\job\jobs\lamber\Goblin.class
 com\github\jp\erudosan\emj\utils\db\SQLGetterSetter.class
 com\github\jp\erudosan\emj\job\JobPlayer$1.class
+com\github\jp\erudosan\emj\gui\GUIIcon.class
 com\github\jp\erudosan\emj\job\jobs\lamber\Crafter.class
 com\github\jp\erudosan\emj\Main.class
 com\github\jp\erudosan\emj\job\jobs\fisher\Alchemist.class
@@ -35,7 +35,6 @@ com\github\jp\erudosan\emj\utils\Items.class
 com\github\jp\erudosan\emj\command\commands\subcommands\Help.class
 com\github\jp\erudosan\emj\command\commands\subcommands\AddLevel.class
 com\github\jp\erudosan\emj\job\jobs\lamber\FarmMaster.class
-com\github\jp\erudosan\emj\gui\GuiIcon.class
 com\github\jp\erudosan\emj\job\JobGenre.class
 com\github\jp\erudosan\emj\event\PlayerJobLeaveEvent.class
 com\github\jp\erudosan\emj\utils\Lang.class
@@ -49,8 +48,10 @@ com\github\jp\erudosan\emj\listener\OnCook.class
 com\github\jp\erudosan\emj\job\jobs\fisher\ArkMage.class
 com\github\jp\erudosan\emj\job\JobManager$1.class
 com\github\jp\erudosan\emj\listener\mylistener\OnPlayerChangeExp.class
+com\github\jp\erudosan\emj\gui\GUIFieldType.class
 com\github\jp\erudosan\emj\job\jobs\miner\MineMaster.class
 com\github\jp\erudosan\emj\listener\OnFish.class
+com\github\jp\erudosan\emj\gui\GUIManager.class
 com\github\jp\erudosan\emj\job\jobs\miner\CanonShooter.class
 com\github\jp\erudosan\emj\utils\Config.class
 com\github\jp\erudosan\emj\job\jobs\lamber\Lamber.class
@@ -62,4 +63,5 @@ com\github\jp\erudosan\emj\command\CommandManager.class
 com\github\jp\erudosan\emj\job\JobManager.class
 com\github\jp\erudosan\emj\listener\mylistener\OnJobJoinLeave.class
 com\github\jp\erudosan\emj\command\commands\subcommands\Gui.class
+com\github\jp\erudosan\emj\gui\GUI.class
 com\github\jp\erudosan\emj\listener\mylistener\OnPlayerLevelUp.class

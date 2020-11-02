@@ -1,7 +1,7 @@
 package com.github.jp.erudosan.emj.job.jobs.lamber;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.gui.GuiIcon;
+import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import org.bukkit.Material;
@@ -28,8 +28,8 @@ public class Farmer extends Job {
     }
 
     @Override
-    public GuiIcon ItemIcon() {
-        return new GuiIcon(Material.WHEAT,plugin.getHandler().getCaption("farmer"));
+    public GUIIcon ItemIcon() {
+        return new GUIIcon(Material.WHEAT,plugin.getHandler().getCaption("farmer"));
     }
 
     @Override

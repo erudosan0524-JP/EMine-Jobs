@@ -1,8 +1,7 @@
 package com.github.jp.erudosan.emj.job.jobs.miner;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.command.commands.subcommands.Gui;
-import com.github.jp.erudosan.emj.gui.GuiIcon;
+import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import me.zombie_striker.qg.api.QualityArmory;
@@ -30,9 +29,9 @@ public class Gunner extends Job {
     }
 
     @Override
-    public GuiIcon ItemIcon() {
+    public GUIIcon ItemIcon() {
         Gun gun = QualityArmory.getGunByName("magnum");
-        return new GuiIcon(gun.getItemStack());
+        return new GUIIcon(gun.getItemStack());
     }
 
     @Override
