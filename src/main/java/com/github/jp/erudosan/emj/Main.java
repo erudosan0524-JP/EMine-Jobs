@@ -2,7 +2,6 @@ package com.github.jp.erudosan.emj;
 
 
 import com.github.jp.erudosan.emj.command.CommandManager;
-import com.github.jp.erudosan.emj.utils.gui.GuiManager;
 import com.github.jp.erudosan.emj.job.JobPlayer;
 import com.github.jp.erudosan.emj.listener.*;
 import com.github.jp.erudosan.emj.listener.mylistener.OnJobJoinLeave;
