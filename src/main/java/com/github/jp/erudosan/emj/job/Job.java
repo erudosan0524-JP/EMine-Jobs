@@ -1,7 +1,7 @@
 package com.github.jp.erudosan.emj.job;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.utils.gui.GuiIcon;
+import com.github.jp.erudosan.emj.gui.GUIIcon;
 import org.bukkit.entity.Player;
 
 public abstract class Job {
@@ -27,7 +27,7 @@ public abstract class Job {
      */
     public abstract int rank();
 
-    public abstract GuiIcon ItemIcon();
+    public abstract GUIIcon ItemIcon();
 
     //レベルアップ時の報酬処理
     public abstract void onLevelUp(Player player, int level);

@@ -35,9 +35,6 @@ public class Main extends JavaPlugin {
     @Getter
     private JobPlayer jobPlayer;
 
-    @Getter
-    private GuiManager guiManager;
-
     @Override
     public void onDisable() {
         super.onDisable();
@@ -65,9 +62,6 @@ public class Main extends JavaPlugin {
         jobPlayer = new JobPlayer(getInstance());
         jobPlayer.setup();
 
-        //Setting GUI
-        guiManager = new GuiManager(getInstance());
-
         //Setting Listeners
         new OnBlock(getInstance());
         new OnFish(getInstance());
@@ -76,6 +70,7 @@ public class Main extends JavaPlugin {
         new OnDeath(getInstance());
         new OnInteract(getInstance());
         new OnDropItem(getInstance());
+        new OnClickInv(getInstance());
 
         new OnPlayerLevelUp(getInstance());
         new OnPlayerChangeExp(getInstance());

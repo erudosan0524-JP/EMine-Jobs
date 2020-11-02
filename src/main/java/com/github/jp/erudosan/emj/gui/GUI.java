@@ -1,5 +1,8 @@
 package com.github.jp.erudosan.emj.gui;
 
+import com.github.jp.erudosan.emj.Main;
+import com.github.jp.erudosan.emj.job.Job;
+import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryType;
@@ -19,16 +22,20 @@ public class GUI {
     private Inventory inv;
     private String title;
 
+    private Main plugin;
 
     private HashMap<Integer,GUIIcon> icons = new HashMap<>();
     private LinkedHashSet<GUIIcon> noSlotIcons = new LinkedHashSet<>();
 
-    private Object clickedIcon;
-
     private Material filler;
 
-    public GUI(Player player) {
-        this.player = player;
+    public GUI(Main plugin) {
+        this.plugin = plugin;
+    }
+
+    public GUI open() {
+        GUIManager.openGui(this);
+        return this;
     }
 
     public boolean isSimilar(GUI gui) {
@@ -178,6 +185,14 @@ public class GUI {
             }
         }
         addButton(new GUIIcon(slot, MiscInfo));
+    }
+
+    public void addJobsIcon(Player player) {
+        JobPlayer jobPlayer = plugin.getJobPlayer();
+
+        for(Job job : jobPlayer.canJoinJobs(player)) {
+            addButton(job.ItemIcon());
+        }
     }
 
     public Material getFiller() {

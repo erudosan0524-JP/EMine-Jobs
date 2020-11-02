@@ -6,7 +6,6 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -14,69 +13,28 @@ public class GUIManager {
 
     private static HashMap<UUID, GUI> map = new HashMap<>();
 
-    public static boolean processClick(final Player player, ItemStack currentItem, List<Integer> icons) {
-        GUI gui = map.get(player.getUniqueId());
-        if (gui == null) return true;
-
-        for (Integer one : icons) {
-            GUIIcon icon = gui.getIcons().get(one);
-
-            //Clickの処理
-            /*
-            1. クリックされたスロット取得
-            2. クリックされたアイテム取得(アイテムは独自)
-            3. アイテムに応じたJobを取得
-            4. クリック時の処理を追加
-            5. 実行(emj join [jobs_name])
-             */
-
-            icon.setOnClickListener(new GUIIcon.OnClickListener() {
-                @Override
-                public void onClick() {
-
-                }
-            });
-        }
-        return true;
-
-    }
-
-    public static boolean isOpenedGUI(Player player) {
-        GUI gui = map.get(player.getUniqueId());
-
-        if (gui == null) {
-            return false;
-        }
-
-        if (player.getOpenInventory() == null) {
-            return false;
-        }
-
-        return true;
-    }
-
     public static GUI getGUI(Player player) {
         return map.get(player.getUniqueId());
     }
 
-    public static boolean canClick(Player player, List<Integer> icons) {
-        try {
-            GUI gui = map.get(player.getUniqueId());
-
-            if (gui == null) {
-                return true;
-            }
-
-            for (Integer one : icons) {
-                GUIIcon icon = gui.getIcons().get(one);
-                if (icon == null) {
-                    continue;
-                }
-            }
-
-        } catch (Exception e) {
+    public static boolean isOpenedGUI(Player player) {
+        GUI gui = map.get(player.getUniqueId());
+        if (gui == null)
             return false;
-        }
+        if (player.getOpenInventory() == null)
+            return false;
+        return true;
+    }
+
+    public static boolean removePlayer(Player player) {
+        GUI removed = map.remove(player.getUniqueId());
+        if (removed == null)
+            return false;
+
+
+        if (player.getOpenInventory() != null && player.getOpenInventory().getTopInventory().equals(removed.getInv()))
+            player.closeInventory();
+
         return true;
     }
 
@@ -106,19 +64,27 @@ public class GUIManager {
         gui.setInv(GuiInv);
     }
 
-    public static GUI getGui(Player player) {
-        return map.get(player.getUniqueId());
-    }
+    public static void openGui(GUI gui) {
+        Player player = gui.getPlayer();
 
-    public static boolean isOpenedGui(Player player) {
-        GUI gui = map.get(player.getUniqueId());
-        if (gui == null)
-            return false;
-        if (player.getOpenInventory() == null)
-            return false;
-//	if (!player.getOpenInventory().getTopInventory().equals(gui.getInv()))
-//	    return false;
-        return true;
+        GUI oldGui = null;
+
+        if (oldGui == null) {
+            generateInventory(gui);
+            player.openInventory(gui.getInv());
+            map.put(player.getUniqueId(), gui);
+        } else {
+            player.closeInventory();
+            updateContent(gui);
+        }
+
+        if (isOpenedGUI(player)) {
+            oldGui = getGUI(player);
+            if (!gui.isSimilar(oldGui)) {
+                oldGui = null;
+            }
+        }
+
     }
 
     public static void updateContent(GUI gui) {
@@ -150,29 +116,6 @@ public class GUIManager {
         gui.setInv(player.getOpenInventory().getTopInventory());
         map.put(player.getUniqueId(), gui);
         player.updateInventory();
-    }
-
-    public static void openGui(GUI gui) {
-        Player player = gui.getPlayer();
-        if (player.isSleeping())
-            return;
-
-        GUI oldGui = null;
-        if (isOpenedGui(player)) {
-            oldGui = getGui(player);
-            if (!gui.isSimilar(oldGui)) {
-                oldGui = null;
-            }
-        }
-        if (oldGui == null) {
-            generateInventory(gui);
-            player.closeInventory();
-            player.openInventory(gui.getInv());
-            map.put(player.getUniqueId(), gui);
-        } else {
-            updateContent(gui);
-        }
-
     }
 }
 

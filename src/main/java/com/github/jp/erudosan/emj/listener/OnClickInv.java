@@ -52,9 +52,6 @@ public class OnClickInv implements Listener {
 
         final List<Integer> icons = new ArrayList<>();
         icons.add(e.getRawSlot());
-        if(!GUIManager.canClick(player,icons)) {
-            e.setCancelled(true);
-        }
 
         InventoryAction action = e.getAction();
 

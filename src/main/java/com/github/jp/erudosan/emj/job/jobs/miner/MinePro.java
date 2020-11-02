@@ -1,7 +1,7 @@
 package com.github.jp.erudosan.emj.job.jobs.miner;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.utils.gui.GuiIcon;
+import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import org.bukkit.Material;
@@ -29,8 +29,8 @@ public class MinePro extends Job {
     }
 
     @Override
-    public GuiIcon ItemIcon() {
-        return new GuiIcon(Material.IRON_PICKAXE,plugin.getHandler().getCaption("mine-pro"));
+    public GUIIcon ItemIcon() {
+        return new GUIIcon(Material.IRON_PICKAXE,plugin.getHandler().getCaption("mine-pro"));
     }
 
     @Override

@@ -2,6 +2,8 @@ length_zero_message: "/lts helpでヘルプを表示できます"
 invalid_command: "&c不正なサブコマンド"
 error_command: "&cエラーが検出されました"
 
+gui-title: "EMine-Jobs"
+
 # join event Message
 player_join_message: "{player}さんがログインしました。"
 player_join_message1: "お久しぶり！{player}さん！"

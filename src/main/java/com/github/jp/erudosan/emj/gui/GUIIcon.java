@@ -12,8 +12,6 @@ public class GUIIcon {
     private ItemStack item;
     private Integer slot;
 
-    private OnClickListener listener;
-
     public GUIIcon(ItemStack item) {
         this.item = item;
     }
@@ -48,31 +46,10 @@ public class GUIIcon {
             ItemStack i = item.clone();
 
             ItemMeta meta = i.getItemMeta();
-
-            if (player != null) {
-//	    if (meta != null && meta.hasDisplayName()) {
-//		meta.setDisplayName(CMI.getInstance().getPlaceholderAPIManager().updatePlaceHolders(player, meta.getDisplayName()));
-//	    }
-//
-//	    if (meta != null && meta.hasLore()) {
-//		meta.setLore(CMI.getInstance().getPlaceholderAPIManager().updatePlaceHolders(player, meta.getLore()));
-//	    }
-            }
             i.setItemMeta(meta);
             return i;
         }
 
         return item;
     }
-
-    public void setOnClickListener(OnClickListener listener) {
-        this.listener = listener;
-    }
-
-
-    public abstract static class OnClickListener {
-        public abstract void onClick();
-    }
-
-
 }
