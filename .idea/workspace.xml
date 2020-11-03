@@ -29,78 +29,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUIFieldType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUIIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUIIcon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUIManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUIManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/chef/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/chef/Chef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Alchemist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Alchemist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/ArkMage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/ArkMage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/DemonAvenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/DemonAvenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Enchanter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Enchanter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/FishMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/FishMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/FishPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/FishPro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Fisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Fisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Mage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/hunter/Hunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/hunter/Hunter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Crafter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Crafter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/FarmMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/FarmMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Farmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Farmer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Goblin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Goblin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Lamber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Lamber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/LamberMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/LamberMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/LamberPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/LamberPro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/MineCrafter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/MineCrafter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Ork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/lamber/Ork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/CanonShooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/CanonShooter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/GunMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/GunMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Gunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Gunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/MineMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/MineMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/MinePro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/MinePro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Miner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Miner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnClickInv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnClickInv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/gui/GUIRows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/gui/GUIRows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/gui/GuiIcon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/gui/GuiIcon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/gui/GuiManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/gui/GuiManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/Job.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/chef/Chef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/chef/Chef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/Alchemist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/Alchemist.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/ArkMage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/ArkMage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/DemonAvenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/DemonAvenger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/Enchanter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/Enchanter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/FishMaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/FishMaster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/FishPro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/FishPro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/Fisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/Fisher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/Mage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/Mage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/Wizard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/fisher/Wizard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/hunter/Hunter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/hunter/Hunter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/Crafter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/Crafter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/FarmMaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/FarmMaster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/Farmer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/Farmer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/Goblin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/Goblin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/Lamber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/Lamber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/LamberMaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/LamberMaster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/LamberPro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/LamberPro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/MineCrafter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/MineCrafter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/Ork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/lamber/Ork.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/CanonShooter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/CanonShooter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/GunMaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/GunMaster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/Gunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/Gunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/MineMaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/MineMaster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/MinePro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/MinePro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/Miner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/Miner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/OnClickInv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/OnClickInv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lang/lang_ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lang/lang_ja.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -588,12 +522,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1602842817246" />
-    <state x="2631" y="352" key="#com.intellij.ide.util.MemberChooser" timestamp="1604332146980">
+    <state x="2631" y="352" key="#com.intellij.ide.util.MemberChooser" timestamp="1604396611045">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1602736941591" />
     <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603871868444" />
-    <state x="2631" y="352" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604332146980" />
+    <state x="2631" y="352" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604396611045" />
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603614907800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -611,26 +545,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603022539679" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604339457438">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604404954018">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604339457438" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604339457438">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604404954018" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604404954018">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604339457438" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604339457438">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604404954018" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604404954018">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604339457438" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604339457438">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604404954018" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604404954018">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604339457438" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604404954018" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1603679086037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -651,12 +585,12 @@
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="2601" y="425" width="540" height="524" key="StructurePopup/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604323726203" />
-    <state x="2347" y="369" key="Vcs.Push.Dialog.v2" timestamp="1604321798091">
+    <state x="2347" y="369" key="Vcs.Push.Dialog.v2" timestamp="1604340076419">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602739160745" />
     <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603868619383" />
-    <state x="2347" y="369" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604321798091" />
+    <state x="2347" y="369" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604340076419" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602639884212">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

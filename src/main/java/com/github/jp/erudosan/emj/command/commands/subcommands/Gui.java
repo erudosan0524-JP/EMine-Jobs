@@ -19,7 +19,7 @@ public class Gui extends SubCommand {
     public void onCommand(Player player, String[] args) {
         //TODO: 職業一覧のGUIの実装。アイテムをクリックしたら職業に就ける
         GUI gui = new GUI(plugin);
-        gui.setTitle("TEST");
+        gui.setTitle(plugin.getHandler().getCaption("inv-title"));
         gui.setPlayer(player);
         gui.setInvType(InventoryType.CHEST);
         gui.setFiller(Material.WHITE_STAINED_GLASS_PANE);
