@@ -2,7 +2,7 @@ length_zero_message: "/lts helpでヘルプを表示できます"
 invalid_command: "&c不正なサブコマンド"
 error_command: "&cエラーが検出されました"
 
-gui-title: "EMine-Jobs"
+inv-title: "&l&2現在就ける職業一覧"
 
 # join event Message
 player_join_message: "{player}さんがログインしました。"
@@ -29,7 +29,7 @@ stats_line2: "現在の経験値:&2"
 stats_line3: "レベル:&2"
 
 # "/emj join" Command Message
-join_message: "あなたは{job}に就きました"
+join_message: "あなたは&2{job}&fに就きました"
 join_error_message: "あなたが指定した職業はまだ就くことができません！"
 
 # "/emj leave" Command Message

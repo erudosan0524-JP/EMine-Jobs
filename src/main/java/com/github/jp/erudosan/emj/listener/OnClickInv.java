@@ -3,15 +3,15 @@ package com.github.jp.erudosan.emj.listener;
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.gui.GUI;
 import com.github.jp.erudosan.emj.gui.GUIManager;
+import com.github.jp.erudosan.emj.job.Job;
+import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.inventory.ClickType;
-import org.bukkit.event.inventory.InventoryAction;
 import org.bukkit.event.inventory.InventoryClickEvent;
-
-import java.util.ArrayList;
-import java.util.List;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 public class OnClickInv implements Listener {
 
@@ -19,41 +19,41 @@ public class OnClickInv implements Listener {
 
     public OnClickInv(Main plugin) {
         this.plugin = plugin;
-        plugin.getServer().getPluginManager().registerEvents(this,plugin);
+        plugin.getServer().getPluginManager().registerEvents(this, plugin);
     }
 
     @EventHandler
     public void onClickInventory(InventoryClickEvent e) {
         final Player player = (Player) e.getWhoClicked();
 
-        if(!GUIManager.isOpenedGUI(player)) {
+        Inventory inv = e.getClickedInventory();
+
+        if (!GUIManager.isOpenedGUI(player)) {
             return;
         }
 
         GUI gui = GUIManager.getGUI(player);
-        if(e.getClick() == ClickType.DOUBLE_CLICK || e.getHotbarButton() != -1) {
+        JobPlayer jobPlayer = plugin.getJobPlayer();
+
+        if (inv == gui.getInv()) {
+
+            ItemStack item = e.getCurrentItem();
+
+            if (!item.hasItemMeta()) {
+                return;
+            }
+
+            ItemMeta meta = item.getItemMeta();
+            String name = meta.getDisplayName();
+
+
+            for (Job job : jobPlayer.canJoinJobs(player)) {
+                if (name.equals(plugin.getHandler().getCaption(job.name()))) {
+                    plugin.getServer().dispatchCommand(player, "emj join " + job.name());
+                }
+            }
             e.setCancelled(true);
-            return;
         }
-
-        if(e.isShiftClick()) {
-            e.setCancelled(true);
-        }
-
-        if (!e.getAction().equals(InventoryAction.PICKUP_ALL) &&
-                !e.getAction().equals(InventoryAction.PICKUP_ONE) &&
-                !e.getAction().equals(InventoryAction.PICKUP_HALF) &&
-                !e.getAction().equals(InventoryAction.PICKUP_SOME) &&
-                !e.getAction().equals(InventoryAction.PLACE_ALL) &&
-                !e.getAction().equals(InventoryAction.PLACE_ONE) &&
-                !e.getAction().equals(InventoryAction.PLACE_SOME) &&
-                !e.getAction().equals(InventoryAction.MOVE_TO_OTHER_INVENTORY))
-            e.setCancelled(true);
-
-        final List<Integer> icons = new ArrayList<>();
-        icons.add(e.getRawSlot());
-
-        InventoryAction action = e.getAction();
-
     }
 }
+
