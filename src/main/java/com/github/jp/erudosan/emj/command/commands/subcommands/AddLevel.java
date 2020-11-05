@@ -6,8 +6,6 @@ import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
-import java.io.IOException;
-
 public class AddLevel extends SubCommand {
 
     private Main plugin;
@@ -18,7 +16,7 @@ public class AddLevel extends SubCommand {
 
     @Override
     public void onCommand(Player player, String[] args) {
-        if (args.length != 0) {
+        if (args.length >= 1) {
 
             int level = 0;
             Player _player = null;
@@ -33,6 +31,7 @@ public class AddLevel extends SubCommand {
 
             JobPlayer jobPlayer = plugin.getJobPlayer();
             jobPlayer.addLevel(_player, level);
+            player.sendMessage(player.getName() + "に" + level + "レベル加えました");
         }
 
     }

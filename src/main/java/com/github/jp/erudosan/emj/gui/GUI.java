@@ -190,8 +190,10 @@ public class GUI {
     public void addJobsIcon(Player player) {
         JobPlayer jobPlayer = plugin.getJobPlayer();
 
-        for(Job job : jobPlayer.canJoinJobs(player)) {
-            addButton(job.ItemIcon());
+        if(jobPlayer.playerJobExists(player)) {
+            for(Job job : jobPlayer.canJoinJobs(player)) {
+                addButton(job.ItemIcon());
+            }
         }
     }
 
