@@ -86,8 +86,6 @@ public class JobManager {
             //ランクi職業一覧を取得
             for(String s : getJobsFromRank(i)) {
 
-                System.out.println("ランク" + i + "職業: " + s);
-
                 if(Objects.isNull(s)) {
                     continue;
                 }
