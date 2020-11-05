@@ -59,6 +59,7 @@ com\github\jp\erudosan\emj\listener\OnClickInv.class
 com\github\jp\erudosan\emj\job\JobPlayer.class
 com\github\jp\erudosan\emj\listener\OnBlock.class
 com\github\jp\erudosan\emj\listener\OnDropItem.class
+com\github\jp\erudosan\emj\gui\GUIIcon$OnClickListener.class
 com\github\jp\erudosan\emj\command\CommandManager.class
 com\github\jp\erudosan\emj\job\JobManager.class
 com\github\jp\erudosan\emj\listener\mylistener\OnJobJoinLeave.class

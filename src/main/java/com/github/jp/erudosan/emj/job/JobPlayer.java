@@ -3,8 +3,6 @@ package com.github.jp.erudosan.emj.job;
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.event.PlayerChangeExpEvent;
 import com.github.jp.erudosan.emj.event.PlayerLevelUpEvent;
-import com.github.jp.erudosan.emj.job.jobs.hunter.Hunter;
-import lombok.Getter;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
@@ -82,19 +80,19 @@ public class JobPlayer extends JobManager{
                 if(getLevel(player) > level) {
                     switch (job.genre()) {
                         case MINER:
-                            jobList.addAll(MinerJobs.get(i + 1));
+                            jobList.addAll(MinerJobs.get(i+1));
                             break;
                         case LAMBER:
-                            jobList.addAll(LamberJobs.get(i + 1));
+                            jobList.addAll(LamberJobs.get(i+1));
                             break;
                         case FISHING:
-                            jobList.addAll(FisherJobs.get(i + 1));
+                            jobList.addAll(FisherJobs.get(i+1));
                             break;
                         case CHEF:
-                            jobList.addAll(ChefJobs.get(i + 1));
+                            jobList.addAll(ChefJobs.get(i+1));
                             break;
                         case HUNTER:
-                            jobList.addAll(HunterJobs.get(i + 1));
+                            jobList.addAll(HunterJobs.get(i+1));
                             break;
                     }
                 } else {

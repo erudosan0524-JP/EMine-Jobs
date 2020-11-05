@@ -30,11 +30,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUIIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUIIcon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnClickInv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnClickInv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Jobs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Jobs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +73,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -458,7 +454,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604333481471</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="[update] update GUI and lang&#10;&#10;GUIと言語ファイルのアップデート">
+      <created>1604410903150</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1604410903150</updated>
+    </task>
+    <task id="LOCAL-00049" summary="[fix] fix canJoinJobs Bug&#10;&#10;canJoinJobsの判定バグの修正">
+      <created>1604536577149</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1604536577149</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -486,8 +496,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[update] update JobPlayer&#10;&#10;その人が就くことができる職業一覧のListを追加" />
-    <MESSAGE value="[update] update canJoinJobs&#10;&#10;レベル判定をcanJoinJobsに追加" />
     <MESSAGE value="[add] add add level Command&#10;&#10;／emj addlevel [player] [level] の追加" />
     <MESSAGE value="[fix] fix many bugs&#10;&#10;多くのバグを修正" />
     <MESSAGE value="[fix] fix lang_ja.yml&#10;&#10;lang_ja.ymlに書いてあった内容を変更" />
@@ -511,7 +519,9 @@
     <MESSAGE value="[delete] delete Gui System&#10;&#10;GUI関連のシステムを削除" />
     <MESSAGE value="[delete] delete Gui System" />
     <MESSAGE value="[update] update GUI&#10;&#10;GUIのアップデート" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] update GUI&#10;&#10;GUIのアップデート" />
+    <MESSAGE value="[update] update GUI and lang&#10;&#10;GUIと言語ファイルのアップデート" />
+    <MESSAGE value="[fix] fix canJoinJobs Bug&#10;&#10;canJoinJobsの判定バグの修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix] fix canJoinJobs Bug&#10;&#10;canJoinJobsの判定バグの修正" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
@@ -541,30 +551,47 @@
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603009000016" />
     <state x="2610" y="431" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604322414649" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603022539679">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2332" y="361" key="FileChooserDialogImpl" timestamp="1604477812120">
+      <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603022539679" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604404954018">
+    <state x="2332" y="361" key="FileChooserDialogImpl/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604477812120" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604536384456">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604404954018" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604404954018">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536384456" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604536384456">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604404954018" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604404954018">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536384456" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604536384455">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604404954018" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604404954018">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536384455" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604536384456">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604404954018" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536384456" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604534689927">
+      <screen x="1920" y="164" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604534689927" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1604534689926">
+      <screen x="1920" y="164" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604534689926" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1604534689926">
+      <screen x="1920" y="164" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604534689926" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1604534689927">
+      <screen x="1920" y="164" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604534689927" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1603679086037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -585,12 +612,12 @@
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="2601" y="425" width="540" height="524" key="StructurePopup/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604323726203" />
-    <state x="2347" y="369" key="Vcs.Push.Dialog.v2" timestamp="1604340076419">
+    <state x="2347" y="369" key="Vcs.Push.Dialog.v2" timestamp="1604410928657">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602739160745" />
     <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603868619383" />
-    <state x="2347" y="369" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604340076419" />
+    <state x="2347" y="369" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604410928657" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602639884212">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -599,6 +626,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="733" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603556308039" />
+    <state x="2037" y="375" key="new project wizard" timestamp="1604477865861">
+      <screen x="1920" y="164" width="1920" height="1040" />
+    </state>
+    <state x="2037" y="375" key="new project wizard/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604477865861" />
     <state x="2433" y="390" width="894" height="782" key="search.everywhere.popup" timestamp="1604148925266">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
