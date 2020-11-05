@@ -29,8 +29,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Jobs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Jobs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Jobs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Jobs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobPlayer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -612,12 +613,12 @@
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="2601" y="425" width="540" height="524" key="StructurePopup/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604323726203" />
-    <state x="2347" y="369" key="Vcs.Push.Dialog.v2" timestamp="1604410928657">
+    <state x="2347" y="369" key="Vcs.Push.Dialog.v2" timestamp="1604536724747">
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602739160745" />
     <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603868619383" />
-    <state x="2347" y="369" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604410928657" />
+    <state x="2347" y="369" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536724747" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602639884212">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
