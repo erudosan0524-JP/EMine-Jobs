@@ -69,6 +69,7 @@ public class JobPlayer extends JobManager{
                 Job j = getJobFromName(s);
                 jobList.add(j);
             }
+            return jobList;
         }
 
         Job job = getPlayerJob(player);
@@ -100,6 +101,7 @@ public class JobPlayer extends JobManager{
                         Job j = getJobFromName(s);
                         jobList.add(j);
                     }
+                    return jobList;
                 }
             }
         }
