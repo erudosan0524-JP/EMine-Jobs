@@ -10,6 +10,9 @@ player_join_message1: "お久しぶり！{player}さん！"
 player_join_message2: "日ぶりですね！"
 player_firstjoin_message: "&d{player}さんが初めてログインしました！"
 
+#quit event message
+player_quit_message: "{player}さんがログアウトしました。"
+
 # Command Message
 command_firstline: "&7============= &2EMine&7-&3Jobs &7============="
 command_endline:  "&7======================================"

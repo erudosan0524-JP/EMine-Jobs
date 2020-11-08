@@ -29,14 +29,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/RecipeManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnClickInv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnClickInv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnJoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/EMine-Jobs-0.2.2-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/EMine-Jobs-0.2.2-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobPlayer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobPlayer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobPlayer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +132,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602571541459</updated>
-    </task>
-    <task id="LOCAL-00002" summary="[update] update OnBlock.java&#10;&#10;lamber用の処理の追加">
-      <created>1602579587913</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1602579587913</updated>
     </task>
     <task id="LOCAL-00003" summary="[add] add /leave command&#10;&#10;leaveコマンドの追加">
       <created>1602579876153</created>
@@ -474,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604536836088</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="[fix] fix canJoinJobs bugs&#10;&#10;canJoinJobsのバグを修正">
+      <created>1604675969565</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1604675969566</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -502,7 +504,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[fix] fix many bugs&#10;&#10;多くのバグを修正" />
     <MESSAGE value="[fix] fix lang_ja.yml&#10;&#10;lang_ja.ymlに書いてあった内容を変更" />
     <MESSAGE value="[add] add many job&#10;&#10;実装していなかった職業クラスの追加" />
     <MESSAGE value="[add] add PlayerJobJoinEvent and PlayerJobLeaveEvent&#10;&#10;PlayerJobJoinEventとPlayerJobLeaveEventの追加" />
@@ -527,7 +528,8 @@
     <MESSAGE value="[update] update GUI and lang&#10;&#10;GUIと言語ファイルのアップデート" />
     <MESSAGE value="[fix] fix canJoinJobs Bug&#10;&#10;canJoinJobsの判定バグの修正" />
     <MESSAGE value="[fix] fix log&#10;&#10;デバッグ用の文字消去修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix] fix log&#10;&#10;デバッグ用の文字消去修正" />
+    <MESSAGE value="[fix] fix canJoinJobs bugs&#10;&#10;canJoinJobsのバグを修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix] fix canJoinJobs bugs&#10;&#10;canJoinJobsのバグを修正" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
@@ -557,33 +559,34 @@
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603009000016" />
     <state x="2610" y="431" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604322414649" />
-    <state x="2332" y="361" key="FileChooserDialogImpl" timestamp="1604477812120">
-      <screen x="1920" y="164" width="1920" height="1040" />
+    <state x="2332" y="337" key="FileChooserDialogImpl" timestamp="1604738172245">
+      <screen x="1920" y="140" width="1920" height="1040" />
     </state>
+    <state x="2332" y="337" key="FileChooserDialogImpl/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604738172245" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603022539679" />
     <state x="2332" y="361" key="FileChooserDialogImpl/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604477812120" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604673631729">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604679482697">
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604673631729" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604679482697" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536904744" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604673631729">
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604679482697">
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604673631729" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604679482697" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536904744" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604673631729">
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604679482697">
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604673631729" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604679482697" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536904744" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604673631729">
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604679482697">
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604673631729" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604679482697" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536904744" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604536904744">
@@ -622,10 +625,11 @@
       <screen x="1920" y="164" width="1920" height="1040" />
     </state>
     <state x="2601" y="425" width="540" height="524" key="StructurePopup/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604323726203" />
-    <state x="2347" y="369" key="Vcs.Push.Dialog.v2" timestamp="1604536853673">
-      <screen x="1920" y="164" width="1920" height="1040" />
+    <state x="2347" y="345" key="Vcs.Push.Dialog.v2" timestamp="1604675971759">
+      <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602739160745" />
+    <state x="2347" y="345" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604675971759" />
     <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603868619383" />
     <state x="2347" y="369" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536853673" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602639884212">

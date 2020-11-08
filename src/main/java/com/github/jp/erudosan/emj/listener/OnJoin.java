@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -67,5 +68,11 @@ public class OnJoin implements Listener {
 
             plugin.getSql().setPlayer(player,sqlDate);
         }
+    }
+
+    @EventHandler
+    public void onLeave(PlayerQuitEvent e) {
+        Player player = e.getPlayer();
+        e.setQuitMessage(ChatColor.BOLD + plugin.getHandler().getCaption(player,"player_quit_message"));
     }
 }

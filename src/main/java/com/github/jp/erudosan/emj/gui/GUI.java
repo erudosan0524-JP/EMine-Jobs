@@ -24,7 +24,7 @@ public class GUI {
 
     private Main plugin;
 
-    private HashMap<Integer,GUIIcon> icons = new HashMap<>();
+    private HashMap<Integer, GUIIcon> icons = new HashMap<>();
     private LinkedHashSet<GUIIcon> noSlotIcons = new LinkedHashSet<>();
 
     private Material filler;
@@ -122,7 +122,7 @@ public class GUI {
         return this.title;
     }
 
-    public HashMap<Integer,GUIIcon> getIcons() {
+    public HashMap<Integer, GUIIcon> getIcons() {
         combineIcons();
         return icons;
     }
@@ -190,11 +190,10 @@ public class GUI {
     public void addJobsIcon(Player player) {
         JobPlayer jobPlayer = plugin.getJobPlayer();
 
-        if(jobPlayer.playerJobExists(player)) {
-            for(Job job : jobPlayer.canJoinJobs(player)) {
-                addButton(job.ItemIcon());
-            }
+        for (Job job : jobPlayer.canJoinJobs(player)) {
+            addButton(job.ItemIcon());
         }
+
     }
 
     public Material getFiller() {

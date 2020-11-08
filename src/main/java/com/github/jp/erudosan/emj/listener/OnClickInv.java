@@ -5,6 +5,7 @@ import com.github.jp.erudosan.emj.gui.GUI;
 import com.github.jp.erudosan.emj.gui.GUIManager;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobPlayer;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -38,6 +39,10 @@ public class OnClickInv implements Listener {
         if (inv == gui.getInv()) {
 
             ItemStack item = e.getCurrentItem();
+
+            if(item.getType() == Material.AIR) {
+                return;
+            }
 
             if (!item.hasItemMeta()) {
                 return;

@@ -1,6 +1,5 @@
 package com.github.jp.erudosan.emj.utils;
 
-import lombok.Getter;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -171,6 +170,10 @@ public class Items {
         return foods;
     }
 
+
+    /*
+    カスタムアイテム一覧
+     */
     public static ItemStack getFisherProItem() {
         ItemStack fishRod = new ItemStack(Material.FISHING_ROD,1);
         ItemMeta meta = fishRod.getItemMeta();
@@ -221,4 +224,5 @@ public class Items {
 
         return EnchantItem;
     }
+
 }
