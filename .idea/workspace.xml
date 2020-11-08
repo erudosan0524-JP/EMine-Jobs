@@ -29,16 +29,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/RecipeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/gui/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnClickInv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnClickInv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnJoin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/EMine-Jobs-0.2.2-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/EMine-Jobs-0.2.2-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobPlayer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobPlayer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,13 +123,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602571541459</updated>
-    </task>
-    <task id="LOCAL-00003" summary="[add] add /leave command&#10;&#10;leaveコマンドの追加">
-      <created>1602579876153</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1602579876153</updated>
     </task>
     <task id="LOCAL-00004" summary="[add] add /leave command&#10;&#10;leaveコマンドの追加修正">
       <created>1602579915980</created>
@@ -476,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604675969566</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="[fix] fix some bugs&#10;&#10;いくつかのバグを修正">
+      <created>1604821569872</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1604821569873</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -504,7 +495,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[fix] fix lang_ja.yml&#10;&#10;lang_ja.ymlに書いてあった内容を変更" />
     <MESSAGE value="[add] add many job&#10;&#10;実装していなかった職業クラスの追加" />
     <MESSAGE value="[add] add PlayerJobJoinEvent and PlayerJobLeaveEvent&#10;&#10;PlayerJobJoinEventとPlayerJobLeaveEventの追加" />
     <MESSAGE value="[add] add gun repo and dependency&#10;&#10;銃プラグインのレポジトリとDependencyを追加" />
@@ -529,7 +519,8 @@
     <MESSAGE value="[fix] fix canJoinJobs Bug&#10;&#10;canJoinJobsの判定バグの修正" />
     <MESSAGE value="[fix] fix log&#10;&#10;デバッグ用の文字消去修正" />
     <MESSAGE value="[fix] fix canJoinJobs bugs&#10;&#10;canJoinJobsのバグを修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix] fix canJoinJobs bugs&#10;&#10;canJoinJobsのバグを修正" />
+    <MESSAGE value="[fix] fix some bugs&#10;&#10;いくつかのバグを修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix] fix some bugs&#10;&#10;いくつかのバグを修正" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
