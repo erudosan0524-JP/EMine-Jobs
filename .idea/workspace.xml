@@ -31,13 +31,6 @@
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnCook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnCook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnDeath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnDeath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnFish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnFish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606036178460</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[update] update EXP System 2&#10;&#10;経験値システムの更新2">
+      <created>1606037515738</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606037515738</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,7 +147,8 @@
     <MESSAGE value="[update] update OnBlock.java&#10;&#10;lamber用の処理の追加" />
     <MESSAGE value="[add] add /leave command&#10;&#10;leaveコマンドの追加" />
     <MESSAGE value="[update] update EXP System&#10;&#10;経験値システムの更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] update EXP System&#10;&#10;経験値システムの更新" />
+    <MESSAGE value="[update] update EXP System 2&#10;&#10;経験値システムの更新2" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] update EXP System 2&#10;&#10;経験値システムの更新2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2631" y="328" key="#com.intellij.ide.util.MemberChooser" timestamp="1605779119812">
@@ -159,10 +160,11 @@
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state x="2104" y="226" key="MergeDialog/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1605778101995" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1602579879291">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="2347" y="345" key="Vcs.Push.Dialog.v2" timestamp="1606037523851">
+      <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602579879291" />
+    <state x="2347" y="345" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1606037523851" />
     <state x="2643" y="373" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605778093754">
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>

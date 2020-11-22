@@ -64,8 +64,9 @@ public class JobPlayer extends JobManager{
 
     public List<Job> canJoinJobs(Player player) {
         List<Job> jobList = new ArrayList<>();
+        int level = getLevel(player);
 
-        if(!playerJobExists(player)) {
+        if(!playerJobExists(player) || level <= 25) {
             for(String s : getJobsFromRank(1)) {
                 Job j = getJobFromName(s);
                 jobList.add(j);
@@ -73,36 +74,32 @@ public class JobPlayer extends JobManager{
             return jobList;
         }
 
-        Job job = getPlayerJob(player);
-
-        for(int i=1; i <= 5; i++) {
-            if(job.rank() == i) {
-                double level = Math.sqrt(1000 * Math.log(i + 1));
-
-                if(getLevel(player) > level) {
-                    switch (job.genre()) {
-                        case MINER:
-                            jobList.addAll(MinerJobs.get(i+1));
-                            break;
-                        case LAMBER:
-                            jobList.addAll(LamberJobs.get(i+1));
-                            break;
-                        case FISHING:
-                            jobList.addAll(FisherJobs.get(i+1));
-                            break;
-                        case CHEF:
-                            jobList.addAll(ChefJobs.get(i+1));
-                            break;
-                        case HUNTER:
-                            jobList.addAll(HunterJobs.get(i+1));
-                            break;
-                    }
-                } else {
-                    for(String s : getJobsFromRank(1)) {
-                        Job j = getJobFromName(s);
-                        jobList.add(j);
-                    }
-                    return jobList;
+        if(level > 25) {
+            for(String s : getJobsFromRank(2)) {
+                Job j = getJobFromName(s);
+                if(j.genre() == getPlayerJob(player).genre()) {
+                    jobList.add(j);
+                }
+            }
+        } else if(level > 35) {
+            for(String s : getJobsFromRank(3)) {
+                Job j = getJobFromName(s);
+                if(j.genre() == getPlayerJob(player).genre()) {
+                    jobList.add(j);
+                }
+            }
+        } else if(level > 45) {
+            for(String s : getJobsFromRank(4)) {
+                Job j = getJobFromName(s);
+                if(j.genre() == getPlayerJob(player).genre()) {
+                    jobList.add(j);
+                }
+            }
+        } else if (level > 55){
+            for(String s : getJobsFromRank(5)) {
+                Job j = getJobFromName(s);
+                if(j.genre() == getPlayerJob(player).genre()) {
+                    jobList.add(j);
                 }
             }
         }
