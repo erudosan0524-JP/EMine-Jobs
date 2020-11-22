@@ -38,4 +38,9 @@ public class LamberMaster extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
 }

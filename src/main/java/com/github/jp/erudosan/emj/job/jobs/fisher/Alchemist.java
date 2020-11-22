@@ -37,4 +37,9 @@ public class Alchemist extends Job {
     public void onLevelUp(Player player, int level) {
 
     }
+
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
 }

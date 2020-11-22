@@ -38,4 +38,9 @@ public class ArkMage extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
 }

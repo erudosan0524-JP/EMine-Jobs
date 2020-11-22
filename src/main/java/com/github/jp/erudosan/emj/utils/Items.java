@@ -174,24 +174,6 @@ public class Items {
     /*
     カスタムアイテム一覧
      */
-    public static ItemStack getFisherProItem() {
-        ItemStack fishRod = new ItemStack(Material.FISHING_ROD,1);
-        ItemMeta meta = fishRod.getItemMeta();
-
-
-        String itemName = ChatColor.GOLD + "すごいつりざお";
-        meta.setDisplayName(itemName);
-        List<String> lores = new ArrayList<>();
-        lores.add(ChatColor.DARK_PURPLE + "めちゃくちゃすごいつりざお");
-        meta.setLore(lores);
-        meta.addEnchant(Enchantment.LURE,5,true);
-        meta.addEnchant(Enchantment.DURABILITY,5,true);
-        meta.addEnchant(Enchantment.LUCK,5,true);
-
-        fishRod.setItemMeta(meta);
-
-        return fishRod;
-    }
 
     public static ItemStack getCrafterItem() {
         ItemStack CraftTool = new ItemStack(Material.BRICK,1);

@@ -38,4 +38,9 @@ public class Goblin extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
 }

@@ -37,32 +37,7 @@ public class OnJobJoinLeave implements Listener {
         Player player = e.getPlayer();
         Job job = e.getJob();
 
-        String itemName = "";
-        List<String> lores = new ArrayList<>();
-
-        if(job instanceof Gunner) {
-            Gun gun = QualityArmory.getGunByName("glock");
-
-            player.getInventory().addItem(gun.getItemStack());
-            player.getInventory().addItem(gun.getAmmoType().getItemStack());
-
-            itemName = "GLOCK-17";
-
-        } else if(job instanceof FishPro) {
-            itemName = Objects.requireNonNull(Items.getFisherProItem().getItemMeta()).getDisplayName();
-            player.getInventory().addItem(Items.getFisherProItem());
-
-        } else if(job instanceof Crafter) {
-            itemName = Objects.requireNonNull(Items.getCrafterItem().getItemMeta()).getDisplayName();
-            player.getInventory().addItem(Items.getCrafterItem());
-        } else if(job instanceof Enchanter){
-            itemName = Objects.requireNonNull(Items.getEnchanterItem().getItemMeta()).getDisplayName();
-            player.getInventory().addItem(Items.getEnchanterItem());
-        } else {
-            return;
-        }
-
-        player.sendMessage("報酬として" + itemName +ChatColor.WHITE + "を手に入れた！");
+        job.onJobJoin(player);
     }
 
     @EventHandler

@@ -38,4 +38,9 @@ public class Lamber extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
 }

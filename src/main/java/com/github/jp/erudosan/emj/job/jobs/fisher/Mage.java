@@ -37,4 +37,9 @@ public class Mage extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
 }

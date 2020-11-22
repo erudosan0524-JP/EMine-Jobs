@@ -39,4 +39,9 @@ public class Fisher extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
 }

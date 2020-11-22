@@ -39,4 +39,9 @@ public class Chef extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
 }

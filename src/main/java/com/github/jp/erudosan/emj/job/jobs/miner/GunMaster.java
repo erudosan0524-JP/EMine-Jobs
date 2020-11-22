@@ -40,4 +40,9 @@ public class GunMaster extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
 }

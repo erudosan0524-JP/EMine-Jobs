@@ -39,4 +39,9 @@ public class CanonShooter extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
 }

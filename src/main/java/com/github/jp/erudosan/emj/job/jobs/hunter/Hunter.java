@@ -38,4 +38,9 @@ public class Hunter extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
 }

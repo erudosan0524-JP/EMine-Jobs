@@ -37,4 +37,9 @@ public class Farmer extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
 }

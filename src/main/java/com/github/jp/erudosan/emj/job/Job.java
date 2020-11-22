@@ -31,4 +31,7 @@ public abstract class Job {
 
     //レベルアップ時の報酬処理
     public abstract void onLevelUp(Player player, int level);
+
+    //jobに就いた時の処理
+    public abstract void onJobJoin(Player player);
 }

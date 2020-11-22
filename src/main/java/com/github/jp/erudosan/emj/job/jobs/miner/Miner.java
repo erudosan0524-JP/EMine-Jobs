@@ -60,7 +60,10 @@ public class Miner extends Job {
         }
     }
 
+    @Override
+    public void onJobJoin(Player player) {
 
+    }
 
 
 }
