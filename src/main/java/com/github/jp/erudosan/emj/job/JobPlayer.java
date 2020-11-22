@@ -37,7 +37,7 @@ public class JobPlayer extends JobManager{
     }
 
     public void addExp(Player player, double exp) {
-        double y = 51.763 * Math.exp(0.093 * plugin.getSql().getLevel(player));
+        double y = 51.763 * Math.exp(0.093 * (plugin.getSql().getLevel(player) + 1));
 
         if (plugin.getSql().getExp(player) > y) {
             this.levelUp(player);

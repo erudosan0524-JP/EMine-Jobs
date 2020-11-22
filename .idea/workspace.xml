@@ -115,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606037515738</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[update] update EXP System 3&#10;&#10;経験値システムの更新3">
+      <created>1606038333140</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606038333140</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,7 +155,8 @@
     <MESSAGE value="[add] add /leave command&#10;&#10;leaveコマンドの追加" />
     <MESSAGE value="[update] update EXP System&#10;&#10;経験値システムの更新" />
     <MESSAGE value="[update] update EXP System 2&#10;&#10;経験値システムの更新2" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] update EXP System 2&#10;&#10;経験値システムの更新2" />
+    <MESSAGE value="[update] update EXP System 3&#10;&#10;経験値システムの更新3" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] update EXP System 3&#10;&#10;経験値システムの更新3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2631" y="328" key="#com.intellij.ide.util.MemberChooser" timestamp="1605779119812">
@@ -160,11 +168,11 @@
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state x="2104" y="226" key="MergeDialog/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1605778101995" />
-    <state x="2347" y="345" key="Vcs.Push.Dialog.v2" timestamp="1606037523851">
+    <state x="2347" y="345" key="Vcs.Push.Dialog.v2" timestamp="1606038341533">
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602579879291" />
-    <state x="2347" y="345" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1606037523851" />
+    <state x="2347" y="345" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1606038341533" />
     <state x="2643" y="373" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605778093754">
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
