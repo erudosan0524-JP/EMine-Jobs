@@ -213,12 +213,12 @@ public class SQLGetterSetter {
         }
     }
 
-    public void updateExp(Player player, int exp) {
+    public void updateExp(Player player, double exp) {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
                     .prepareStatement("UPDATE " + player_jobs_table + " SET exp=? WHERE uuid=?");
-            statement.setInt(1,exp);
+            statement.setDouble(1,exp);
             statement.setString(2,player.getUniqueId().toString());
             statement.executeUpdate();
 

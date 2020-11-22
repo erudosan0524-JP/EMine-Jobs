@@ -31,6 +31,13 @@
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnCook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnCook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnDeath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnDeath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnFish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnFish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602579876153</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[update] update EXP System&#10;&#10;経験値システムの更新">
+      <created>1606036178460</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606036178460</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,7 +146,8 @@
     <MESSAGE value="[add] add BlockBreak Listener&#10;&#10;BlockBreakリスナーの追加" />
     <MESSAGE value="[update] update OnBlock.java&#10;&#10;lamber用の処理の追加" />
     <MESSAGE value="[add] add /leave command&#10;&#10;leaveコマンドの追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] add /leave command&#10;&#10;leaveコマンドの追加" />
+    <MESSAGE value="[update] update EXP System&#10;&#10;経験値システムの更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] update EXP System&#10;&#10;経験値システムの更新" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2631" y="328" key="#com.intellij.ide.util.MemberChooser" timestamp="1605779119812">

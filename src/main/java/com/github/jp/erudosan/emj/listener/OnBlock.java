@@ -14,6 +14,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
 
+import java.util.Random;
+
 public class OnBlock implements Listener {
 
     private Main plugin;
@@ -43,13 +45,21 @@ public class OnBlock implements Listener {
                 if(Items.getStones().contains(brokenBlcok.getType())) {
                     jobPlayer.addExp(player,1);
                 }
+
+                if(Items.getOres().contains(brokenBlcok.getType())) {
+                    Random rand = new Random();
+                    int amount = rand.nextInt(6);
+                    jobPlayer.addExp(player,amount);
+                }
             }
         }
 
         if (job.genre() == JobGenre.LAMBER) {
             if(Items.getAxes().contains(itemMainHand) || Items.getAxes().contains(itemOffHand)) {
                 if(Items.getWoods().contains(brokenBlcok.getType())) {
-                    jobPlayer.addExp(player, 1);
+                    Random rand = new Random();
+                    int amount = rand.nextInt(5);
+                    jobPlayer.addExp(player, amount);
                 }
             }
         }

@@ -12,6 +12,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.FurnaceExtractEvent;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
 
+import java.util.Random;
+
 public class OnCook implements Listener {
 
     private Main plugin;
@@ -36,7 +38,9 @@ public class OnCook implements Listener {
 
         if(job.genre() == JobGenre.CHEF) {
             if(Items.getFoods().contains(e.getItemType())) {
-                jobPlayer.addExp(player, 1);
+                Random rand = new Random();
+                double amount = (rand.nextDouble() + 1) * e.getItemAmount();
+                jobPlayer.addExp(player, amount);
             }
         }
     }
@@ -53,7 +57,9 @@ public class OnCook implements Listener {
 
         if(job.genre() == JobGenre.CHEF) {
             if(Items.getFoods().contains(e.getItem().getType())) {
-                jobPlayer.addExp(player,1);
+                Random rand = new Random();
+                int amount = rand.nextInt(5) + 1;
+                jobPlayer.addExp(player,amount);
             }
         }
     }

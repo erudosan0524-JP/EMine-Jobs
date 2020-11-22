@@ -10,6 +10,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerFishEvent;
 
+import java.util.Random;
+
 public class OnFish implements Listener {
 
     private Main plugin;
@@ -32,7 +34,9 @@ public class OnFish implements Listener {
         Job job = jobPlayer.getPlayerJob(player);
 
         if(job.genre() == JobGenre.FISHING) {
-            jobPlayer.addExp(player,1);
+            Random rand = new Random();
+            int amount = rand.nextInt(3) + 1;
+            jobPlayer.addExp(player,amount);
         }
 
     }

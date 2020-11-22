@@ -15,12 +15,6 @@ public class Config {
     private String language;
 
     @Getter
-    private int needExpLevelUp;
-
-    @Getter
-    private int needLevelTo2, needLevelTo3, needLevelTo4, needLevelTo5;
-
-    @Getter
     private int guiSize;
 
     @Getter
@@ -47,11 +41,6 @@ public class Config {
         config = plugin.getConfig();
 
         language = config.getString("language");
-        needExpLevelUp = config.getInt("need-exp-levelup");
-        needLevelTo2 = config.getInt("need-level-to2");
-        needLevelTo3 = config.getInt("need-level-to3");
-        needLevelTo4 = config.getInt("need-level-to4");
-        needLevelTo5 = config.getInt("need-level-to5");
         guiSize = config.getInt("gui-size");
         enabledMySQL = config.getBoolean("enabled-mysql");
         host = config.getString("host");
