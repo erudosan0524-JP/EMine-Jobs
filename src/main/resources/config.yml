@@ -4,10 +4,16 @@ language: ja
 #SETTING GUI
 gui-size: 6
 
+needlevelto2: 25
+needlevelto3: 35
+needlevelto4: 45
+needlevelto5: 55
+
 #Settings for Database
 enabled-mysql: true
 host: localhost
 port: 3306
 username: erudo
 password: password
-database: emine-jobs
+database: emine-
+  oooojobs

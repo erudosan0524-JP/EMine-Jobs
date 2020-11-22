@@ -66,7 +66,7 @@ public class JobPlayer extends JobManager{
         List<Job> jobList = new ArrayList<>();
         int level = getLevel(player);
 
-        if(!playerJobExists(player) || level <= 25) {
+        if(!playerJobExists(player) || level <= plugin.getMyconfig().getNeedLevelto2()) {
             for(String s : getJobsFromRank(1)) {
                 Job j = getJobFromName(s);
                 jobList.add(j);
@@ -74,28 +74,28 @@ public class JobPlayer extends JobManager{
             return jobList;
         }
 
-        if(level > 25) {
+        if(level > plugin.getMyconfig().getNeedLevelto2()) {
             for(String s : getJobsFromRank(2)) {
                 Job j = getJobFromName(s);
                 if(j.genre() == getPlayerJob(player).genre()) {
                     jobList.add(j);
                 }
             }
-        } else if(level > 35) {
+        } else if(level > plugin.getMyconfig().getNeedLevelto3()) {
             for(String s : getJobsFromRank(3)) {
                 Job j = getJobFromName(s);
                 if(j.genre() == getPlayerJob(player).genre()) {
                     jobList.add(j);
                 }
             }
-        } else if(level > 45) {
+        } else if(level > plugin.getMyconfig().getNeedLevelto4()) {
             for(String s : getJobsFromRank(4)) {
                 Job j = getJobFromName(s);
                 if(j.genre() == getPlayerJob(player).genre()) {
                     jobList.add(j);
                 }
             }
-        } else if (level > 55){
+        } else if (level > plugin.getMyconfig().getNeedLevelto5()){
             for(String s : getJobsFromRank(5)) {
                 Job j = getJobFromName(s);
                 if(j.genre() == getPlayerJob(player).genre()) {

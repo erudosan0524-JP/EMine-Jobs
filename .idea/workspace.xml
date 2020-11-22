@@ -23,19 +23,26 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop-level" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,6 +66,9 @@
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1ioQbg8v3U54IxN28yMQ4huMAjF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -136,7 +146,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop-level" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -168,11 +178,11 @@
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state x="2104" y="226" key="MergeDialog/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1605778101995" />
-    <state x="2347" y="345" key="Vcs.Push.Dialog.v2" timestamp="1606038341533">
+    <state x="2347" y="345" key="Vcs.Push.Dialog.v2" timestamp="1606042314876">
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602579879291" />
-    <state x="2347" y="345" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1606038341533" />
+    <state x="2347" y="345" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1606042314876" />
     <state x="2643" y="373" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605778093754">
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
