@@ -26,6 +26,8 @@ help_message:
   - "&3/emj join &f[職業名] &f➡ &2指定した職業に就職"
   - "&3/emj leave &f➡ &2現在の職業を辞める"
   - "&3/emj jobs &f➡ &2就職可能な職業を表示"
+  - "&3/emj gui &f➡ &2GUIを開く"
+  - "&3/emj addlevel &f[プレイヤー名] [レベル] ➡ &2指定したプレイヤーに指定したレベルを与える"
 
 # "/emj stats" Command Message
 stats_message:
@@ -91,3 +93,8 @@ miner-item: "微妙に使える木のピッケル"
 miner-item-lore:
   - "鉱夫の初期アイテム"
   - "木のピッケルだが，採掘速度が少しだけ早い"
+
+lamber-item: "微妙に使える木の斧"
+lamber-item-lore:
+  - "木こり師の初期アイテム"
+  - "木の斧だが，採掘速度が少しだけ早い"

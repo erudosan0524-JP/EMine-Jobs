@@ -2,6 +2,7 @@ package com.github.jp.erudosan.emj.job;
 
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.event.PlayerChangeExpEvent;
+import com.github.jp.erudosan.emj.event.PlayerJobLeaveEvent;
 import com.github.jp.erudosan.emj.event.PlayerLevelUpEvent;
 import org.bukkit.entity.Player;
 
@@ -22,6 +23,7 @@ public class JobPlayer extends JobManager{
     public void setPlayerJob(Player player, Job job) {
         if(Objects.isNull(job)) {
             plugin.getSql().leavePlayerJob(player);
+
         } else {
             plugin.getSql().setPlayerJob(player,job);
         }
@@ -32,6 +34,9 @@ public class JobPlayer extends JobManager{
     }
 
     public void updatePlayerJob(Player player, Job job, double exp, int level) {
+        PlayerJobLeaveEvent event = new PlayerJobLeaveEvent(player,getPlayerJob(player));
+        plugin.getServer().getPluginManager().callEvent(event);
+
         plugin.getSql().updatePlayerJob(player,job,exp,level);
     }
 

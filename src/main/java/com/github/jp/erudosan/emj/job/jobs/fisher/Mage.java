@@ -42,4 +42,9 @@ public class Mage extends Job {
 
     }
 
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
+
 }

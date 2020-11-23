@@ -45,12 +45,6 @@ public class OnJobJoinLeave implements Listener {
         Player player = e.getPlayer();
         Job job = e.getJob();
 
-        if(job instanceof Gunner) {
-            Gun gun = QualityArmory.getGunByName("glock");
-
-            if(player.getInventory().contains(gun.getItemStack())) {
-                player.getInventory().remove(gun.getItemStack());
-            }
-        }
+        job.onJobLeave(player);
     }
 }

@@ -34,4 +34,6 @@ public abstract class Job {
 
     //jobに就いた時の処理
     public abstract void onJobJoin(Player player);
+
+    public abstract void onJobLeave(Player player);
 }

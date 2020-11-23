@@ -61,4 +61,9 @@ public class Crafter extends Job {
         player.sendMessage("報酬として" + itemName +ChatColor.WHITE + "を手に入れた！");
     }
 
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
+
 }

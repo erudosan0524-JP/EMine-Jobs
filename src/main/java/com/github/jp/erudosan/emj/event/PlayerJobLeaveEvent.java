@@ -12,6 +12,10 @@ public class PlayerJobLeaveEvent extends Event {
     private Job job;
     private static final HandlerList handlers = new HandlerList();
 
+    /*
+    @param player プレイヤー
+    @param job もともと就いていた職業
+     */
     public PlayerJobLeaveEvent(Player player, Job job) {
         this.player = player;
         this.job = job;

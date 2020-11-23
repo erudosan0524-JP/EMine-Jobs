@@ -42,4 +42,9 @@ public class MineCrafter extends Job {
 
     }
 
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
+
 }

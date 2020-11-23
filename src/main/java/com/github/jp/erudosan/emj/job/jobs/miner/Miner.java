@@ -62,5 +62,10 @@ public class Miner extends Job {
 
     }
 
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
+
 
 }

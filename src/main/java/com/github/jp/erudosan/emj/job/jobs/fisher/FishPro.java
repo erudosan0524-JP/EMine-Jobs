@@ -67,4 +67,9 @@ public class FishPro extends Job {
         player.sendMessage("報酬として" + itemName + "を手に入れた！");
     }
 
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
+
 }

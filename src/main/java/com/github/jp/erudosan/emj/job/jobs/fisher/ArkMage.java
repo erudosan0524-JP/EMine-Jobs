@@ -43,4 +43,9 @@ public class ArkMage extends Job {
 
     }
 
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
+
 }

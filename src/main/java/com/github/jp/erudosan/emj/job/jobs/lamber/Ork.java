@@ -41,4 +41,9 @@ public class Ork extends Job {
     public void onJobJoin(Player player) {
 
     }
+
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
 }

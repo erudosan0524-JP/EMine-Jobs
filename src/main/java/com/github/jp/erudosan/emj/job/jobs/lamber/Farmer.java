@@ -42,4 +42,9 @@ public class Farmer extends Job {
 
     }
 
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
+
 }

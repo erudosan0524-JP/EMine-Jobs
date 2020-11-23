@@ -44,4 +44,9 @@ public class Chef extends Job {
 
     }
 
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
+
 }

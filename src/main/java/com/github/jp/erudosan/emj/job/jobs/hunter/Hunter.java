@@ -43,4 +43,9 @@ public class Hunter extends Job {
 
     }
 
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
+
 }

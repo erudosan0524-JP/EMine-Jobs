@@ -58,4 +58,9 @@ public class FishMaster extends Job {
 
     }
 
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
+
 }
