@@ -5,6 +5,8 @@ import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.job.JobPlayer;
+import com.github.jp.erudosan.emj.job.jobs.miner.MinePro;
+import com.github.jp.erudosan.emj.skills.BlockBreakUtil;
 import com.github.jp.erudosan.emj.utils.Items;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -65,7 +67,19 @@ public class OnBlock implements Listener {
         }
 
 
+        //Mine-proのピッケル
+        if(job instanceof MinePro) {
+            if(player.getInventory().getItemInMainHand().getType() == Material.IRON_PICKAXE) {
+                ItemStack item = player.getInventory().getItemInMainHand();
+                if(item.hasItemMeta() && item.getItemMeta().hasDisplayName()) {
+                    if(item.getItemMeta().getDisplayName().equalsIgnoreCase(plugin.getHandler().getCaption("mine-pro-item"))) {
 
+                        //ブロック一気に破壊する処理
+                        BlockBreakUtil.Break3x3(brokenBlcok.getLocation());
+                    }
+                }
+            }
+        }
 
     }
 }

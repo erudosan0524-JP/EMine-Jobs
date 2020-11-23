@@ -4,6 +4,7 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
+import com.github.jp.erudosan.emj.utils.Items;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -46,7 +47,7 @@ public class Crafter extends Job {
 
     @Override
     public void onJobJoin(Player player) {
-        player.getInventory().addItem(getItem());
+        player.getInventory().addItem(Items.getCrafterItem(plugin));
         player.sendMessage("報酬として" + plugin.getHandler().getCaption("crafter-item") +ChatColor.WHITE + "を手に入れた！");
     }
 
@@ -54,23 +55,11 @@ public class Crafter extends Job {
     public void onJobLeave(Player player) {
         Inventory inv = player.getInventory();
 
-        if(inv.contains(getItem())) {
-            inv.remove(getItem());
+        if(inv.contains(Items.getCrafterItem(plugin))) {
+            inv.remove(Items.getCrafterItem(plugin));
         }
 
         player.sendMessage(plugin.getHandler().getCaptionJob(this,"remove_item_message"));
-    }
-
-    private ItemStack getItem() {
-        ItemStack CraftTool = new ItemStack(Material.BRICK,1);
-        ItemMeta meta = CraftTool.getItemMeta();
-
-        meta.setDisplayName(plugin.getHandler().getCaption("crafter-item"));
-        meta.setLore(plugin.getHandler().getCaptionList("crafter-item-lore"));
-
-        CraftTool.setItemMeta(meta);
-
-        return CraftTool;
     }
 
 }

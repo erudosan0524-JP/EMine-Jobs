@@ -109,3 +109,8 @@ crafter-item: "クラフトツール"
 crafter-item-lore:
   - "右クリックで使用できる。"
   - "携帯型作業台"
+
+enchanter-item: "エンチャントツール"
+enchanter-item-lore:
+  - "右クリックで使用できる"
+  - "携帯型エンチャントテーブル"

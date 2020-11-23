@@ -4,6 +4,7 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
+import com.github.jp.erudosan.emj.utils.Items;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -47,7 +48,7 @@ public class Miner extends Job {
 
     @Override
     public void onJobJoin(Player player) {
-        player.getInventory().addItem(getItem());
+        player.getInventory().addItem(Items.getMinerItem(plugin));
 
         player.sendMessage("報酬として" + plugin.getHandler().getCaption("miner-item") + ChatColor.WHITE + "を手に入れた！");
 
@@ -57,26 +58,11 @@ public class Miner extends Job {
     public void onJobLeave(Player player) {
         Inventory inv = player.getInventory();
 
-        if(inv.contains(getItem())) {
-            inv.remove(getItem());
+        if(inv.contains(Items.getMinerItem(plugin))) {
+            inv.remove(Items.getMinerItem(plugin));
         }
 
         player.sendMessage(plugin.getHandler().getCaptionJob(this,"remove_item_message"));
     }
-
-    private ItemStack getItem() {
-        ItemStack item = new ItemStack(Material.WOODEN_PICKAXE);
-        ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(plugin.getHandler().getCaption("miner-item"));
-        meta.setLore(plugin.getHandler().getCaptionList("miner-item-lore"));
-        meta.addEnchant(Enchantment.DIG_SPEED,5,true);
-        meta.addEnchant(Enchantment.DURABILITY,3,true);
-        meta.addEnchant(Enchantment.MENDING,1,true);
-
-        item.setItemMeta(meta);
-
-        return item;
-    }
-
 
 }

@@ -45,9 +45,9 @@ public class OnInteract implements Listener {
 
         if (e.getAction() == Action.RIGHT_CLICK_BLOCK || e.getAction() == Action.RIGHT_CLICK_AIR) {
 
-            if (itemMain.getItemMeta().getDisplayName().equals(Items.getCrafterItem().getItemMeta().hasDisplayName())
-                    || itemOff.getItemMeta().getDisplayName().equals(Items.getCrafterItem().getItemMeta().hasDisplayName())) {
-                if(itemMain.getType() == Items.getCrafterItem().getType() || itemOff.getType() == Items.getCrafterItem().getType()) {
+            if (itemMain.getItemMeta().getDisplayName().equals(Items.getCrafterItem(plugin).getItemMeta().hasDisplayName())
+                    || itemOff.getItemMeta().getDisplayName().equals(Items.getCrafterItem(plugin).getItemMeta().hasDisplayName())) {
+                if(itemMain.getType() == Items.getCrafterItem(plugin).getType() || itemOff.getType() == Items.getCrafterItem(plugin).getType()) {
                     if (jobPlayer.playerJobExists(player)) {
                         Job job = jobPlayer.getPlayerJob(player);
 
@@ -56,9 +56,9 @@ public class OnInteract implements Listener {
                         }
                     }
                 }
-            } else if(itemMain.getItemMeta().getDisplayName().equals(Items.getEnchanterItem().getItemMeta().hasDisplayName())
-                    || itemOff.getItemMeta().getDisplayName().equals(Items.getEnchanterItem().getItemMeta().hasDisplayName())) {
-                if(itemMain.getType() == Items.getEnchanterItem().getType() || itemOff.getType() == Items.getEnchanterItem().getType()) {
+            } else if(itemMain.getItemMeta().getDisplayName().equals(Items.getEnchanterItem(plugin).getItemMeta().hasDisplayName())
+                    || itemOff.getItemMeta().getDisplayName().equals(Items.getEnchanterItem(plugin).getItemMeta().hasDisplayName())) {
+                if(itemMain.getType() == Items.getEnchanterItem(plugin).getType() || itemOff.getType() == Items.getEnchanterItem(plugin).getType()) {
                     if (jobPlayer.playerJobExists(player)) {
                         Job job = jobPlayer.getPlayerJob(player);
 

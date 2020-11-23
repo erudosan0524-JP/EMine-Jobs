@@ -1,5 +1,6 @@
 package com.github.jp.erudosan.emj.utils;
 
+import com.github.jp.erudosan.emj.Main;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -174,33 +175,55 @@ public class Items {
     /*
     カスタムアイテム一覧
      */
+    public static ItemStack getLamberItem(Main plugin) {
+        ItemStack item = new ItemStack(Material.WOODEN_AXE);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(plugin.getHandler().getCaption("lamber-item"));
+        meta.setLore(plugin.getHandler().getCaptionList("lamber-item-lore"));
+        meta.addEnchant(Enchantment.DIG_SPEED, 5, true);
+        meta.addEnchant(Enchantment.DURABILITY, 3, true);
+        meta.addEnchant(Enchantment.MENDING, 1, true);
 
-    public static ItemStack getCrafterItem() {
-        ItemStack CraftTool = new ItemStack(Material.BRICK,1);
+        item.setItemMeta(meta);
+
+        return item;
+
+    }
+
+    public static ItemStack getMinerItem(Main plugin) {
+        ItemStack item = new ItemStack(Material.WOODEN_PICKAXE);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(plugin.getHandler().getCaption("miner-item"));
+        meta.setLore(plugin.getHandler().getCaptionList("miner-item-lore"));
+        meta.addEnchant(Enchantment.DIG_SPEED, 5, true);
+        meta.addEnchant(Enchantment.DURABILITY, 3, true);
+        meta.addEnchant(Enchantment.MENDING, 1, true);
+
+        item.setItemMeta(meta);
+
+        return item;
+
+    }
+
+
+    public static ItemStack getCrafterItem(Main plugin) {
+        ItemStack CraftTool = new ItemStack(Material.BRICK, 1);
         ItemMeta meta = CraftTool.getItemMeta();
 
-        String itemName = ChatColor.DARK_RED + "クラフトツール";
-        meta.setDisplayName(itemName);
-        List<String> lores = new ArrayList<>();
-        lores.add(ChatColor.GRAY + "右クリックで使用できる。");
-        lores.add(ChatColor.GRAY + "携帯型作業台");
-        meta.setLore(lores);
+        meta.setDisplayName(plugin.getHandler().getCaption("crafter-item"));
+        meta.setLore(plugin.getHandler().getCaptionList("crafter-item-lore"));
 
         CraftTool.setItemMeta(meta);
 
         return CraftTool;
     }
 
-    public static ItemStack getEnchanterItem() {
-        ItemStack EnchantItem = new ItemStack(Material.BOOK,1);
+    public static ItemStack getEnchanterItem(Main plugin) {
+        ItemStack EnchantItem = new ItemStack(Material.BOOK, 1);
         ItemMeta meta = EnchantItem.getItemMeta();
 
-        String itemName = ChatColor.AQUA + "エンチャントツール";
-        meta.setDisplayName(itemName);
-        List<String> lore = new ArrayList<>();
-        lore.add(ChatColor.GRAY + "右クリックで使用できる");
-        lore.add(ChatColor.GRAY + "携帯型エンチャントテーブル");
-        meta.setLore(lore);
+        meta.setDisplayName(plugin.getHandler().getCaption("enchanter-item"));
+        meta.setLore(plugin.getHandler().getCaptionList("enchanter-item-lore"));
 
         EnchantItem.setItemMeta(meta);
 
