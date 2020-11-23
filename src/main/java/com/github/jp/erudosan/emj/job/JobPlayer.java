@@ -25,7 +25,14 @@ public class JobPlayer extends JobManager{
         } else {
             plugin.getSql().setPlayerJob(player,job);
         }
+    }
 
+    public boolean isSetPlayerJob(Player player) {
+        return plugin.getSql().isSetPlayerJob(player);
+    }
+
+    public void updatePlayerJob(Player player, Job job, double exp, int level) {
+        plugin.getSql().updatePlayerJob(player,job,exp,level);
     }
 
     public Job getPlayerJob(Player player) {
@@ -47,6 +54,10 @@ public class JobPlayer extends JobManager{
         plugin.getServer().getPluginManager().callEvent(event);
 
         plugin.getSql().updateExp(player,plugin.getSql().getExp(player) + exp);
+    }
+
+    public double getExp(Player player) {
+        return plugin.getSql().getExp(player);
     }
 
     public void levelUp(Player player) {

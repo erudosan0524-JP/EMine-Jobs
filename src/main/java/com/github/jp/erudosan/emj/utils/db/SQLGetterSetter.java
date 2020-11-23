@@ -197,14 +197,14 @@ public class SQLGetterSetter {
         return false;
     }
 
-    public void updatePlayerJob(Player player, Job job) {
+    public void updatePlayerJob(Player player, Job job,double exp, int level) {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
                     .prepareStatement("UPDATE " + player_jobs_table + " SET job=?, exp=?, level=? WHERE uuid=?");
             statement.setString(1,job.name());
-            statement.setInt(2,0);
-            statement.setInt(3,1);
+            statement.setDouble(2,exp);
+            statement.setInt(3,level);
             statement.setString(4,player.getUniqueId().toString());
             statement.executeUpdate();
 
