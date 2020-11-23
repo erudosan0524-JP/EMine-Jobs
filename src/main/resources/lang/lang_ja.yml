@@ -12,6 +12,7 @@ player_firstjoin_message: "&d{player}さんが初めてログインしました�
 
 #quit event message
 player_quit_message: "{player}さんがログアウトしました。"
+remove_item_message: "{job}を辞めたため，固有アイテムを失いました"
 
 # Command Message
 command_firstline: "&7============= &2EMine&7-&3Jobs &7============="

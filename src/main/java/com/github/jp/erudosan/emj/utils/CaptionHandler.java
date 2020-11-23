@@ -1,6 +1,7 @@
 package com.github.jp.erudosan.emj.utils;
 
 import com.github.jp.erudosan.emj.Main;
+import com.github.jp.erudosan.emj.job.Job;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -107,6 +108,24 @@ public class CaptionHandler {
             caption = caption.replace("{player}",player.getName());
         } else if(caption.contains("{job}")) {
             caption = caption.replace("{job}",plugin.getJobPlayer().getPlayerJob(player).name().toUpperCase());
+        }
+
+        return caption;
+    }
+
+    public String getCaptionJob(Job job, String name) {
+        String caption = this.config.getString(name);
+
+        if (caption == null)
+        {
+            this.plugin.getLogger().warning("Missing caption: " + name);
+            caption = "&c[missing caption]";
+        }
+
+        caption = ChatColor.translateAlternateColorCodes('&', caption);
+
+        if(caption.contains("{job}")) {
+            caption = caption.replace("{job}",job.name());
         }
 
         return caption;

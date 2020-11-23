@@ -57,7 +57,7 @@ public class Hunter extends Job {
         if(inv.contains(getItem())) {
             inv.remove(getItem());
         }
-        player.sendMessage(plugin.getHandler().getCaption(this.name()) + "から退職したため，固有アイテムを失いました。");
+        player.sendMessage(plugin.getHandler().getCaptionJob(this,"remove_item_message"));
     }
 
     private ItemStack getItem() {

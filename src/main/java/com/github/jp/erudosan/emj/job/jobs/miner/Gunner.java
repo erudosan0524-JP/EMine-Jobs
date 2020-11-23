@@ -70,7 +70,6 @@ public class Gunner extends Job {
             inv.remove(gun.getAmmoType().getItemStack());
         }
 
-        player.sendMessage(plugin.getHandler().getCaption(this.name()) + "から退職したため，固有アイテムを失いました。");
-    }
+        player.sendMessage(plugin.getHandler().getCaptionJob(this,"remove_item_message"));    }
 
 }
