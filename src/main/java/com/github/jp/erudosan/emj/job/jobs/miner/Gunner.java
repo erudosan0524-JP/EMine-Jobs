@@ -8,6 +8,7 @@ import me.zombie_striker.qg.api.QualityArmory;
 import me.zombie_striker.qg.guns.Gun;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,7 +59,18 @@ public class Gunner extends Job {
 
     @Override
     public void onJobLeave(Player player) {
+        Inventory inv = player.getInventory();
+        Gun gun = QualityArmory.getGunByName("glock");
 
+        if(inv.contains(gun.getItemStack())) {
+            inv.remove(gun.getItemStack());
+        }
+
+        if(inv.contains(gun.getAmmoType().getItemStack())) {
+            inv.remove(gun.getAmmoType().getItemStack());
+        }
+
+        player.sendMessage(plugin.getHandler().getCaption(this.name()) + "から退職したため，固有アイテムを失いました。");
     }
 
 }

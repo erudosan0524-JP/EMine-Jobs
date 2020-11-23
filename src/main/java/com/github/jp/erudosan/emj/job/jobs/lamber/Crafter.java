@@ -7,6 +7,7 @@ import com.github.jp.erudosan.emj.job.JobGenre;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -45,25 +46,31 @@ public class Crafter extends Job {
 
     @Override
     public void onJobJoin(Player player) {
-        ItemStack CraftTool = new ItemStack(Material.BRICK,1);
-        ItemMeta meta = CraftTool.getItemMeta();
-
-        String itemName = ChatColor.DARK_RED + "クラフトツール";
-        meta.setDisplayName(itemName);
-        List<String> lores = new ArrayList<>();
-        lores.add(ChatColor.GRAY + "右クリックで使用できる。");
-        lores.add(ChatColor.GRAY + "携帯型作業台");
-        meta.setLore(lores);
-
-        CraftTool.setItemMeta(meta);
-
-        player.getInventory().addItem(CraftTool);
-        player.sendMessage("報酬として" + itemName +ChatColor.WHITE + "を手に入れた！");
+        player.getInventory().addItem(getItem());
+        player.sendMessage("報酬として" + plugin.getHandler().getCaption("crafter-item") +ChatColor.WHITE + "を手に入れた！");
     }
 
     @Override
     public void onJobLeave(Player player) {
+        Inventory inv = player.getInventory();
 
+        if(inv.contains(getItem())) {
+            inv.remove(getItem());
+        }
+
+        player.sendMessage(plugin.getHandler().getCaption(this.name()) + "から退職したため，固有アイテムを失いました。");
+    }
+
+    private ItemStack getItem() {
+        ItemStack CraftTool = new ItemStack(Material.BRICK,1);
+        ItemMeta meta = CraftTool.getItemMeta();
+
+        meta.setDisplayName(plugin.getHandler().getCaption("crafter-item"));
+        meta.setLore(plugin.getHandler().getCaptionList("crafter-item-lore"));
+
+        CraftTool.setItemMeta(meta);
+
+        return CraftTool;
     }
 
 }

@@ -8,6 +8,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -46,6 +47,25 @@ public class Miner extends Job {
 
     @Override
     public void onJobJoin(Player player) {
+        player.getInventory().addItem(getItem());
+
+        player.sendMessage("報酬として" + plugin.getHandler().getCaption("miner-item") + ChatColor.WHITE + "を手に入れた！");
+
+    }
+
+    @Override
+    public void onJobLeave(Player player) {
+        Inventory inv = player.getInventory();
+
+        if(inv.contains(getItem())) {
+            inv.remove(getItem());
+        }
+
+        player.sendMessage(plugin.getHandler().getCaption(this.name()) + "から退職したため，固有アイテムを失いました。");
+
+    }
+
+    private ItemStack getItem() {
         ItemStack item = new ItemStack(Material.WOODEN_PICKAXE);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(plugin.getHandler().getCaption("miner-item"));
@@ -56,15 +76,7 @@ public class Miner extends Job {
 
         item.setItemMeta(meta);
 
-        player.getInventory().addItem(item);
-
-        player.sendMessage("報酬として" + plugin.getHandler().getCaption("miner-item") + ChatColor.WHITE + "を手に入れた！");
-
-    }
-
-    @Override
-    public void onJobLeave(Player player) {
-
+        return item;
     }
 
 

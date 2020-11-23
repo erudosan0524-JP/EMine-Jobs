@@ -9,6 +9,7 @@ import com.github.jp.erudosan.emj.utils.Items;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.inventory.FurnaceExtractEvent;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
 
@@ -39,7 +40,7 @@ public class OnCook implements Listener {
         if(job.genre() == JobGenre.CHEF) {
             if(Items.getFoods().contains(e.getItemType())) {
                 Random rand = new Random();
-                double amount = (rand.nextDouble() + 1) * e.getItemAmount();
+                double amount = (rand.nextDouble() + 1) * e.getItemAmount(); //(1.0~2.0)*アイテム数
                 jobPlayer.addExp(player, amount);
             }
         }
@@ -58,9 +59,14 @@ public class OnCook implements Listener {
         if(job.genre() == JobGenre.CHEF) {
             if(Items.getFoods().contains(e.getItem().getType())) {
                 Random rand = new Random();
-                int amount = rand.nextInt(5) + 1;
+                int amount = rand.nextInt(5) + 1; //1~6
                 jobPlayer.addExp(player,amount);
             }
         }
+    }
+
+    @EventHandler
+    public void onFoodLevelChange(FoodLevelChangeEvent e) {
+
     }
 }
