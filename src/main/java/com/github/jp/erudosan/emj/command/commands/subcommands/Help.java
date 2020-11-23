@@ -16,10 +16,11 @@ public class Help extends SubCommand {
     @Override
     public void onCommand(Player player, String[] args) {
         player.sendMessage(plugin.getHandler().getCaption("command_firstline"));
-        player.sendMessage(plugin.getHandler().getCaption("help_line1"));
-        player.sendMessage(plugin.getHandler().getCaption("help_line2"));
-        player.sendMessage(plugin.getHandler().getCaption("help_line3"));
-        player.sendMessage(plugin.getHandler().getCaption("help_line4"));
+
+        for(String help_message : plugin.getHandler().getCaptionList("help_message")) {
+            player.sendMessage(help_message);
+        }
+
         player.sendMessage(plugin.getHandler().getCaption("command_endline"));
 
 

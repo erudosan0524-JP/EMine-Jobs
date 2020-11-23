@@ -11,6 +11,7 @@ import org.bukkit.entity.Player;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 public class CaptionHandler {
     private Main plugin;
@@ -109,6 +110,21 @@ public class CaptionHandler {
         }
 
         return caption;
+    }
+
+    public List<String> getCaptionList(String name) {
+        List<String> captions = this.config.getStringList(name);
+
+        if(captions.isEmpty()) {
+            this.plugin.getLogger().warning("Missing caption: " + name);
+            captions.add("&c[missing caption]");
+        }
+
+        for(String caption : captions) {
+            caption = ChatColor.translateAlternateColorCodes('&',caption);
+        }
+
+        return captions;
     }
 
 }
