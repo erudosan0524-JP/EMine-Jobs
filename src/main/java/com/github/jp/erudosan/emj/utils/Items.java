@@ -205,6 +205,59 @@ public class Items {
 
     }
 
+    public static ItemStack getHunterItem(Main plugin) {
+        ItemStack item = new ItemStack(Material.WOODEN_SWORD);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(plugin.getHandler().getCaption("hunter-item"));
+        meta.setLore(plugin.getHandler().getCaptionList("hunter-item-lore"));
+        meta.addEnchant(Enchantment.DAMAGE_UNDEAD,5,true);
+        meta.addEnchant(Enchantment.KNOCKBACK,2,true);
+        meta.addEnchant(Enchantment.MENDING,1,true);
+
+        item.setItemMeta(meta);
+
+        return item;
+    }
+
+    public static ItemStack getFisherItem(Main plugin) {
+        ItemStack item = new ItemStack(Material.FISHING_ROD);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(plugin.getHandler().getCaption("fisher-item"));
+        meta.setLore(plugin.getHandler().getCaptionList("fisher-item-lore"));
+
+        meta.addEnchant(Enchantment.MENDING,1,true);
+
+        item.setItemMeta(meta);
+
+        return item;
+    }
+
+    public static ItemStack getChefItem(Main plugin) {
+        //携帯式かまど
+        ItemStack item = new ItemStack(Material.BEETROOTS);
+        ItemMeta meta = item.getItemMeta();
+
+        meta.setDisplayName(plugin.getHandler().getCaption("chef-item"));
+        meta.setLore(plugin.getHandler().getCaptionList("chef-item-list"));
+
+        item.setItemMeta(meta);
+
+        return item;
+    }
+
+    public static ItemStack getMineProItem(Main plugin) {
+        ItemStack item = new ItemStack(Material.IRON_PICKAXE);
+        ItemMeta meta = item.getItemMeta();
+
+        meta.setDisplayName(plugin.getHandler().getCaption("mine-pro-item"));
+        meta.setLore(plugin.getHandler().getCaptionList("mine-pro-item-lore"));
+
+        item.setItemMeta(meta);
+
+        return item;
+    }
+
+
 
     public static ItemStack getCrafterItem(Main plugin) {
         ItemStack CraftTool = new ItemStack(Material.BRICK, 1);

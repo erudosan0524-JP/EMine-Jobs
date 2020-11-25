@@ -4,8 +4,11 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
+import com.github.jp.erudosan.emj.utils.Items;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
 
 public class Fisher extends Job {
 
@@ -41,12 +44,19 @@ public class Fisher extends Job {
 
     @Override
     public void onJobJoin(Player player) {
+        player.getInventory().addItem(Items.getFisherItem(plugin));
 
+        player.sendMessage("報酬として" + plugin.getHandler().getCaption("fisher-item") + ChatColor.WHITE + "を手に入れた！");
     }
 
     @Override
     public void onJobLeave(Player player) {
+        Inventory inv = player.getInventory();
 
+        if(inv.contains(Items.getFisherItem(plugin))) {
+            inv.remove(Items.getFisherItem(plugin));
+        }
+        player.sendMessage(plugin.getHandler().getCaptionJob(this,"remove_item_message"));
     }
 
 }
