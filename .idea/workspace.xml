@@ -30,13 +30,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/chef/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/chef/Chef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Fisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/fisher/Fisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/hunter/Hunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/hunter/Hunter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/MinePro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/MinePro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnInteract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang/lang_ja.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606132645057</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="[update] add many Items&#10;&#10;職業アイテムの追加">
+      <created>1606306180697</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606306180697</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +233,8 @@
     <MESSAGE value="[update] add Initial items&#10;&#10;初期アイテムの設定" />
     <MESSAGE value="[update] add remove_item_message&#10;&#10;固有アイテムを失った時のメッセージを修正" />
     <MESSAGE value="[add] add BlockBreakUtil&#10;&#10;鉱夫系の職業スキルの追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] add BlockBreakUtil&#10;&#10;鉱夫系の職業スキルの追加" />
+    <MESSAGE value="[update] add many Items&#10;&#10;職業アイテムの追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] add many Items&#10;&#10;職業アイテムの追加" />
   </component>
   <component name="WindowStateProjectService">
     <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1606103494403">

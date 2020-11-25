@@ -251,6 +251,10 @@ public class Items {
 
         meta.setDisplayName(plugin.getHandler().getCaption("mine-pro-item"));
         meta.setLore(plugin.getHandler().getCaptionList("mine-pro-item-lore"));
+        meta.addEnchant(Enchantment.DURABILITY, 3, true);
+        meta.addEnchant(Enchantment.DIG_SPEED,5, true);
+        meta.addEnchant(Enchantment.MENDING, 1, true);
+        meta.addEnchant(Enchantment.SILK_TOUCH,1,true);
 
         item.setItemMeta(meta);
 
