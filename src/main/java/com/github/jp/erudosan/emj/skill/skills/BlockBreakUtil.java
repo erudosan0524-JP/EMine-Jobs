@@ -1,8 +1,6 @@
-package com.github.jp.erudosan.emj.skills;
+package com.github.jp.erudosan.emj.skill.skills;
 
 import org.bukkit.Location;
-
-import java.util.List;
 
 public class BlockBreakUtil {
 
