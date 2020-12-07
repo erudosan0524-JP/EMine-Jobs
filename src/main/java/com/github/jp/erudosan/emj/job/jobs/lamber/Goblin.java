@@ -20,7 +20,7 @@ public class Goblin extends Job {
 
     @Override
     public JobGenre genre() {
-        return JobGenre.LAMBER;
+        return JobGenre.LUMBER;
     }
 
     @Override

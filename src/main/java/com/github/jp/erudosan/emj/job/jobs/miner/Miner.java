@@ -14,6 +14,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Miner extends Job {
@@ -57,9 +58,15 @@ public class Miner extends Job {
     @Override
     public void onJobLeave(Player player) {
         Inventory inv = player.getInventory();
+        Iterator invIterator = inv.iterator();
 
-        if(inv.contains(Items.getMinerItem(plugin))) {
-            inv.remove(Items.getMinerItem(plugin));
+
+        while(invIterator.hasNext()) {
+            ItemStack item = (ItemStack) invIterator.next();
+
+            if(item.getItemMeta().getDisplayName().equals(Items.getMinerItem(plugin))) {
+                inv.remove(item);
+            }
         }
 
         player.sendMessage(plugin.getHandler().getCaptionJob(this,"remove_item_message"));

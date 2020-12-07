@@ -46,14 +46,14 @@ public class JobManager {
         jobs.add(new MineMaster(plugin));
 
         //Lamber
-        jobs.add(new Lamber(plugin));
-        jobs.add(new LamberPro(plugin));
+        jobs.add(new Lumber(plugin));
+        jobs.add(new LumberPro(plugin));
         jobs.add(new Farmer(plugin));
         jobs.add(new Crafter(plugin));
         jobs.add(new Ork(plugin));
         jobs.add(new Goblin(plugin));
         jobs.add(new FarmMaster(plugin));
-        jobs.add(new LamberMaster(plugin));
+        jobs.add(new LumberMaster(plugin));
         jobs.add(new MineCrafter(plugin));
 
         //Fisher
@@ -96,7 +96,7 @@ public class JobManager {
                     case MINER:
                         miners.add(job);
                         break;
-                    case LAMBER:
+                    case LUMBER:
                         lambers.add(job);
                         break;
                     case FISHING:
@@ -120,7 +120,7 @@ public class JobManager {
 
 
         jobGenres.add(JobGenre.MINER);
-        jobGenres.add(JobGenre.LAMBER);
+        jobGenres.add(JobGenre.LUMBER);
         jobGenres.add(JobGenre.CHEF);
         jobGenres.add(JobGenre.FISHING);
         jobGenres.add(JobGenre.HUNTER);

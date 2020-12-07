@@ -9,6 +9,9 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+
+import java.util.Iterator;
 
 public class MinePro extends Job {
 
@@ -45,18 +48,23 @@ public class MinePro extends Job {
     public void onJobJoin(Player player) {
         player.getInventory().addItem(Items.getMineProItem(plugin));
 
-        player.sendMessage("報酬として" + plugin.getHandler().getCaption("miner-pro-item") + ChatColor.WHITE + "を手に入れた！");
+        player.sendMessage("報酬として" + plugin.getHandler().getCaption("mine-pro-item") + ChatColor.WHITE + "を手に入れた！");
 
     }
 
     @Override
     public void onJobLeave(Player player) {
+        //TODO: アイテムを名前で比較する。
         Inventory inv = player.getInventory();
+        Iterator invIterator = inv.iterator();
 
-        if(inv.contains(Items.getMineProItem(plugin))) {
-            inv.remove(Items.getMineProItem(plugin));
+        while(invIterator.hasNext()) {
+            ItemStack item = (ItemStack) invIterator.next();
+
+            if(item.getItemMeta().getDisplayName().equals(Items.getMineProItem(plugin))) {
+                inv.remove(item);
+            }
         }
-
         player.sendMessage(plugin.getHandler().getCaptionJob(this,"remove_item_message"));
     }
 }

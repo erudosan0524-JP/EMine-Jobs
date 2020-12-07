@@ -4,14 +4,17 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
+import com.github.jp.erudosan.emj.utils.Items;
 import me.zombie_striker.qg.api.QualityArmory;
 import me.zombie_striker.qg.guns.Gun;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Gunner extends Job {
@@ -65,14 +68,19 @@ public class Gunner extends Job {
     @Override
     public void onJobLeave(Player player) {
         Inventory inv = player.getInventory();
+        Iterator invIterator = inv.iterator();
+
         Gun gun = QualityArmory.getGunByName("glock");
 
-        if(inv.contains(gun.getItemStack())) {
-            inv.remove(gun.getItemStack());
-        }
 
-        if(inv.contains(gun.getAmmoType().getItemStack())) {
-            inv.remove(gun.getAmmoType().getItemStack());
+        while(invIterator.hasNext()) {
+            ItemStack item = (ItemStack) invIterator.next();
+
+            if(item.getItemMeta().getDisplayName().equals(gun.getItemStack().getItemMeta().getDisplayName())) {
+                inv.remove(item);
+            } else if(gun.getAmmoType().getItemStack().getItemMeta().getDisplayName().equals(gun.getAmmoType().getItemStack().getItemMeta().getDisplayName())) {
+                inv.remove(item);
+            }
         }
 
         player.sendMessage(plugin.getHandler().getCaptionJob(this,"remove_item_message"));    }

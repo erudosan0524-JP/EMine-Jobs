@@ -7,9 +7,9 @@ import com.github.jp.erudosan.emj.job.JobGenre;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 
-public class LamberMaster extends Job {
+public class LumberMaster extends Job {
 
-    public LamberMaster(Main plugin) {
+    public LumberMaster(Main plugin) {
         super(plugin);
     }
 
@@ -20,7 +20,7 @@ public class LamberMaster extends Job {
 
     @Override
     public JobGenre genre() {
-        return JobGenre.LAMBER;
+        return JobGenre.LUMBER;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class LamberMaster extends Job {
 
     @Override
     public GUIIcon ItemIcon() {
-        return new GUIIcon(Material.DIAMOND_AXE,plugin.getHandler().getCaption("lamber-master"));
+        return new GUIIcon(Material.DIAMOND_AXE,plugin.getHandler().getCaption("lumber-master"));
     }
 
     @Override

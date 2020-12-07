@@ -4,7 +4,6 @@ F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\event\PlayerJobLeaveEvent.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\lamber\FarmMaster.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\listener\mylistener\OnPlayerLevelUp.java
-F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\skill\Skill.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\utils\Items.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\listener\OnFish.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\event\PlayerChangeExpEvent.java
@@ -21,6 +20,8 @@ F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\command\commands\SubCommand.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\event\PlayerLevelUpEvent.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\listener\OnJoin.java
+F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\chef\Glutonny.java
+F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\skills\BlockBreakUtil.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\lamber\LamberPro.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\command\commands\subcommands\Jobs.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\lamber\Crafter.java
@@ -41,7 +42,9 @@ F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\command\commands\subcommands\AddLevel.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\miner\MinePro.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\JobManager.java
+F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\command\commands\subcommands\Reload.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\hunter\Hunter.java
+F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\hunter\Archer.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\chef\Chef.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\command\commands\subcommands\Gui.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\command\commands\subcommands\Stats.java
@@ -50,8 +53,6 @@ F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\lamber\Goblin.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\listener\OnInteract.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\gui\GUIIcon.java
-F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\skill\SkillManager.java
-F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\utils\BlockBreakUtil.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\command\commands\subcommands\Leave.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\JobPlayer.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\utils\db\RecipeManager.java
@@ -66,6 +67,8 @@ F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\fisher\Fisher.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\listener\mylistener\OnPlayerChangeExp.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\utils\Config.java
+F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\chef\Hunger.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\miner\CanonShooter.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\fisher\Alchemist.java
+F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\task\SkillTask.java
 F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\job\jobs\fisher\FishMaster.java

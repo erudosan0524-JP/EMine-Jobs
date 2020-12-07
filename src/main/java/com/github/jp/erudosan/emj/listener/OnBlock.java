@@ -55,7 +55,7 @@ public class OnBlock implements Listener {
             }
         }
 
-        if (job.genre() == JobGenre.LAMBER) {
+        if (job.genre() == JobGenre.LUMBER) {
             if(Items.getAxes().contains(itemMainHand) || Items.getAxes().contains(itemOffHand)) {
                 if(Items.getWoods().contains(brokenBlcok.getType())) {
                     Random rand = new Random();

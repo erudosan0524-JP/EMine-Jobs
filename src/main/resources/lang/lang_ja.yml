@@ -54,14 +54,14 @@ menu_stick_lore: "右クリックでメニューが開けます。"
 
 # Jobs name (rank1)
 miner: "鉱夫"
-lamber: "木こり師"
+lumber: "木こり師"
 fisher: "釣り師"
 chef: "調理師"
 hunter: "ハンター"
 
 #Jobs name (rank2)
 mine-pro: "マインプロ"
-lamber-pro: "ランバープロ"
+lumber-pro: "ランバープロ"
 fish-pro: "フィッシュプロ"
 enchanter: "エンチャンター"
 
@@ -82,7 +82,7 @@ gun-master: "ガンマスター"
 mine-master: "マインマスター"
 goblin: "ゴブリン"
 farm-master: "ファームマスター"
-lamber-master: "ランバーマスター"
+lumber-master: "ランバーマスター"
 minecrafter: "マインクラフター"
 fish-master: "フィッシュマスター"
 demon-avenger: "デーモンアベンジャー"
@@ -95,8 +95,8 @@ miner-item-lore:
   - "鉱夫の初期アイテム"
   - "木のピッケルだが，採掘速度が少しだけ早い"
 
-lamber-item: "微妙に使える木の斧"
-lamber-item-lore:
+lumber-item: "微妙に使える木の斧"
+lumber-item-lore:
   - "木こり師の初期アイテム"
   - "木の斧だが，採掘速度が少しだけ早い"
 

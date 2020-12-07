@@ -9,6 +9,9 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+
+import java.util.Iterator;
 
 public class Chef extends Job {
 
@@ -51,9 +54,14 @@ public class Chef extends Job {
     @Override
     public void onJobLeave(Player player) {
         Inventory inv = player.getInventory();
+        Iterator invIterator = inv.iterator();
 
-        if(inv.contains(Items.getChefItem(plugin))) {
-            inv.remove(Items.getChefItem(plugin));
+        while(invIterator.hasNext()) {
+            ItemStack item = (ItemStack) invIterator.next();
+
+            if(item.getItemMeta().getDisplayName().equals(Items.getChefItem(plugin))) {
+                inv.remove(item);
+            }
         }
 
         player.sendMessage(plugin.getHandler().getCaptionJob(this,"remove_item_message"));

@@ -15,7 +15,7 @@ public class CanonShooter extends Job {
 
     @Override
     public String name() {
-        return "CanonShooter";
+        return "canon-shooter";
     }
 
     @Override

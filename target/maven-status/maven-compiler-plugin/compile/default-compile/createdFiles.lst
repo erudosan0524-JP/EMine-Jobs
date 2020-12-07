@@ -13,6 +13,7 @@ com\github\jp\erudosan\emj\job\jobs\fisher\Fisher.class
 com\github\jp\erudosan\emj\utils\CaptionHandler.class
 com\github\jp\erudosan\emj\job\jobs\fisher\DemonAvenger.class
 com\github\jp\erudosan\emj\job\jobs\chef\Chef.class
+com\github\jp\erudosan\emj\command\commands\subcommands\Reload.class
 com\github\jp\erudosan\emj\job\jobs\lamber\Ork.class
 com\github\jp\erudosan\emj\job\jobs\miner\Gunner.class
 com\github\jp\erudosan\emj\job\Job.class

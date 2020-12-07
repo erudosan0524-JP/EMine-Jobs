@@ -10,10 +10,8 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Iterator;
 
 public class Crafter extends Job {
     public Crafter(Main plugin) {
@@ -27,7 +25,7 @@ public class Crafter extends Job {
 
     @Override
     public JobGenre genre() {
-        return JobGenre.LAMBER;
+        return JobGenre.LUMBER;
     }
 
     @Override
@@ -54,9 +52,14 @@ public class Crafter extends Job {
     @Override
     public void onJobLeave(Player player) {
         Inventory inv = player.getInventory();
+        Iterator invIterator = inv.iterator();
 
-        if(inv.contains(Items.getCrafterItem(plugin))) {
-            inv.remove(Items.getCrafterItem(plugin));
+        while(invIterator.hasNext()) {
+            ItemStack item = (ItemStack) invIterator.next();
+
+            if(item.getItemMeta().getDisplayName().equals(Items.getCrafterItem(plugin))) {
+                inv.remove(item);
+            }
         }
 
         player.sendMessage(plugin.getHandler().getCaptionJob(this,"remove_item_message"));

@@ -7,8 +7,8 @@ import com.github.jp.erudosan.emj.job.JobGenre;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 
-public class LamberPro extends Job {
-    public LamberPro(Main plugin) {
+public class LumberPro extends Job {
+    public LumberPro(Main plugin) {
         super(plugin);
     }
 
@@ -19,7 +19,7 @@ public class LamberPro extends Job {
 
     @Override
     public JobGenre genre() {
-        return JobGenre.LAMBER;
+        return JobGenre.LUMBER;
     }
 
     @Override

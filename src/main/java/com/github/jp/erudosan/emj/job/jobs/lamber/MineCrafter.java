@@ -19,7 +19,7 @@ public class MineCrafter extends Job {
 
     @Override
     public JobGenre genre() {
-        return JobGenre.LAMBER;
+        return JobGenre.LUMBER;
     }
 
     @Override
