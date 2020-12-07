@@ -91,27 +91,31 @@ public class JobPlayer extends JobManager{
         }
 
         if(level > plugin.getMyconfig().getNeedLevelto2()) {
-            for(String s : getJobsFromRank(2)) {
+            for (String s : getJobsFromRank(2)) {
                 Job j = getJobFromName(s);
-                if(j.genre() == getPlayerJob(player).genre()) {
+                if (j.genre() == getPlayerJob(player).genre()) {
                     jobList.add(j);
                 }
             }
-        } else if(level > plugin.getMyconfig().getNeedLevelto3()) {
+        }
+
+        if(level > plugin.getMyconfig().getNeedLevelto3()) {
             for(String s : getJobsFromRank(3)) {
                 Job j = getJobFromName(s);
                 if(j.genre() == getPlayerJob(player).genre()) {
                     jobList.add(j);
                 }
             }
-        } else if(level > plugin.getMyconfig().getNeedLevelto4()) {
+        }
+        if(level > plugin.getMyconfig().getNeedLevelto4()) {
             for(String s : getJobsFromRank(4)) {
                 Job j = getJobFromName(s);
                 if(j.genre() == getPlayerJob(player).genre()) {
                     jobList.add(j);
                 }
             }
-        } else if (level > plugin.getMyconfig().getNeedLevelto5()){
+        }
+        if (level > plugin.getMyconfig().getNeedLevelto5()){
             for(String s : getJobsFromRank(5)) {
                 Job j = getJobFromName(s);
                 if(j.genre() == getPlayerJob(player).genre()) {

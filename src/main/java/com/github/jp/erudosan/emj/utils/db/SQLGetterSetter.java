@@ -260,7 +260,7 @@ public class SQLGetterSetter {
         return "";
     }
 
-    public int getExp(Player player) {
+    public double getExp(Player player) {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
@@ -270,7 +270,7 @@ public class SQLGetterSetter {
             ResultSet results = statement.executeQuery();
             results.next();
 
-            return results.getInt("exp");
+            return results.getDouble("exp");
 
         } catch (SQLException throwable) {
             throwable.printStackTrace();

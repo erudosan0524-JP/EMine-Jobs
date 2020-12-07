@@ -9,6 +9,7 @@ import me.zombie_striker.qg.guns.Gun;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +36,11 @@ public class Gunner extends Job {
 
     @Override
     public GUIIcon ItemIcon() {
-        Gun gun = QualityArmory.getGunByName("magnum");
+        Gun gun = QualityArmory.getGunByName("glock");
+        ItemMeta meta = gun.getItemStack().getItemMeta();
+        meta.setDisplayName(this.name());
+        gun.getItemStack().setItemMeta(meta);
+
         return new GUIIcon(gun.getItemStack());
     }
 

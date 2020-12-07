@@ -3,6 +3,7 @@ package com.github.jp.erudosan.emj.command.commands.subcommands;
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
 import com.github.jp.erudosan.emj.gui.GUI;
+import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryType;
@@ -25,6 +26,7 @@ public class Gui extends SubCommand {
         gui.setFiller(Material.WHITE_STAINED_GLASS_PANE);
         gui.addJobsIcon(player);
         gui.open();
+
     }
 
     @Override

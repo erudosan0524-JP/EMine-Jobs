@@ -5,7 +5,7 @@ import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import com.github.jp.erudosan.emj.job.JobPlayer;
 import com.github.jp.erudosan.emj.job.jobs.miner.MinePro;
-import com.github.jp.erudosan.emj.skill.skills.BlockBreakUtil;
+import com.github.jp.erudosan.emj.skills.BlockBreakUtil;
 import com.github.jp.erudosan.emj.utils.Items;
 import org.bukkit.Material;
 import org.bukkit.block.Block;

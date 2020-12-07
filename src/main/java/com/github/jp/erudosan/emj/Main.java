@@ -7,11 +7,13 @@ import com.github.jp.erudosan.emj.listener.*;
 import com.github.jp.erudosan.emj.listener.mylistener.OnJobJoinLeave;
 import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerChangeExp;
 import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerLevelUp;
+import com.github.jp.erudosan.emj.task.SkillTask;
 import com.github.jp.erudosan.emj.utils.CaptionHandler;
 import com.github.jp.erudosan.emj.utils.Config;
 import com.github.jp.erudosan.emj.utils.db.DBManager;
 import com.github.jp.erudosan.emj.utils.db.SQLGetterSetter;
 import lombok.Getter;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -38,6 +40,8 @@ public class Main extends JavaPlugin {
     @Override
     public void onDisable() {
         super.onDisable();
+
+        Bukkit.getScheduler().cancelTasks(getInstance());
     }
 
     @Override

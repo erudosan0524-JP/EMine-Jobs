@@ -1,9 +1,9 @@
+com\github\jp\erudosan\emj\job\jobs\chef\Glutonny.class
 com\github\jp\erudosan\emj\command\commands\subcommands\Join.class
 com\github\jp\erudosan\emj\job\jobs\miner\GunMaster.class
 com\github\jp\erudosan\emj\job\jobs\fisher\FishMaster.class
 com\github\jp\erudosan\emj\event\PlayerChangeExpEvent.class
 com\github\jp\erudosan\emj\job\jobs\lamber\Goblin.class
-com\github\jp\erudosan\emj\utils\BlockBreakUtil.class
 com\github\jp\erudosan\emj\utils\db\SQLGetterSetter.class
 com\github\jp\erudosan\emj\gui\GUIIcon.class
 com\github\jp\erudosan\emj\job\jobs\lamber\Crafter.class
@@ -13,7 +13,6 @@ com\github\jp\erudosan\emj\job\jobs\fisher\Fisher.class
 com\github\jp\erudosan\emj\utils\CaptionHandler.class
 com\github\jp\erudosan\emj\job\jobs\fisher\DemonAvenger.class
 com\github\jp\erudosan\emj\job\jobs\chef\Chef.class
-com\github\jp\erudosan\emj\skill\SkillManager.class
 com\github\jp\erudosan\emj\job\jobs\lamber\Ork.class
 com\github\jp\erudosan\emj\job\jobs\miner\Gunner.class
 com\github\jp\erudosan\emj\job\Job.class
@@ -46,9 +45,11 @@ com\github\jp\erudosan\emj\command\commands\subcommands\Leave.class
 com\github\jp\erudosan\emj\job\jobs\fisher\Mage.class
 com\github\jp\erudosan\emj\listener\OnDeath.class
 com\github\jp\erudosan\emj\listener\OnCook.class
-com\github\jp\erudosan\emj\skill\Skill.class
 com\github\jp\erudosan\emj\job\jobs\fisher\ArkMage.class
+com\github\jp\erudosan\emj\job\jobs\hunter\Archer.class
+com\github\jp\erudosan\emj\job\jobs\chef\Hunger.class
 com\github\jp\erudosan\emj\job\JobManager$1.class
+com\github\jp\erudosan\emj\skills\BlockBreakUtil.class
 com\github\jp\erudosan\emj\listener\mylistener\OnPlayerChangeExp.class
 com\github\jp\erudosan\emj\gui\GUIFieldType.class
 com\github\jp\erudosan\emj\job\jobs\miner\MineMaster.class
@@ -65,6 +66,7 @@ com\github\jp\erudosan\emj\gui\GUIIcon$OnClickListener.class
 com\github\jp\erudosan\emj\command\CommandManager.class
 com\github\jp\erudosan\emj\job\JobManager.class
 com\github\jp\erudosan\emj\listener\mylistener\OnJobJoinLeave.class
+com\github\jp\erudosan\emj\task\SkillTask.class
 com\github\jp\erudosan\emj\command\commands\subcommands\Gui.class
 com\github\jp\erudosan\emj\gui\GUI.class
 com\github\jp\erudosan\emj\utils\AxisController.class
