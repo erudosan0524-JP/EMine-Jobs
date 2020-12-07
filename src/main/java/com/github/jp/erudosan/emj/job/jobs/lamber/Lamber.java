@@ -4,8 +4,14 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
+import com.github.jp.erudosan.emj.utils.Items;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 public class Lamber extends Job {
 
@@ -38,4 +44,22 @@ public class Lamber extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+        player.getInventory().addItem(Items.getLamberItem(plugin));
+
+        player.sendMessage("報酬として" + plugin.getHandler().getCaption("lamber-item") +ChatColor.WHITE + "を手に入れた！");
+
+    }
+
+    @Override
+    public void onJobLeave(Player player) {
+        Inventory inv = player.getInventory();
+
+        if(inv.contains(Items.getLamberItem(plugin))) {
+            inv.remove(Items.getLamberItem(plugin));
+        }
+        player.sendMessage(plugin.getHandler().getCaptionJob(this,"remove_item_message"));
+
+    }
 }

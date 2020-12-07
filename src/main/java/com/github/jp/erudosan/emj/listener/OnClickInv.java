@@ -52,9 +52,11 @@ public class OnClickInv implements Listener {
             String name = meta.getDisplayName();
 
 
-            for (Job job : jobPlayer.canJoinJobs(player)) {
-                if (name.equals(plugin.getHandler().getCaption(job.name()))) {
-                    plugin.getServer().dispatchCommand(player, "emj join " + job.name());
+            if(jobPlayer.playerJobExists(player)) {
+                for (Job job : jobPlayer.canJoinJobs(player)) {
+                    if (name.equals(plugin.getHandler().getCaption(job.name()))) {
+                        plugin.getServer().dispatchCommand(player, "emj join " + job.name());
+                    }
                 }
             }
             e.setCancelled(true);

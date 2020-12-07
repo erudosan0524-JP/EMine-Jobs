@@ -27,8 +27,15 @@ public abstract class Job {
      */
     public abstract int rank();
 
+    //GUIのアイコン
     public abstract GUIIcon ItemIcon();
 
     //レベルアップ時の報酬処理
     public abstract void onLevelUp(Player player, int level);
+
+    //jobに就いた時の処理
+    public abstract void onJobJoin(Player player);
+
+    //jobを辞めた時の処理
+    public abstract void onJobLeave(Player player);
 }

@@ -22,5 +22,15 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.12" level="project" />
     <orderEntry type="library" name="Maven: me.zombie_striker:QualityArmory:1.1.169" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains:annotations:20.1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.oracle.database.jdbc:ojdbc8:19.7.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.oracle.database.jdbc:ucp:19.7.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.oracle.database.security:oraclepki:19.7.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.oracle.database.security:osdt_cert:19.7.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.oracle.database.security:osdt_core:19.7.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.oracle.database.ha:simplefan:19.7.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.oracle.database.ha:ons:19.7.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.oracle.database.nls:orai18n:19.7.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.oracle.database.xml:xdb:19.7.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.oracle.database.xml:xmlparserv2:19.7.0.0" level="project" />
   </component>
 </module>

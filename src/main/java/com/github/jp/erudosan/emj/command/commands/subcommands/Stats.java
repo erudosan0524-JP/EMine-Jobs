@@ -4,6 +4,8 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
 import org.bukkit.entity.Player;
 
+import java.util.List;
+
 public class Stats extends SubCommand {
 
     private Main plugin;
@@ -16,9 +18,13 @@ public class Stats extends SubCommand {
     public void onCommand(Player player, String[] args) {
         if (plugin.getSql().playerJobExists(player)) {
             player.sendMessage(plugin.getHandler().getCaption("command_firstline"));
-            player.sendMessage(plugin.getHandler().getCaption("stats_line1") + plugin.getHandler().getCaption(plugin.getSql().getPlayerJob(player).toLowerCase()));
-            player.sendMessage(plugin.getHandler().getCaption("stats_line2") + plugin.getSql().getExp(player));
-            player.sendMessage(plugin.getHandler().getCaption("stats_line3") + plugin.getSql().getLevel(player));
+
+            List<String> stats_message = plugin.getHandler().getCaptionList("stats_message");
+
+            player.sendMessage(stats_message.get(0) + plugin.getHandler().getCaption(plugin.getSql().getPlayerJob(player).toLowerCase()));
+            player.sendMessage(stats_message.get(0) + plugin.getSql().getExp(player));
+            player.sendMessage(stats_message.get(0) + plugin.getSql().getLevel(player));
+
             player.sendMessage(plugin.getHandler().getCaption("command_endline"));
         }
     }

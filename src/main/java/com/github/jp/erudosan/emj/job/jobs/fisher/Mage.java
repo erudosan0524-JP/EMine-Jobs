@@ -37,4 +37,14 @@ public class Mage extends Job {
 
     }
 
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
+
 }

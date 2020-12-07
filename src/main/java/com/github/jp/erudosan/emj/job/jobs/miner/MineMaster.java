@@ -37,4 +37,14 @@ public class MineMaster extends Job {
     public void onLevelUp(Player player, int level) {
 
     }
+
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
+    @Override
+    public void onJobLeave(Player player) {
+
+    }
 }

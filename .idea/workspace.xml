@@ -29,20 +29,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/task/SkillTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/command/commands/subcommands/Stats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Gunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Gunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnClickInv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/listener/OnClickInv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/CaptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/CaptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/db/SQLGetterSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Stats.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Stats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/JobPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/OnBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/OnBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/OnDeath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/listener/OnDeath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/CaptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/CaptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -50,11 +70,10 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop-skill" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -62,6 +81,9 @@
         <option name="mavenHome" value="F:\ProgramFiles\IntelliJ IDEA Community Edition 2020.2.2\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1ioQbg8v3U54IxN28yMQ4huMAjF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -72,21 +94,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\development\minecraft_plugins\EMine-Jobs\src\main\java\com\github\jp\erudosan\emj\utils" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.github.jp.erudosan.emj.gui" />
-      <recent name="com.github.jp.erudosan.emj.gui.elements" />
-      <recent name="com.github.jp.erudosan.emj.job.jobs.fisher" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration name="EMine-Jobs [package]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
@@ -124,350 +132,126 @@
       <option name="presentableId" value="Default" />
       <updated>1602571541459</updated>
     </task>
-    <task id="LOCAL-00004" summary="[add] add /leave command&#10;&#10;leaveコマンドの追加修正">
-      <created>1602579915980</created>
+    <task id="LOCAL-00001" summary="[add] add BlockBreak Listener&#10;&#10;BlockBreakリスナーの追加">
+      <created>1602577612831</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602577612831</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[update] update OnBlock.java&#10;&#10;lamber用の処理の追加">
+      <created>1602579587913</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602579587913</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[add] add /leave command&#10;&#10;leaveコマンドの追加">
+      <created>1602579876153</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602579876153</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[update] update EXP System&#10;&#10;経験値システムの更新">
+      <created>1606036178460</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1602579915980</updated>
+      <updated>1606036178460</updated>
     </task>
-    <task id="LOCAL-00005" summary="[update] update Leave.java&#10;&#10;leaveコマンドの処理アップデート">
-      <created>1602640343747</created>
+    <task id="LOCAL-00005" summary="[update] update EXP System 2&#10;&#10;経験値システムの更新2">
+      <created>1606037515738</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1602640343747</updated>
+      <updated>1606037515738</updated>
     </task>
-    <task id="LOCAL-00006" summary="[add] add IDEA project files.&#10;&#10;IDEAのプロジェクトファイルの追加">
-      <created>1602640382859</created>
+    <task id="LOCAL-00006" summary="[update] update EXP System 3&#10;&#10;経験値システムの更新3">
+      <created>1606038333140</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1602640382859</updated>
+      <updated>1606038333140</updated>
     </task>
-    <task id="LOCAL-00007" summary="[add] add PlayerLevelUpEvent&#10;&#10;プレイヤーがレベルアップしたときのイベントを追加">
-      <created>1602641128937</created>
+    <task id="LOCAL-00007" summary="[update] update JobPlayer&#10;&#10;必要レベルをConfigで指定できるように">
+      <created>1606061253673</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1602641128937</updated>
+      <updated>1606061253673</updated>
     </task>
-    <task id="LOCAL-00008" summary="[add] add PlayerLevelUp Lister&#10;&#10;プレイヤーがレベルアップしたときのリスナーを追加">
-      <created>1602641802061</created>
+    <task id="LOCAL-00008" summary="[update] add abstract onJobJoin method&#10;&#10;抽象メソッドのonJobJoinの追加">
+      <created>1606062041384</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1602641802061</updated>
+      <updated>1606062041384</updated>
     </task>
-    <task id="LOCAL-00009" summary="[update] update Config to make Level up exp setting&#10;&#10;レベルアップ時に必要なEXPの設定をコンフィグに追加">
-      <created>1602642420928</created>
+    <task id="LOCAL-00009" summary="[update] update Join command&#10;&#10;職業に就いた時にレベルリセットされる仕様を変更">
+      <created>1606100915850</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1602642420928</updated>
+      <updated>1606100915850</updated>
     </task>
-    <task id="LOCAL-00010" summary="[add] add PlayerChangeExpEvent&#10;&#10;プレイヤーの経験値が変化したときのイベントを追加">
-      <created>1602648178237</created>
+    <task id="LOCAL-00010" summary="[update] add Miner Initial item&#10;&#10;Minerの初期アイテムの設定">
+      <created>1606102226912</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1602648178237</updated>
+      <updated>1606102226912</updated>
     </task>
-    <task id="LOCAL-00011" summary="[add] add Fish Listener&#10;&#10;Fish Listener の追加">
-      <created>1602735624579</created>
+    <task id="LOCAL-00011" summary="[update] update abstract class Job&#10;&#10;抽象クラスJobのアップデート">
+      <created>1606103758592</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1602735624579</updated>
+      <updated>1606103758592</updated>
     </task>
-    <task id="LOCAL-00012" summary="[update] update Items.java&#10;&#10;Items.javaに食べ物のListを追加">
-      <created>1602739157983</created>
+    <task id="LOCAL-00012" summary="[update] add Initial items&#10;&#10;初期アイテムの設定">
+      <created>1606106037620</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1602739157983</updated>
+      <updated>1606106037620</updated>
     </task>
-    <task id="LOCAL-00013" summary="[update] update Job System&#10;&#10;Jobにレベルアップ処理を追加">
-      <created>1602921887626</created>
+    <task id="LOCAL-00013" summary="[update] add remove_item_message&#10;&#10;固有アイテムを失った時のメッセージを修正">
+      <created>1606111188254</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1602921887626</updated>
+      <updated>1606111188254</updated>
     </task>
-    <task id="LOCAL-00014" summary="[remove] remove job_id from DB&#10;&#10;DBからjob_idカラムを削除">
-      <created>1602922361312</created>
+    <task id="LOCAL-00014" summary="[add] add BlockBreakUtil&#10;&#10;鉱夫系の職業スキルの追加">
+      <created>1606132645056</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1602922361312</updated>
+      <updated>1606132645057</updated>
     </task>
-    <task id="LOCAL-00015" summary="[update] update Leave Command&#10;&#10;leaveコマンドのアップデート1">
-      <created>1603009059229</created>
+    <task id="LOCAL-00015" summary="[update] add many Items&#10;&#10;職業アイテムの追加">
+      <created>1606306180697</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1603009059229</updated>
+      <updated>1606306180697</updated>
     </task>
-    <task id="LOCAL-00016" summary="[update] update Miner level up event&#10;&#10;Minerのレベルアップ時のイベントを追加">
-      <created>1603009910981</created>
+    <task id="LOCAL-00016" summary="[update] update Items.java&#10;&#10;itemのアップデート">
+      <created>1606306391496</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1603009910981</updated>
+      <updated>1606306391496</updated>
     </task>
-    <task id="LOCAL-00017" summary="[add] add PlayerJoinEvent&#10;&#10;PlayerJoinEventの処理追加">
-      <created>1603010096580</created>
+    <task id="LOCAL-00017" summary="[fix] fix Hunter exp System&#10;&#10;HunterのMOBを倒したときに経験値が入らないバグ修正">
+      <created>1607353182097</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1603010096580</updated>
+      <updated>1607353182097</updated>
     </task>
-    <task id="LOCAL-00018" summary="[update] update join event&#10;&#10;joinイベントのアップデート">
-      <created>1603023315766</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1603023315766</updated>
-    </task>
-    <task id="LOCAL-00019" summary="[update] update job name in Stats&#10;&#10;ステータスの職業名を日本語対応に">
-      <created>1603029057369</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1603029057369</updated>
-    </task>
-    <task id="LOCAL-00020" summary="[update] update CaptionHandler&#10;&#10;プレイヤー名と職業をlang.ymlで設定できるように">
-      <created>1603520791399</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1603520791399</updated>
-    </task>
-    <task id="LOCAL-00021" summary="[fix] fix CaptionHandler&#10;&#10;ぬるぽが出ていたのを修正">
-      <created>1603527148237</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1603527148237</updated>
-    </task>
-    <task id="LOCAL-00022" summary="[fix] fix CaptionHandler &#10;&#10;ただしく認識されてなかった文字の修正">
-      <created>1603528180464</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1603528180464</updated>
-    </task>
-    <task id="LOCAL-00023" summary="[update] update JobManager to rank up&#10;&#10;ランクアップ処理追加のためのJobManagerアップデート">
-      <created>1603531637810</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1603531637810</updated>
-    </task>
-    <task id="LOCAL-00024" summary="[update] update JobPlayer&#10;&#10;その人が就くことができる職業一覧のListを追加">
-      <created>1603533544968</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1603533544968</updated>
-    </task>
-    <task id="LOCAL-00025" summary="[update] update canJoinJobs&#10;&#10;レベル判定をcanJoinJobsに追加">
-      <created>1603537420005</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1603537420005</updated>
-    </task>
-    <task id="LOCAL-00026" summary="[add] add add level Command&#10;&#10;／emj addlevel [player] [level] の追加">
-      <created>1603542110734</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1603542110734</updated>
-    </task>
-    <task id="LOCAL-00027" summary="[fix] fix many bugs&#10;&#10;多くのバグを修正">
-      <created>1603546999746</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1603546999746</updated>
-    </task>
-    <task id="LOCAL-00028" summary="[fix] fix lang_ja.yml&#10;&#10;lang_ja.ymlに書いてあった内容を変更">
-      <created>1603547950196</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1603547950196</updated>
-    </task>
-    <task id="LOCAL-00029" summary="[add] add many job&#10;&#10;実装していなかった職業クラスの追加">
-      <created>1603627096941</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1603627096941</updated>
-    </task>
-    <task id="LOCAL-00030" summary="[add] add PlayerJobJoinEvent and PlayerJobLeaveEvent&#10;&#10;PlayerJobJoinEventとPlayerJobLeaveEventの追加">
-      <created>1603632455269</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1603632455269</updated>
-    </task>
-    <task id="LOCAL-00031" summary="[add] add gun repo and dependency&#10;&#10;銃プラグインのレポジトリとDependencyを追加">
-      <created>1603679037295</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1603679037295</updated>
-    </task>
-    <task id="LOCAL-00032" summary="[add] add JobJoinLeave listener&#10;&#10;Jobに入った時のイベントリスナーの追加">
-      <created>1603680352195</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1603680352195</updated>
-    </task>
-    <task id="LOCAL-00033" summary="[fix] fix StackOverFlow in JobJoinEvent&#10;&#10;JobJoinEventで発生していたStackOverFlowを修正">
-      <created>1603681005809</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1603681005809</updated>
-    </task>
-    <task id="LOCAL-00034" summary="[update] update">
-      <created>1603779436279</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1603779436279</updated>
-    </task>
-    <task id="LOCAL-00035" summary="[add] OnInteract Event Listener&#10;&#10;InteractEventのListenerを追加">
-      <created>1603781528122</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1603781528122</updated>
-    </task>
-    <task id="LOCAL-00036" summary="[update] update OnInteract&#10;&#10;OnInteractのアップデート">
-      <created>1603782120448</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1603782120448</updated>
-    </task>
-    <task id="LOCAL-00037" summary="[update] update OnJobJoinLeave listener&#10;&#10;Enchanterの就職アイテムの追加">
-      <created>1603787843816</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1603787843816</updated>
-    </task>
-    <task id="LOCAL-00038" summary="[update] update OnInteract &#10;&#10;OnInteractのアップデート">
-      <created>1603868013817</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1603868013817</updated>
-    </task>
-    <task id="LOCAL-00039" summary="[add] add Gui.java&#10;&#10;Gui.javaの追加">
-      <created>1603947933100</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1603947933100</updated>
-    </task>
-    <task id="LOCAL-00040" summary="[add] add OnDropItem&#10;&#10;プレイヤーがアイテムをDROPしたときの処理追加">
-      <created>1603948800540</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1603948800540</updated>
-    </task>
-    <task id="LOCAL-00041" summary="[add] add Gui class&#10;&#10;Guiクラスの追加">
-      <created>1603952751601</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1603952751601</updated>
-    </task>
-    <task id="LOCAL-00042" summary="[update] update jobs&#10;&#10;職業関連のアップデート">
-      <created>1604055721192</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1604055721192</updated>
-    </task>
-    <task id="LOCAL-00043" summary="[update] update Gui&#10;&#10;Guiのアップデート">
-      <created>1604148634774</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1604148634774</updated>
-    </task>
-    <task id="LOCAL-00044" summary="[update] GUI muri&#10;&#10;GUIのシステムのアップデート（もう無理）">
-      <created>1604221546995</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1604221546995</updated>
-    </task>
-    <task id="LOCAL-00045" summary="[delete] delete Gui System&#10;&#10;GUI関連のシステムを削除">
-      <created>1604322466346</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1604322466346</updated>
-    </task>
-    <task id="LOCAL-00046" summary="[delete] delete Gui System">
-      <created>1604326523336</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1604326523336</updated>
-    </task>
-    <task id="LOCAL-00047" summary="[update] update GUI&#10;&#10;GUIのアップデート">
-      <created>1604333481471</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1604333481471</updated>
-    </task>
-    <task id="LOCAL-00048" summary="[update] update GUI and lang&#10;&#10;GUIと言語ファイルのアップデート">
-      <created>1604410903150</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1604410903150</updated>
-    </task>
-    <task id="LOCAL-00049" summary="[fix] fix canJoinJobs Bug&#10;&#10;canJoinJobsの判定バグの修正">
-      <created>1604536577149</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1604536577149</updated>
-    </task>
-    <task id="LOCAL-00050" summary="[fix] fix log&#10;&#10;デバッグ用の文字消去修正">
-      <created>1604536836088</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1604536836088</updated>
-    </task>
-    <task id="LOCAL-00051" summary="[fix] fix canJoinJobs bugs&#10;&#10;canJoinJobsのバグを修正">
-      <created>1604675969565</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1604675969566</updated>
-    </task>
-    <task id="LOCAL-00052" summary="[fix] fix some bugs&#10;&#10;いくつかのバグを修正">
-      <created>1604821569872</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1604821569873</updated>
-    </task>
-    <option name="localTasksCounter" value="53" />
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,7 +265,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="develop-skill" />
                       </list>
                     </value>
                   </entry>
@@ -495,151 +279,73 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] add many job&#10;&#10;実装していなかった職業クラスの追加" />
-    <MESSAGE value="[add] add PlayerJobJoinEvent and PlayerJobLeaveEvent&#10;&#10;PlayerJobJoinEventとPlayerJobLeaveEventの追加" />
-    <MESSAGE value="[add] add gun repo and dependency&#10;&#10;銃プラグインのレポジトリとDependencyを追加" />
-    <MESSAGE value="[add] add JobJoinLeave listener&#10;&#10;Jobに入った時のイベントリスナーの追加" />
-    <MESSAGE value="[fix] fix StackOverFlow in JobJoinEvent&#10;&#10;JobJoinEventで発生していたStackOverFlowを修正" />
-    <MESSAGE value="[update] update" />
-    <MESSAGE value="[add] OnInteract Event Listener&#10;&#10;InteractEventのListenerを追加" />
-    <MESSAGE value="[update] update OnInteract&#10;&#10;OnInteractのアップデート" />
-    <MESSAGE value="[update] update OnJobJoinLeave listener&#10;&#10;Enchanterの就職アイテムの追加" />
-    <MESSAGE value="[update] update OnInteract &#10;&#10;OnInteractのアップデート" />
-    <MESSAGE value="[add]" />
-    <MESSAGE value="[add] add Gui.java&#10;&#10;Gui.javaの追加" />
-    <MESSAGE value="[add] add OnDropItem&#10;&#10;プレイヤーがアイテムをDROPしたときの処理追加" />
-    <MESSAGE value="[add] add Gui class&#10;&#10;Guiクラスの追加" />
-    <MESSAGE value="[update] update jobs&#10;&#10;職業関連のアップデート" />
-    <MESSAGE value="[update] update Gui&#10;&#10;Guiのアップデート" />
-    <MESSAGE value="[update] GUI muri&#10;&#10;GUIのシステムのアップデート（もう無理）" />
-    <MESSAGE value="[delete] delete Gui System&#10;&#10;GUI関連のシステムを削除" />
-    <MESSAGE value="[delete] delete Gui System" />
-    <MESSAGE value="[update] update GUI&#10;&#10;GUIのアップデート" />
-    <MESSAGE value="[update] update GUI and lang&#10;&#10;GUIと言語ファイルのアップデート" />
-    <MESSAGE value="[fix] fix canJoinJobs Bug&#10;&#10;canJoinJobsの判定バグの修正" />
-    <MESSAGE value="[fix] fix log&#10;&#10;デバッグ用の文字消去修正" />
-    <MESSAGE value="[fix] fix canJoinJobs bugs&#10;&#10;canJoinJobsのバグを修正" />
-    <MESSAGE value="[fix] fix some bugs&#10;&#10;いくつかのバグを修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix] fix some bugs&#10;&#10;いくつかのバグを修正" />
+    <MESSAGE value="[add] add BlockBreak Listener&#10;&#10;BlockBreakリスナーの追加" />
+    <MESSAGE value="[update] update OnBlock.java&#10;&#10;lamber用の処理の追加" />
+    <MESSAGE value="[add] add /leave command&#10;&#10;leaveコマンドの追加" />
+    <MESSAGE value="[update] update EXP System&#10;&#10;経験値システムの更新" />
+    <MESSAGE value="[update] update EXP System 2&#10;&#10;経験値システムの更新2" />
+    <MESSAGE value="[update] update EXP System 3&#10;&#10;経験値システムの更新3" />
+    <MESSAGE value="[update] update JobPlayer&#10;&#10;必要レベルをConfigで指定できるように" />
+    <MESSAGE value="[update] add abstract onJobJoin method&#10;&#10;抽象メソッドのonJobJoinの追加" />
+    <MESSAGE value="[update] update Join command&#10;&#10;職業に就いた時にレベルリセットされる仕様を変更" />
+    <MESSAGE value="[update] add Miner Initial item&#10;&#10;Minerの初期アイテムの設定" />
+    <MESSAGE value="[update] update abstract class Job&#10;&#10;抽象クラスJobのアップデート" />
+    <MESSAGE value="[update] add Initial items&#10;&#10;初期アイテムの設定" />
+    <MESSAGE value="[update] add remove_item_message&#10;&#10;固有アイテムを失った時のメッセージを修正" />
+    <MESSAGE value="[add] add BlockBreakUtil&#10;&#10;鉱夫系の職業スキルの追加" />
+    <MESSAGE value="[update] add many Items&#10;&#10;職業アイテムの追加" />
+    <MESSAGE value="[update] update Items.java&#10;&#10;itemのアップデート" />
+    <MESSAGE value="[fix] fix Hunter exp System&#10;&#10;HunterのMOBを倒したときに経験値が入らないバグ修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix] fix Hunter exp System&#10;&#10;HunterのMOBを倒したときに経験値が入らないバグ修正" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607354582292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1602842835954" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602842817246">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1607354582292" />
+    <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1607353373654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1602842817246" />
-    <state x="2631" y="352" key="#com.intellij.ide.util.MemberChooser" timestamp="1604396611045">
-      <screen x="1920" y="164" width="1920" height="1040" />
-    </state>
-    <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1602736941591" />
-    <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603871868444" />
-    <state x="2631" y="352" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604396611045" />
-    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603614907800">
+    <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1602579834851" />
+    <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1607353373654" />
+    <state x="2631" y="328" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1605779119812" />
+    <state x="719" y="389" width="481" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606303730746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603614907800" />
-    <state x="2639" y="553" width="482" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604150660163">
-      <screen x="1920" y="164" width="1920" height="1040" />
-    </state>
-    <state x="2639" y="553" width="482" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604150660163" />
-    <state x="2610" y="431" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604322414649">
-      <screen x="1920" y="164" width="1920" height="1040" />
-    </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603009000016" />
-    <state x="2610" y="431" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604322414649" />
-    <state x="2332" y="337" key="FileChooserDialogImpl" timestamp="1604738172245">
-      <screen x="1920" y="140" width="1920" height="1040" />
-    </state>
-    <state x="2332" y="337" key="FileChooserDialogImpl/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604738172245" />
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603022539679" />
-    <state x="2332" y="361" key="FileChooserDialogImpl/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604477812120" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604679482697">
-      <screen x="1920" y="140" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604679482697" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536904744" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604679482697">
-      <screen x="1920" y="140" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604679482697" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536904744" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604679482697">
-      <screen x="1920" y="140" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604679482697" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536904744" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604679482697">
-      <screen x="1920" y="140" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604679482697" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603873658796" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536904744" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604536904744">
-      <screen x="1920" y="164" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536904744" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1604536904744">
-      <screen x="1920" y="164" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536904744" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1604536904744">
-      <screen x="1920" y="164" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536904744" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1604536904744">
-      <screen x="1920" y="164" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536904744" />
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1603679086037">
+    <state x="719" y="389" width="481" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1606303730746" />
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1607355279208">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603679086037" />
-    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1603556312589">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1607355279208" />
+    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1607355279207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603556312589" />
-    <state x="669" y="225" width="582" height="586" key="RefactorJ.ExtractClass" timestamp="1603526724221">
+    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1607355279207" />
+    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1607355279207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="669" y="225" width="582" height="586" key="RefactorJ.ExtractClass/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603526724221" />
-    <state x="2092" y="238" key="SettingsEditor" timestamp="1604323834476">
-      <screen x="1920" y="164" width="1920" height="1040" />
+    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1607355279207" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1607355279208">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2092" y="238" key="SettingsEditor/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604323834476" />
-    <state x="2601" y="425" width="540" height="524" key="StructurePopup" timestamp="1604323726203">
-      <screen x="1920" y="164" width="1920" height="1040" />
-    </state>
-    <state x="2601" y="425" width="540" height="524" key="StructurePopup/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604323726203" />
-    <state x="2347" y="345" key="Vcs.Push.Dialog.v2" timestamp="1604675971759">
+    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1607355279208" />
+    <state x="2104" y="226" key="MergeDialog" timestamp="1605778101995">
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602739160745" />
-    <state x="2347" y="345" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1604675971759" />
-    <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603868619383" />
-    <state x="2347" y="369" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604536853673" />
-    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602639884212">
+    <state x="2104" y="226" key="MergeDialog/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1605778101995" />
+    <state x="427" y="205" key="Vcs.Push.Dialog.v2" timestamp="1607353184139">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602579879291" />
+    <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1607353184139" />
+    <state x="2347" y="345" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1606306394720" />
+    <state x="2643" y="373" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605778093754">
+      <screen x="1920" y="140" width="1920" height="1040" />
+    </state>
+    <state x="2643" y="373" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1605778093754" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602575397256">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1602639884212" />
-    <state x="733" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1603556308039">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="733" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603556308039" />
-    <state x="2037" y="375" key="new project wizard" timestamp="1604477865861">
-      <screen x="1920" y="164" width="1920" height="1040" />
-    </state>
-    <state x="2037" y="375" key="new project wizard/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604477865861" />
-    <state x="2433" y="390" width="894" height="782" key="search.everywhere.popup" timestamp="1604148925266">
-      <screen x="1920" y="164" width="1920" height="1040" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1602735309206" />
-    <state x="513" y="226" width="894" height="782" key="search.everywhere.popup/0.0.1920.1040/1920.164.1920.1040@0.0.1920.1040" timestamp="1603543582339" />
-    <state x="2433" y="390" width="894" height="782" key="search.everywhere.popup/0.0.1920.1040/1920.164.1920.1040@1920.164.1920.1040" timestamp="1604148925266" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1602575397256" />
   </component>
 </project>
