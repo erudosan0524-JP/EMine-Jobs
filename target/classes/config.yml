@@ -1,17 +1,13 @@
 # Setting Language
 language: ja
 
-#Setting Level UP exp
-need-exp-levelup: 100
-
-#SETTING RANK UP NEED LEVEL
-need-level-to2: 30
-need-level-to3: 40
-need-level-to4: 25
-need-level-to5: 30
-
 #SETTING GUI
 gui-size: 6
+
+needlevelto2: 25
+needlevelto3: 35
+needlevelto4: 45
+needlevelto5: 55
 
 #Settings for Database
 enabled-mysql: true
@@ -19,4 +15,4 @@ host: localhost
 port: 3306
 username: erudo
 password: password
-database: emine-jobs
+database: eminejobs

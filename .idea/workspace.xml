@@ -23,14 +23,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:develop-skill" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/skill/Skill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/skill/SkillManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/Items.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606306180697</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[update] update Items.java&#10;&#10;itemのアップデート">
+      <created>1606306391496</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606306391496</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,7 +213,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="develop-skill" />
                       </list>
                     </value>
                   </entry>
@@ -234,7 +242,8 @@
     <MESSAGE value="[update] add remove_item_message&#10;&#10;固有アイテムを失った時のメッセージを修正" />
     <MESSAGE value="[add] add BlockBreakUtil&#10;&#10;鉱夫系の職業スキルの追加" />
     <MESSAGE value="[update] add many Items&#10;&#10;職業アイテムの追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] add many Items&#10;&#10;職業アイテムの追加" />
+    <MESSAGE value="[update] update Items.java&#10;&#10;itemのアップデート" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] update Items.java&#10;&#10;itemのアップデート" />
   </component>
   <component name="WindowStateProjectService">
     <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1606103494403">
@@ -251,12 +260,12 @@
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state x="2104" y="226" key="MergeDialog/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1605778101995" />
-    <state x="427" y="205" key="Vcs.Push.Dialog.v2" timestamp="1606139527350">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2347" y="345" key="Vcs.Push.Dialog.v2" timestamp="1606306394720">
+      <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602579879291" />
     <state x="427" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1606139527350" />
-    <state x="2347" y="345" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1606042314876" />
+    <state x="2347" y="345" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1606306394720" />
     <state x="2643" y="373" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605778093754">
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>

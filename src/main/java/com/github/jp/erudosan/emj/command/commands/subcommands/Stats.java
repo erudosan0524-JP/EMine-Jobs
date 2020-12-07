@@ -21,9 +21,9 @@ public class Stats extends SubCommand {
 
             List<String> stats_message = plugin.getHandler().getCaptionList("stats_message");
 
-            player.sendMessage(stats_message.get(0) + plugin.getHandler().getCaption(plugin.getSql().getPlayerJob(player).toLowerCase()));
-            player.sendMessage(stats_message.get(1) + plugin.getSql().getExp(player));
-            player.sendMessage(stats_message.get(2) + plugin.getSql().getLevel(player));
+            player.sendMessage(plugin.getHandler().getCaption(stats_message.get(0)) + plugin.getHandler().getCaption(plugin.getSql().getPlayerJob(player).toLowerCase()));
+            player.sendMessage(plugin.getHandler().getCaption(stats_message.get(1)) + plugin.getSql().getExp(player));
+            player.sendMessage(plugin.getHandler().getCaption(stats_message.get(2)) + plugin.getSql().getLevel(player));
 
             player.sendMessage(plugin.getHandler().getCaption("command_endline"));
         }

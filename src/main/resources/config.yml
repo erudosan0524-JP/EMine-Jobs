@@ -15,5 +15,4 @@ host: localhost
 port: 3306
 username: erudo
 password: password
-database: emine-
-  oooojobs
+database: eminejobs

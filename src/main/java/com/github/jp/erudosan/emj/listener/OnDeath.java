@@ -25,7 +25,7 @@ public class OnDeath implements Listener {
         LivingEntity ent = e.getEntity();
         LivingEntity killer = ent.getKiller();
 
-        if(!(ent instanceof Player)) {
+        if(ent instanceof Player) {
             return;
         }
 
