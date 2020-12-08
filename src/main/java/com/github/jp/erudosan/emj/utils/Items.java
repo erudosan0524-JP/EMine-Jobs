@@ -174,13 +174,20 @@ public class Items {
     /*
     チェックメソッド
      */
-    public static boolean checkItemName(ItemStack item1,ItemStack item2) {
-        if(item1.hasItemMeta() && item2.hasItemMeta()) {
-            if(item1.getItemMeta().hasDisplayName() && item2.getItemMeta().hasDisplayName()) {
-                if(item1.getItemMeta().getDisplayName().equalsIgnoreCase(ChatColor.stripColor(item2.getItemMeta().getDisplayName()))) {
-                    return true;
-                }
+    public static String getItemName(ItemStack item) {
+        if(item.hasItemMeta()) {
+            if(item.getItemMeta().hasDisplayName()) {
+                return item.getItemMeta().getDisplayName();
             }
+        }
+
+        return null;
+    }
+
+
+    public static boolean checkItemName(ItemStack item1,ItemStack item2) {
+        if(getItemName(item1).equalsIgnoreCase(ChatColor.stripColor(getItemName(item2)))) {
+            return true;
         }
 
         return false;
