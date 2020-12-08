@@ -14,7 +14,7 @@ public class LumberPro extends Job {
 
     @Override
     public String name() {
-        return "lamber-pro";
+        return "lumber-pro";
     }
 
     @Override
@@ -29,7 +29,7 @@ public class LumberPro extends Job {
 
     @Override
     public GUIIcon ItemIcon() {
-        return new GUIIcon(Material.IRON_AXE,plugin.getHandler().getCaption("lamber-pro"));
+        return new GUIIcon(Material.IRON_AXE,plugin.getHandler().getCaption("lumber-pro"));
     }
 
     @Override

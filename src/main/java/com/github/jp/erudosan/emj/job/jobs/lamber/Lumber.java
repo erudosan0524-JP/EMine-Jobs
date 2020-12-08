@@ -21,7 +21,7 @@ public class Lumber extends Job {
 
     @Override
     public String name() {
-        return "lamber";
+        return "lumber";
     }
 
     @Override
@@ -36,7 +36,7 @@ public class Lumber extends Job {
 
     @Override
     public GUIIcon ItemIcon() {
-        return new GUIIcon(Material.STONE_AXE,plugin.getHandler().getCaption("lamber"));
+        return new GUIIcon(Material.STONE_AXE,plugin.getHandler().getCaption("lumber"));
     }
 
     @Override
@@ -48,7 +48,7 @@ public class Lumber extends Job {
     public void onJobJoin(Player player) {
         player.getInventory().addItem(Items.getLumberItem(plugin));
 
-        player.sendMessage("報酬として" + plugin.getHandler().getCaption("lamber-item") +ChatColor.WHITE + "を手に入れた！");
+        player.sendMessage("報酬として" + plugin.getHandler().getCaption("lumber-item") +ChatColor.WHITE + "を手に入れた！");
 
     }
 

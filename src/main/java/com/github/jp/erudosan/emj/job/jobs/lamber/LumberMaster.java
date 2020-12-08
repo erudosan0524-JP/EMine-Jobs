@@ -15,7 +15,7 @@ public class LumberMaster extends Job {
 
     @Override
     public String name() {
-        return "lamber-master";
+        return "lumber-master";
     }
 
     @Override
