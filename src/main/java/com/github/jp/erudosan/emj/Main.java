@@ -7,6 +7,7 @@ import com.github.jp.erudosan.emj.listener.*;
 import com.github.jp.erudosan.emj.listener.mylistener.OnJobJoinLeave;
 import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerChangeExp;
 import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerLevelUp;
+import com.github.jp.erudosan.emj.task.EquipmentTask;
 import com.github.jp.erudosan.emj.utils.CaptionHandler;
 import com.github.jp.erudosan.emj.utils.Config;
 import com.github.jp.erudosan.emj.utils.db.DBManager;
@@ -78,6 +79,10 @@ public class Main extends JavaPlugin {
         new OnPlayerLevelUp(getInstance());
         new OnPlayerChangeExp(getInstance());
         new OnJobJoinLeave(getInstance());
+
+
+        //Setting Tasks
+        Bukkit.getServer().getScheduler().runTaskTimer(getInstance(),new EquipmentTask(getInstance()),0L,20L);
     }
 
     private Main getInstance() {

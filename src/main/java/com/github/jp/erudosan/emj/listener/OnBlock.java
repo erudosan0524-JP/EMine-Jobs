@@ -44,12 +44,12 @@ public class OnBlock implements Listener {
         if(job.genre() == JobGenre.MINER) {
             if(Items.getPickaxes().contains(itemMainHand) || Items.getPickaxes().contains(itemOffHand)) {
                 if(Items.getStones().contains(brokenBlcok.getType())) {
-                    jobPlayer.addExp(player,1);
+                    jobPlayer.addExp(player,0.1);
                 }
 
                 if(Items.getOres().contains(brokenBlcok.getType())) {
                     Random rand = new Random();
-                    int amount = rand.nextInt(6);
+                    double amount = rand.nextDouble() * 50; //0.0~5.0
                     jobPlayer.addExp(player,amount);
                 }
             }
@@ -59,19 +59,8 @@ public class OnBlock implements Listener {
             if(Items.getAxes().contains(itemMainHand) || Items.getAxes().contains(itemOffHand)) {
                 if(Items.getWoods().contains(brokenBlcok.getType())) {
                     Random rand = new Random();
-                    int amount = rand.nextInt(5);
+                    int amount = rand.nextInt(5) + 1;
                     jobPlayer.addExp(player, amount);
-                }
-            }
-        }
-
-
-        //Mine-proのピッケル
-        if(job instanceof MinePro) {
-            if(player.getInventory().getItemInMainHand().getType() == Material.IRON_PICKAXE) {
-                ItemStack item = player.getInventory().getItemInMainHand();
-                if(Items.checkItemName(item,Items.getMineProItem(plugin))) {
-
                 }
             }
         }

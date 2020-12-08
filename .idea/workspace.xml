@@ -439,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607402630542</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="[add] add getItemName method in Items.java&#10;&#10;getItemNameメソッドの追加">
+      <created>1607404372236</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1607404372236</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -467,7 +474,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[update] update JobManager to rank up&#10;&#10;ランクアップ処理追加のためのJobManagerアップデート" />
     <MESSAGE value="[update] update JobPlayer&#10;&#10;その人が就くことができる職業一覧のListを追加" />
     <MESSAGE value="[update] update canJoinJobs&#10;&#10;レベル判定をcanJoinJobsに追加" />
     <MESSAGE value="[add] add add level Command&#10;&#10;／emj addlevel [player] [level] の追加" />
@@ -492,7 +498,8 @@
     <MESSAGE value="[update] add item name check method&#10;&#10;アイテム名をチェックするメソッドの追加" />
     <MESSAGE value="[update] update drop Items&#10;&#10;固有アイテムを捨てられないように" />
     <MESSAGE value="[fix] fix 'lamber' typo&#10;&#10;lamberというタイプミスの修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix] fix 'lamber' typo&#10;&#10;lamberというタイプミスの修正" />
+    <MESSAGE value="[add] add getItemName method in Items.java&#10;&#10;getItemNameメソッドの追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] add getItemName method in Items.java&#10;&#10;getItemNameメソッドの追加" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1602842835954">
