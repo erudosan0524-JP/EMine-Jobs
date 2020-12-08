@@ -1,6 +1,7 @@
 package com.github.jp.erudosan.emj.utils;
 
 import com.github.jp.erudosan.emj.Main;
+import com.github.jp.erudosan.emj.job.Job;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -11,6 +12,8 @@ import org.bukkit.entity.Player;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CaptionHandler {
     private Main plugin;
@@ -109,6 +112,41 @@ public class CaptionHandler {
         }
 
         return caption;
+    }
+
+    public String getCaptionJob(Job job, String name) {
+        String caption = this.config.getString(name);
+
+        if (caption == null)
+        {
+            this.plugin.getLogger().warning("Missing caption: " + name);
+            caption = "&c[missing caption]";
+        }
+
+        caption = ChatColor.translateAlternateColorCodes('&', caption);
+
+        if(caption.contains("{job}")) {
+            caption = caption.replace("{job}",job.name());
+        }
+
+        return caption;
+    }
+
+    public List<String> getCaptionList(String name) {
+        List<String> captions = this.config.getStringList(name);
+        List<String> list = new ArrayList<>();
+
+        if(captions.isEmpty()) {
+            this.plugin.getLogger().warning("Missing caption: " + name);
+            captions.add("&c[missing caption]");
+        }
+
+        for(String caption : captions) {
+            caption = ChatColor.translateAlternateColorCodes('&',caption);
+            list.add(caption);
+        }
+
+        return list;
     }
 
 }

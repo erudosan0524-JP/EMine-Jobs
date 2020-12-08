@@ -3,8 +3,9 @@ package com.github.jp.erudosan.emj.listener;
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
-import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.job.JobPlayer;
+import com.github.jp.erudosan.emj.job.jobs.miner.MinePro;
+import com.github.jp.erudosan.emj.skills.BlockBreakUtil;
 import com.github.jp.erudosan.emj.utils.Items;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -13,6 +14,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.Random;
 
 public class OnBlock implements Listener {
 
@@ -43,19 +46,39 @@ public class OnBlock implements Listener {
                 if(Items.getStones().contains(brokenBlcok.getType())) {
                     jobPlayer.addExp(player,1);
                 }
+
+                if(Items.getOres().contains(brokenBlcok.getType())) {
+                    Random rand = new Random();
+                    int amount = rand.nextInt(6);
+                    jobPlayer.addExp(player,amount);
+                }
             }
         }
 
-        if (job.genre() == JobGenre.LAMBER) {
+        if (job.genre() == JobGenre.LUMBER) {
             if(Items.getAxes().contains(itemMainHand) || Items.getAxes().contains(itemOffHand)) {
                 if(Items.getWoods().contains(brokenBlcok.getType())) {
-                    jobPlayer.addExp(player, 1);
+                    Random rand = new Random();
+                    int amount = rand.nextInt(5);
+                    jobPlayer.addExp(player, amount);
                 }
             }
         }
 
 
+        //Mine-proのピッケル
+        if(job instanceof MinePro) {
+            if(player.getInventory().getItemInMainHand().getType() == Material.IRON_PICKAXE) {
+                ItemStack item = player.getInventory().getItemInMainHand();
+                if(item.hasItemMeta() && item.getItemMeta().hasDisplayName()) {
+                    if(item.getItemMeta().getDisplayName().equalsIgnoreCase(plugin.getHandler().getCaption("mine-pro-item"))) {
 
+                        //ブロック一気に破壊する処理
+                        BlockBreakUtil.Break3x3(brokenBlcok.getLocation());
+                    }
+                }
+            }
+        }
 
     }
 }

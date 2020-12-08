@@ -2,16 +2,15 @@ package com.github.jp.erudosan.emj.utils.db;
 
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
-import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type;
 import lombok.NonNull;
 import org.bukkit.entity.Player;
 
-import java.sql.*;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class SQLGetterSetter {
 
@@ -198,14 +197,14 @@ public class SQLGetterSetter {
         return false;
     }
 
-    public void updatePlayerJob(Player player, Job job) {
+    public void updatePlayerJob(Player player, Job job,double exp, int level) {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
                     .prepareStatement("UPDATE " + player_jobs_table + " SET job=?, exp=?, level=? WHERE uuid=?");
             statement.setString(1,job.name());
-            statement.setInt(2,0);
-            statement.setInt(3,1);
+            statement.setDouble(2,exp);
+            statement.setInt(3,level);
             statement.setString(4,player.getUniqueId().toString());
             statement.executeUpdate();
 
@@ -214,12 +213,12 @@ public class SQLGetterSetter {
         }
     }
 
-    public void updateExp(Player player, int exp) {
+    public void updateExp(Player player, double exp) {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
                     .prepareStatement("UPDATE " + player_jobs_table + " SET exp=? WHERE uuid=?");
-            statement.setInt(1,exp);
+            statement.setDouble(1,exp);
             statement.setString(2,player.getUniqueId().toString());
             statement.executeUpdate();
 
@@ -261,7 +260,7 @@ public class SQLGetterSetter {
         return "";
     }
 
-    public int getExp(Player player) {
+    public double getExp(Player player) {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
@@ -271,7 +270,7 @@ public class SQLGetterSetter {
             ResultSet results = statement.executeQuery();
             results.next();
 
-            return results.getInt("exp");
+            return results.getDouble("exp");
 
         } catch (SQLException throwable) {
             throwable.printStackTrace();
@@ -310,7 +309,7 @@ public class SQLGetterSetter {
 
             if (!jobExists(job)) {
                 PreparedStatement insert = db.getConnection()
-                        .prepareStatement("INSERT INTO " + jobs_table + " (job,genre,rank) VALUE (?,?,?)");
+                        .prepareStatement("INSERT INTO " + jobs_table + " (job,genre,_rank) VALUE (?,?,?)");
                 insert.setString(1,job.name());
                 insert.setString(2,job.genre().getGenre());
                 insert.setInt(3,job.rank());
@@ -327,7 +326,7 @@ public class SQLGetterSetter {
         try {
             DBManager db = plugin.getDbManager();
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("SELECT * FROM " + jobs_table + " WHERE rank=?");
+                    .prepareStatement("SELECT * FROM " + jobs_table + " WHERE _rank=?");
             statement.setInt(1,rank);
 
             ResultSet results = statement.executeQuery();

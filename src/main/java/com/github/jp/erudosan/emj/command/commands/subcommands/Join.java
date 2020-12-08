@@ -26,18 +26,18 @@ public class Join extends SubCommand {
             if(jobPlayer.jobExists(job_name)) {
                 Job job = jobPlayer.getJobFromName(job_name);
 
-                if(plugin.getSql().playerJobExists(player)) {
+                if(jobPlayer.playerJobExists(player)) {
                     if(!jobPlayer.canJoinJobs(player).contains(job)) {
                         player.sendMessage(plugin.getHandler().getCaption("join_error_message"));
                         return;
                     }
 
-                    if(plugin.getSql().isSetPlayerJob(player)) {
-                        plugin.getSql().updatePlayerJob(player,job);
+                    if(jobPlayer.isSetPlayerJob(player)) {
+                        jobPlayer.updatePlayerJob(player,job,jobPlayer.getExp(player), jobPlayer.getLevel(player));
                     }
                 } else {
-                    if(!plugin.getSql().isSetPlayerJob(player)) {
-                        plugin.getSql().setPlayerJob(player,job);
+                    if(!jobPlayer.isSetPlayerJob(player)) {
+                        jobPlayer.setPlayerJob(player,job);
                     }
                 }
 

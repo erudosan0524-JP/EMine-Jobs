@@ -1,7 +1,7 @@
 package com.github.jp.erudosan.emj.job.jobs.lamber;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.gui.GuiIcon;
+import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import org.bukkit.Material;
@@ -19,7 +19,7 @@ public class MineCrafter extends Job {
 
     @Override
     public JobGenre genre() {
-        return JobGenre.LAMBER;
+        return JobGenre.LUMBER;
     }
 
     @Override
@@ -28,12 +28,22 @@ public class MineCrafter extends Job {
     }
 
     @Override
-    public GuiIcon ItemIcon() {
-        return new GuiIcon(Material.GRASS_BLOCK,plugin.getHandler().getCaption("minecrafter"));
+    public GUIIcon ItemIcon() {
+        return new GUIIcon(Material.GRASS_BLOCK,plugin.getHandler().getCaption("minecrafter"));
     }
 
     @Override
     public void onLevelUp(Player player, int level) {
+
+    }
+
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
+    @Override
+    public void onJobLeave(Player player) {
 
     }
 

@@ -1,7 +1,7 @@
 package com.github.jp.erudosan.emj.job.jobs.miner;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.gui.GuiIcon;
+import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import me.zombie_striker.qg.api.QualityArmory;
@@ -15,7 +15,7 @@ public class CanonShooter extends Job {
 
     @Override
     public String name() {
-        return "CanonShooter";
+        return "canon-shooter";
     }
 
     @Override
@@ -29,13 +29,23 @@ public class CanonShooter extends Job {
     }
 
     @Override
-    public GuiIcon ItemIcon() {
+    public GUIIcon ItemIcon() {
         Gun rpg = QualityArmory.getGunByName("rpg");
-        return new GuiIcon(rpg.getItemStack());
+        return new GUIIcon(rpg.getItemStack());
     }
 
     @Override
     public void onLevelUp(Player player, int level) {
+
+    }
+
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
+    @Override
+    public void onJobLeave(Player player) {
 
     }
 

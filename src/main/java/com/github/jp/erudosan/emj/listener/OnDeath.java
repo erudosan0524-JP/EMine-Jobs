@@ -25,7 +25,7 @@ public class OnDeath implements Listener {
         LivingEntity ent = e.getEntity();
         LivingEntity killer = ent.getKiller();
 
-        if(!(ent instanceof Player)) {
+        if(ent instanceof Player) {
             return;
         }
 
@@ -42,7 +42,7 @@ public class OnDeath implements Listener {
             Job job = jobPlayer.getPlayerJob(player);
 
             if(job.genre() == JobGenre.HUNTER) {
-                jobPlayer.addExp(player,1);
+                jobPlayer.addExp(player,5);
             }
         }
 

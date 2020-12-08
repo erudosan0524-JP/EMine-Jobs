@@ -1,7 +1,7 @@
 package com.github.jp.erudosan.emj.gui;
 
 public enum GUIRows {
-    r1(1),r2(2),r3(3),r4(4),r5(5),r6(6);
+    r1(1), r2(2), r3(3), r4(4), r5(5), r6(6);
 
     private int rows;
 
@@ -9,25 +9,21 @@ public enum GUIRows {
         this.rows = rows;
     }
 
-    public int getFields() {
+    public Integer getFields() {
         return rows * 9;
     }
 
-    public int getRows() {
+    public Integer getRows() {
         return rows;
     }
 
-    public static GUIRows getByRows(int rows) {
-        if(rows > 9) {
+    public static GUIRows getByRows(Integer rows) {
+        if (rows > 9)
             rows = rows / 9;
-        }
-
-        for(GUIRows one : GUIRows.values()) {
-            if(one.getRows() == rows) {
+        for (GUIRows one : GUIRows.values()) {
+            if (one.getRows().equals(rows))
                 return one;
-            }
         }
-
         return GUIRows.r6;
     }
 }

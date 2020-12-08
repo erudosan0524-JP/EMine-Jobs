@@ -1,7 +1,7 @@
 package com.github.jp.erudosan.emj.job.jobs.fisher;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.gui.GuiIcon;
+import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import org.bukkit.Material;
@@ -33,7 +33,7 @@ public class FishMaster extends Job {
     }
 
     @Override
-    public GuiIcon ItemIcon() {
+    public GUIIcon ItemIcon() {
         ItemStack item = new ItemStack(Material.FISHING_ROD,1);
         item.addEnchantment(Enchantment.LURE,1);
         ItemMeta meta = item.getItemMeta();
@@ -45,11 +45,21 @@ public class FishMaster extends Job {
         meta.addItemFlags(ItemFlag.HIDE_DYE);
         item.setItemMeta(meta);
 
-        return new GuiIcon(item);
+        return new GUIIcon(item);
     }
 
     @Override
     public void onLevelUp(Player player, int level) {
+
+    }
+
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
+    @Override
+    public void onJobLeave(Player player) {
 
     }
 

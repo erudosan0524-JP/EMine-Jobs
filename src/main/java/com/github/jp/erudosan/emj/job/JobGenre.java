@@ -2,7 +2,7 @@ package com.github.jp.erudosan.emj.job;
 
 public enum JobGenre {
     MINER("MINER"),
-    LAMBER("LAMBER"),
+    LUMBER("LUMBER"),
     FISHING("FISHING"),
     CHEF("CHEF"),
     HUNTER("HUNTER");

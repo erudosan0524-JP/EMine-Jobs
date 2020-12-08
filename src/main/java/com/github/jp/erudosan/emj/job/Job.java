@@ -1,9 +1,8 @@
 package com.github.jp.erudosan.emj.job;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.gui.GuiIcon;
+import com.github.jp.erudosan.emj.gui.GUIIcon;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 
 public abstract class Job {
 
@@ -28,8 +27,15 @@ public abstract class Job {
      */
     public abstract int rank();
 
-    public abstract GuiIcon ItemIcon();
+    //GUIのアイコン
+    public abstract GUIIcon ItemIcon();
 
     //レベルアップ時の報酬処理
     public abstract void onLevelUp(Player player, int level);
+
+    //jobに就いた時の処理
+    public abstract void onJobJoin(Player player);
+
+    //jobを辞めた時の処理
+    public abstract void onJobLeave(Player player);
 }

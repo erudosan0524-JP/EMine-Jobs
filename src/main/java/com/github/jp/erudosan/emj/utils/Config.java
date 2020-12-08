@@ -1,6 +1,5 @@
 package com.github.jp.erudosan.emj.utils;
 
-import com.github.jp.erudosan.emj.Main;
 import lombok.Getter;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;
@@ -16,10 +15,10 @@ public class Config {
     private String language;
 
     @Getter
-    private int needExpLevelUp;
+    private int guiSize;
 
     @Getter
-    private int needLevelTo2, needLevelTo3, needLevelTo4, needLevelTo5;
+    private int needLevelto2,needLevelto3,needLevelto4,needLevelto5;
 
     @Getter
     private boolean enabledMySQL;
@@ -45,11 +44,11 @@ public class Config {
         config = plugin.getConfig();
 
         language = config.getString("language");
-        needExpLevelUp = config.getInt("need-exp-levelup");
-        needLevelTo2 = config.getInt("need-level-to2");
-        needLevelTo3 = config.getInt("need-level-to3");
-        needLevelTo4 = config.getInt("need-level-to4");
-        needLevelTo5 = config.getInt("need-level-to5");
+        guiSize = config.getInt("gui-size");
+        needLevelto2 = config.getInt("needlevelto2");
+        needLevelto3 = config.getInt("needlevelto3");
+        needLevelto4 = config.getInt("needlevelto4");
+        needLevelto5 = config.getInt("needlevelto5");
         enabledMySQL = config.getBoolean("enabled-mysql");
         host = config.getString("host");
         port = config.getInt("port");

@@ -3,7 +3,6 @@ package com.github.jp.erudosan.emj.command.commands.subcommands;
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
 import com.github.jp.erudosan.emj.job.Job;
-import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.entity.Player;
 
@@ -26,7 +25,7 @@ public class Jobs extends SubCommand {
         if(jobPlayer.canJoinJobs(player).size() != 0) {
             player.sendMessage(plugin.getHandler().getCaption("jobs_message_first"));
             for(Job job : jobPlayer.canJoinJobs(player)) {
-                player.sendMessage("・ " + job.name());
+                player.sendMessage("・ " + job.name() + " (" + plugin.getHandler().getCaption(job.name()) + ")");
             }
             player.sendMessage(plugin.getHandler().getCaption("jobs_message_end"));
         } else {

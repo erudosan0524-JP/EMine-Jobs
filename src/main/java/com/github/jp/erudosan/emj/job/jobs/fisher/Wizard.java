@@ -1,7 +1,7 @@
 package com.github.jp.erudosan.emj.job.jobs.fisher;
 
 import com.github.jp.erudosan.emj.Main;
-import com.github.jp.erudosan.emj.gui.GuiIcon;
+import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
 import org.bukkit.Material;
@@ -28,12 +28,22 @@ public class Wizard extends Job {
     }
 
     @Override
-    public GuiIcon ItemIcon() {
-        return new GuiIcon(Material.DEBUG_STICK,plugin.getHandler().getCaption("wizard"));
+    public GUIIcon ItemIcon() {
+        return new GUIIcon(Material.DEBUG_STICK,plugin.getHandler().getCaption("wizard"));
     }
 
     @Override
     public void onLevelUp(Player player, int level) {
+
+    }
+
+    @Override
+    public void onJobJoin(Player player) {
+
+    }
+
+    @Override
+    public void onJobLeave(Player player) {
 
     }
 }
