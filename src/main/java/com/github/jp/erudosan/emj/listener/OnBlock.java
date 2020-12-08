@@ -70,12 +70,8 @@ public class OnBlock implements Listener {
         if(job instanceof MinePro) {
             if(player.getInventory().getItemInMainHand().getType() == Material.IRON_PICKAXE) {
                 ItemStack item = player.getInventory().getItemInMainHand();
-                if(item.hasItemMeta() && item.getItemMeta().hasDisplayName()) {
-                    if(item.getItemMeta().getDisplayName().equalsIgnoreCase(plugin.getHandler().getCaption("mine-pro-item"))) {
+                if(Items.checkItemName(item,Items.getMineProItem(plugin))) {
 
-                        //ブロック一気に破壊する処理
-                        BlockBreakUtil.Break3x3(brokenBlcok.getLocation());
-                    }
                 }
             }
         }

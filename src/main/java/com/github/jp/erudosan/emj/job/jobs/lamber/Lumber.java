@@ -46,7 +46,7 @@ public class Lumber extends Job {
 
     @Override
     public void onJobJoin(Player player) {
-        player.getInventory().addItem(Items.getLamberItem(plugin));
+        player.getInventory().addItem(Items.getLumberItem(plugin));
 
         player.sendMessage("報酬として" + plugin.getHandler().getCaption("lamber-item") +ChatColor.WHITE + "を手に入れた！");
 
@@ -60,7 +60,7 @@ public class Lumber extends Job {
         while(invIterator.hasNext()) {
             ItemStack item = (ItemStack) invIterator.next();
 
-            if(item.getItemMeta().getDisplayName().equals(Items.getLamberItem(plugin))) {
+            if(item.getItemMeta().getDisplayName().equals(Items.getLumberItem(plugin))) {
                 inv.remove(item);
             }
         }

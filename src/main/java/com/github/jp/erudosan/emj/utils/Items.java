@@ -174,7 +174,7 @@ public class Items {
     /*
     チェックメソッド
      */
-    public boolean checkItemName(ItemStack item1,ItemStack item2) {
+    public static boolean checkItemName(ItemStack item1,ItemStack item2) {
         if(item1.hasItemMeta() && item2.hasItemMeta()) {
             if(item1.getItemMeta().hasDisplayName() && item2.getItemMeta().hasDisplayName()) {
                 if(item1.getItemMeta().getDisplayName().equalsIgnoreCase(ChatColor.stripColor(item2.getItemMeta().getDisplayName()))) {
@@ -186,15 +186,29 @@ public class Items {
         return false;
     }
 
+    public static List<ItemStack> getCustomItems(Main plugin) {
+        List<ItemStack> list = new ArrayList<>();
+        list.add(getChefItem(plugin));
+        list.add(getCrafterItem(plugin));
+        list.add(getEnchanterItem(plugin));
+        list.add(getFisherItem(plugin));
+        list.add(getHunterItem(plugin));
+        list.add(getLumberItem(plugin));
+        list.add(getMineProItem(plugin));
+        list.add(getMinerItem(plugin));
+
+        return list;
+    }
+
 
     /*
     カスタムアイテム一覧
      */
-    public static ItemStack getLamberItem(Main plugin) {
+    public static ItemStack getLumberItem(Main plugin) {
         ItemStack item = new ItemStack(Material.WOODEN_AXE);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(plugin.getHandler().getCaption("lamber-item"));
-        meta.setLore(plugin.getHandler().getCaptionList("lamber-item-lore"));
+        meta.setDisplayName(plugin.getHandler().getCaption("lumber-item"));
+        meta.setLore(plugin.getHandler().getCaptionList("lumber-item-lore"));
         meta.addEnchant(Enchantment.DIG_SPEED, 5, true);
         meta.addEnchant(Enchantment.DURABILITY, 3, true);
         meta.addEnchant(Enchantment.MENDING, 1, true);

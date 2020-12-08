@@ -7,7 +7,6 @@ import com.github.jp.erudosan.emj.listener.*;
 import com.github.jp.erudosan.emj.listener.mylistener.OnJobJoinLeave;
 import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerChangeExp;
 import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerLevelUp;
-import com.github.jp.erudosan.emj.task.SkillTask;
 import com.github.jp.erudosan.emj.utils.CaptionHandler;
 import com.github.jp.erudosan.emj.utils.Config;
 import com.github.jp.erudosan.emj.utils.db.DBManager;

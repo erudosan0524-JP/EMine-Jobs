@@ -6,11 +6,11 @@ import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
-public class SkillTask extends BukkitRunnable {
+public class EquipmentTask extends BukkitRunnable {
 
     private Main plugin;
 
-    public SkillTask(Main plugin) {
+    public EquipmentTask(Main plugin) {
         this.plugin = plugin;
     }
 

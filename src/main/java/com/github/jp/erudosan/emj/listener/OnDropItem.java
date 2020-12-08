@@ -1,6 +1,7 @@
 package com.github.jp.erudosan.emj.listener;
 
 import com.github.jp.erudosan.emj.Main;
+import com.github.jp.erudosan.emj.utils.Items;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -38,8 +39,13 @@ public class OnDropItem implements Listener {
             }
         }
 
+        for(ItemStack customItem : Items.getCustomItems(plugin)) {
+            if(item.getType() == customItem.getType()) {
+                if(Items.checkItemName(item,customItem)) {
+                    e.setCancelled(true);
+                }
+            }
 
-
-
+        }
     }
 }
