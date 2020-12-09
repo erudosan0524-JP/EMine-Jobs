@@ -3,6 +3,7 @@ package com.github.jp.erudosan.emj.command.commands.subcommands;
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
 import org.bukkit.entity.Player;
+import org.bukkit.permissions.Permission;
 
 import java.util.List;
 
@@ -42,5 +43,10 @@ public class Stats extends SubCommand {
     @Override
     public String[] aliases() {
         return new String[0];
+    }
+
+    @Override
+    public Permission getPermission() {
+        return new Permission(name());
     }
 }

@@ -6,6 +6,7 @@ import com.github.jp.erudosan.emj.event.PlayerJobJoinEvent;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.entity.Player;
+import org.bukkit.permissions.Permission;
 
 public class Join extends SubCommand {
 
@@ -62,5 +63,10 @@ public class Join extends SubCommand {
     @Override
     public String[] aliases() {
         return new String[0];
+    }
+
+    @Override
+    public Permission getPermission() {
+        return new Permission(name());
     }
 }

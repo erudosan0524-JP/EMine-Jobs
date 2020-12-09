@@ -1,6 +1,7 @@
 package com.github.jp.erudosan.emj.command.commands;
 
 import org.bukkit.entity.Player;
+import org.bukkit.permissions.Permission;
 
 public abstract class SubCommand {
     /*
@@ -34,4 +35,9 @@ public abstract class SubCommand {
      * @return args[]の部分
      */
     public abstract String[] aliases();
+
+    /**
+    * @return コマンドのPermission
+     */
+    public abstract Permission getPermission();
 }

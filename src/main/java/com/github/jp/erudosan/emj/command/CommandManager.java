@@ -8,6 +8,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.permissions.Permission;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -36,6 +37,7 @@ public class CommandManager implements CommandExecutor {
         this.commands.add(new Jobs(plugin));
         this.commands.add(new AddLevel(plugin));
         this.commands.add(new Gui(plugin));
+        this.commands.add(new Reload(plugin));
 
 
     }
@@ -52,8 +54,12 @@ public class CommandManager implements CommandExecutor {
         Player player = (Player) sender;
 
         if(command.getName().equalsIgnoreCase(mainCommand)) {
+            Permission rootPerm = new Permission("emj.command");
+
             if(args.length == 0) {
-                player.sendMessage(plugin.getHandler().getCaption("length_zero_message"));
+                if(player.hasPermission(rootPerm)) {
+                    player.sendMessage(plugin.getHandler().getCaption("length_zero_message"));
+                }
                 return true;
             }
 
@@ -74,7 +80,9 @@ public class CommandManager implements CommandExecutor {
             arrayList.remove(0); //index 0 はサブコマンド本体
 
             try {
-                target.onCommand(player, arrayList.toArray(new String[arrayList.size()]));
+                if(player.hasPermission(target.getPermission().addParent("emj.command",true))) {
+                    target.onCommand(player, arrayList.toArray(new String[arrayList.size()]));
+                }
             } catch(Exception e) {
                 player.sendMessage(plugin.getHandler().getCaption("error_command"));
 

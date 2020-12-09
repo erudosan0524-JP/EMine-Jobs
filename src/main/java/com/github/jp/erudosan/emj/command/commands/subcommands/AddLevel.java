@@ -5,6 +5,7 @@ import com.github.jp.erudosan.emj.command.commands.SubCommand;
 import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
+import org.bukkit.permissions.Permission;
 
 public class AddLevel extends SubCommand {
 
@@ -49,5 +50,10 @@ public class AddLevel extends SubCommand {
     @Override
     public String[] aliases() {
         return new String[0];
+    }
+
+    @Override
+    public Permission getPermission() {
+        return new Permission(name());
     }
 }

@@ -4,6 +4,7 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.command.commands.SubCommand;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
+import org.bukkit.permissions.Permission;
 
 public class Help extends SubCommand {
 
@@ -39,5 +40,10 @@ public class Help extends SubCommand {
     @Override
     public String[] aliases() {
         return new String[0];
+    }
+
+    @Override
+    public Permission getPermission() {
+        return new Permission(name());
     }
 }

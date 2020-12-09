@@ -7,6 +7,7 @@ import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryType;
+import org.bukkit.permissions.Permission;
 
 public class Gui extends SubCommand {
 
@@ -26,7 +27,6 @@ public class Gui extends SubCommand {
         gui.setFiller(Material.WHITE_STAINED_GLASS_PANE);
         gui.addJobsIcon(player);
         gui.open();
-
     }
 
     @Override
@@ -42,5 +42,10 @@ public class Gui extends SubCommand {
     @Override
     public String[] aliases() {
         return new String[0];
+    }
+
+    @Override
+    public Permission getPermission() {
+        return new Permission(name());
     }
 }
