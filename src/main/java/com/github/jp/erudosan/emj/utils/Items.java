@@ -317,7 +317,6 @@ public class Items {
 
         meta.setDisplayName(plugin.getHandler().getCaption("enchanter-item"));
         meta.setLore(plugin.getHandler().getCaptionList("enchanter-item-lore"));
-
         EnchantItem.setItemMeta(meta);
 
         return EnchantItem;

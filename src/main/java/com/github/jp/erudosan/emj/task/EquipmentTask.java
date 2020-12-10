@@ -26,7 +26,7 @@ public class EquipmentTask implements Runnable {
         for (Player player : Bukkit.getServer().getOnlinePlayers()) {
             ItemStack item = player.getInventory().getItemInMainHand();
 
-            if(Items.getItemName(item).equals(Items.getMineProItem(plugin))) {
+            if(Items.checkItemName(item,Items.getMineProItem(plugin))) {
                 player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED,20* 2, 2));
                 player.addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING,20*2,3));
             }
