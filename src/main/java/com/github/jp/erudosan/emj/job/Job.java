@@ -2,6 +2,7 @@ package com.github.jp.erudosan.emj.job;
 
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.gui.GUIIcon;
+import com.github.jp.erudosan.emj.utils.CustomItemHandler;
 import org.bukkit.entity.Player;
 
 public abstract class Job {

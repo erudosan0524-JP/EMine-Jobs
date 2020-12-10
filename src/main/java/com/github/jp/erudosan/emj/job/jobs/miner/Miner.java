@@ -4,6 +4,7 @@ import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.gui.GUIIcon;
 import com.github.jp.erudosan.emj.job.Job;
 import com.github.jp.erudosan.emj.job.JobGenre;
+import com.github.jp.erudosan.emj.utils.CustomItemHandler;
 import com.github.jp.erudosan.emj.utils.Items;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -19,8 +20,11 @@ import java.util.List;
 
 public class Miner extends Job {
 
+    public CustomItemHandler cih;
+
     public Miner(Main plugin) {
         super(plugin);
+        this.cih = new CustomItemHandler(plugin,this);
     }
 
     @Override
@@ -49,9 +53,9 @@ public class Miner extends Job {
 
     @Override
     public void onJobJoin(Player player) {
-        player.getInventory().addItem(Items.getMinerItem(plugin));
+        player.getInventory().addItem(cih.getItem());
 
-        player.sendMessage("報酬として" + plugin.getHandler().getCaption("miner-item") + ChatColor.WHITE + "を手に入れた！");
+        player.sendMessage("報酬として" +cih.getName() + ChatColor.WHITE + "を手に入れた！");
 
     }
 
@@ -64,7 +68,7 @@ public class Miner extends Job {
         while(invIterator.hasNext()) {
             ItemStack item = (ItemStack) invIterator.next();
 
-            if(item.getItemMeta().getDisplayName().equals(Items.getMinerItem(plugin))) {
+            if(item.getItemMeta().getDisplayName().equals(cih.getName())) {
                 inv.remove(item);
             }
         }
