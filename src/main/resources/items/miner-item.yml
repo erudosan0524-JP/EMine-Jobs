@@ -1,0 +1,11 @@
+name: "微妙に使える木のピッケル"
+type: "WOODEN_PICKAXE"
+lore:
+  - "鉱夫の初期アイテム"
+  - "木のピッケルだが，採掘速度が少しだけ早い"
+enchantment:
+  DIG_SPEED: 5
+  DURABILITY: 3
+  MENDING: 1
+unbreakable: false
+

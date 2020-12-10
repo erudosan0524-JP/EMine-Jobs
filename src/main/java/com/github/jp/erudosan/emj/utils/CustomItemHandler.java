@@ -10,6 +10,8 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.craftbukkit.libs.org.apache.commons.io.FileUtils;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import java.io.File;
 import java.io.IOException;
@@ -91,8 +93,7 @@ public class CustomItemHandler {
         List<String> list = new ArrayList<>();
 
         if(captions.isEmpty()) {
-            this.plugin.getLogger().warning("Missing caption: " + name);
-            captions.add("&c[missing caption]");
+            captions.add(" ");
         }
 
         for(String caption : captions) {
@@ -101,6 +102,20 @@ public class CustomItemHandler {
         }
 
         return list;
+    }
+
+    public ItemStack getItem() {
+        ItemStack item = new ItemStack(getMaterial());
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(getName());
+        meta.setLore(getLore());
+        meta.setUnbreakable(isUnbreakable());
+        for(Enchantment enc : getEnchants().keySet()) {
+            meta.addEnchant(enc,getEnchants().get(enc),true);
+        }
+        item.setItemMeta(meta);
+
+        return item;
     }
 
     public String getName() {
@@ -117,6 +132,7 @@ public class CustomItemHandler {
 
     public HashMap<Enchantment,Integer> getEnchants() {
         HashMap<Enchantment,Integer> enchantments = new HashMap<>();
+
 
         for(String key : this.config.getConfigurationSection("enchantment").getKeys(false)) {
             enchantments.put(Enchantment.getByName(key),this.config.getInt("enchantment." + key));
