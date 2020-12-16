@@ -2,6 +2,7 @@ package com.github.jp.erudosan.emj.utils;
 
 import com.github.jp.erudosan.emj.Main;
 import com.github.jp.erudosan.emj.job.Job;
+import com.github.jp.erudosan.emj.job.JobPlayer;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.configuration.InvalidConfigurationException;
@@ -31,13 +32,12 @@ public class CustomItemHandler {
     public CustomItemHandler(Main plugin, Job job)
     {
         this.plugin = plugin;
-        this.path = "/items/" + job.name() + "-item.yml";
+        this.path = "items/" + job.name() + "-item.yml";
         this.configFile = new File(this.plugin.getDataFolder(), path);
 
         System.out.println(this.configFile.getPath());
 
         config = new YamlConfiguration();
-
         this.saveDefault();
         this.reload();
     }

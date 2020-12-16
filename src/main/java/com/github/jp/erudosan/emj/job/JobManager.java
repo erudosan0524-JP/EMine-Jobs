@@ -6,7 +6,9 @@ import com.github.jp.erudosan.emj.job.jobs.fisher.*;
 import com.github.jp.erudosan.emj.job.jobs.hunter.Hunter;
 import com.github.jp.erudosan.emj.job.jobs.lamber.*;
 import com.github.jp.erudosan.emj.job.jobs.miner.*;
+import com.github.jp.erudosan.emj.utils.CustomItemHandler;
 import lombok.Getter;
+import org.bukkit.inventory.ItemStack;
 
 import java.util.*;
 
@@ -25,6 +27,12 @@ public class JobManager {
     protected HashMap<Integer,List<Job>> FisherJobs = new HashMap<>();
     protected HashMap<Integer,List<Job>> ChefJobs = new HashMap<>();
     protected HashMap<Integer,List<Job>> HunterJobs = new HashMap<>();
+
+    /*
+    CustomItems
+    HashMap<Job, ItemStack>
+     */
+    protected HashMap<Job,ItemStack> customItems = new HashMap<Job, ItemStack>();
 
 
 
@@ -74,7 +82,6 @@ public class JobManager {
         jobs.add(new Hunter(plugin));
 
 
-
         //Setting Over rank2 Jobs
         for(int i=1; i <= 5; i++) {
             List<Job> miners = new ArrayList<>();
@@ -91,6 +98,7 @@ public class JobManager {
                 }
 
                 Job job = getJobFromName(s);
+                
 
                 switch (job.genre()) {
                     case MINER:
@@ -128,7 +136,18 @@ public class JobManager {
         jobGenreIterator = jobGenres.iterator();
 
         setJob(jobs);
+
+        setCustomItems();
     }
+
+    private void setCustomItems() {
+        for(Job job : jobs) {
+            CustomItemHandler cih = new CustomItemHandler(plugin, job);
+
+            customItems.put(job,cih.getItem());
+        }
+    }
+
 
     public boolean jobExists(String job_name) {
         for(Job job : jobs) {

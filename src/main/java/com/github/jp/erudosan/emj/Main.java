@@ -2,6 +2,7 @@ package com.github.jp.erudosan.emj;
 
 
 import com.github.jp.erudosan.emj.command.CommandManager;
+import com.github.jp.erudosan.emj.job.JobManager;
 import com.github.jp.erudosan.emj.job.JobPlayer;
 import com.github.jp.erudosan.emj.listener.*;
 import com.github.jp.erudosan.emj.listener.mylistener.OnJobJoinLeave;
@@ -10,6 +11,7 @@ import com.github.jp.erudosan.emj.listener.mylistener.OnPlayerLevelUp;
 import com.github.jp.erudosan.emj.task.EquipmentTask;
 import com.github.jp.erudosan.emj.utils.CaptionHandler;
 import com.github.jp.erudosan.emj.utils.Config;
+import com.github.jp.erudosan.emj.utils.CustomItemHandler;
 import com.github.jp.erudosan.emj.utils.db.DBManager;
 import com.github.jp.erudosan.emj.utils.db.SQLGetterSetter;
 import lombok.Getter;
@@ -37,6 +39,11 @@ public class Main extends JavaPlugin {
     @Getter
     private JobPlayer jobPlayer;
 
+    private JobManager jobManager;
+
+    @Getter
+    private CustomItemHandler customItemHandler;
+
     @Override
     public void onDisable() {
         super.onDisable();
@@ -63,8 +70,9 @@ public class Main extends JavaPlugin {
         commandManager.setup();
 
         //Setting Job
+        jobManager = new JobManager(getInstance());
+        jobManager.setup();
         jobPlayer = new JobPlayer(getInstance());
-        jobPlayer.setup();
 
         //Setting Listeners
         new OnBlock(getInstance());
@@ -79,7 +87,6 @@ public class Main extends JavaPlugin {
         new OnPlayerLevelUp(getInstance());
         new OnPlayerChangeExp(getInstance());
         new OnJobJoinLeave(getInstance());
-
 
         //Setting Tasks
         Bukkit.getServer().getScheduler().runTaskTimer(getInstance(),new EquipmentTask(getInstance()),0L,20L);

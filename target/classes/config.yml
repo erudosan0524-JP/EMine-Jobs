@@ -14,5 +14,5 @@ enabled-mysql: true
 host: localhost
 port: 3306
 username: minecraft
-password: LriJ9rG5#Yzg
+password: password
 database: eminejobs

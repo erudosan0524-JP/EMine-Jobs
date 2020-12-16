@@ -48,6 +48,7 @@ com\github\jp\erudosan\emj\listener\OnCook.class
 com\github\jp\erudosan\emj\job\jobs\lamber\LumberMaster.class
 com\github\jp\erudosan\emj\job\jobs\fisher\ArkMage.class
 com\github\jp\erudosan\emj\job\jobs\hunter\Archer.class
+com\github\jp\erudosan\emj\utils\CustomItemHandler.class
 com\github\jp\erudosan\emj\job\jobs\chef\Hunger.class
 com\github\jp\erudosan\emj\job\JobManager$1.class
 com\github\jp\erudosan\emj\skills\BlockBreakUtil.class

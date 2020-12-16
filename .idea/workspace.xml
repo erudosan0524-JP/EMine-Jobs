@@ -30,8 +30,22 @@
   <component name="ChangeListManager">
     <list default="true" id="0e6a563d-e8d6-4c40-bf68-fc2ac5fe5a83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/JobManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Miner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/job/jobs/miner/Miner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/CustomItemHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jp/erudosan/emj/utils/CustomItemHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/command/commands/subcommands/Gui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/Job.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/Miner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/job/jobs/miner/Miner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/task/EquipmentTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/task/EquipmentTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jp/erudosan/emj/utils/Items.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +70,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -260,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607586790797</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="[update] update Miner&#10;&#10;Minerクラスの更新">
+      <created>1607587117553</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1607587117553</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -308,7 +330,8 @@
     <MESSAGE value="temp commit&#10;&#10;一時的なcommit" />
     <MESSAGE value="[add] add CustomItemHandler&#10;&#10;カスタムアイテムをファイルから取得できるようにするクラスの追加" />
     <MESSAGE value="[update] add getItem method&#10;&#10;getItem() の追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] add getItem method&#10;&#10;getItem() の追加" />
+    <MESSAGE value="[update] update Miner&#10;&#10;Minerクラスの更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] update Miner&#10;&#10;Minerクラスの更新" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2360" y="234" key="#Project_Structure" timestamp="1607511051834">
@@ -330,22 +353,26 @@
     </state>
     <state x="719" y="389" width="481" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1606303730746" />
     <state x="2639" y="529" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1607510902332" />
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1607413334338">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="938" height="187" key="GridCell.Tab.0.bottom" timestamp="1607590243822">
+      <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1607413334338" />
-    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1607413334338">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="938" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1607590243822" />
+    <state width="938" height="187" key="GridCell.Tab.0.center" timestamp="1607590243822">
+      <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1607413334338" />
-    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1607413334338">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="938" height="187" key="GridCell.Tab.0.center/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1607590243822" />
+    <state width="938" height="187" key="GridCell.Tab.0.left" timestamp="1607590243822">
+      <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1607413334338" />
-    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1607413334338">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="938" height="187" key="GridCell.Tab.0.left/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1607590243822" />
+    <state width="938" height="187" key="GridCell.Tab.0.right" timestamp="1607590243822">
+      <screen x="1920" y="140" width="1920" height="1040" />
     </state>
     <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040/1920.140.1920.1040@0.0.1920.1040" timestamp="1607413334338" />
+    <state width="938" height="187" key="GridCell.Tab.0.right/0.0.1920.1040/1920.140.1920.1040@1920.140.1920.1040" timestamp="1607590243822" />
     <state x="2104" y="226" key="MergeDialog" timestamp="1605778101995">
       <screen x="1920" y="140" width="1920" height="1040" />
     </state>
